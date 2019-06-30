@@ -2,22 +2,68 @@
         "From": {
             "row": [7, 8],
             "column": [29, 91],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "Tel",
+                "left": "From",
+                "right": "To"
+            }
         },
         "To": {
             "row": [7, 8],
             "column": [113, null],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "Attn",
+                "left": "To",
+                "right": -1
+            }
+        },
+        "Tel": {
+            "row": [8, 9],
+            "column": [29, 91],
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "Booking No.",
+                "left": "Tel",
+                "right": "Attn"
+            }
+        },
+        "Attn": {
+            "row": [8, 9],
+            "column": [113, null],
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "Date",
+                "left": "Attn",
+                "right": -1
+            }
         },
         "Booking No.": {
             "row": [9, 10],
             "column": [29, 91],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "SHIPPING INSTRUCTION",
+                "left": "Booking No.",
+                "right": "Date"
+            }
         },
         "Date": {
             "row": [9, 10],
             "column": [113, null],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "SHIPPING INSTRUCTION",
+                "left": "Date",
+                "right": -1
+            }
         },
         "Shipper Name & Address": {
             "row": [12, 18],
@@ -66,7 +112,7 @@
         "Port of Discharge": {
             "row": [21, 22],
             "column": [4, 63],
-            "isFlex": 0,
+            "isFlex": 1,
             "endObject": {
                 "top": "Port of Discharge",
                 "bottom": "Container/Seal No.",
@@ -98,7 +144,7 @@
         },
         "Etd": {
             "row": [21, 22],
-            "column": [144, null],
+            "column": [143, null],
             "isFlex": 1,
             "endObject": {
                 "top": "Etd",
@@ -165,11 +211,23 @@
         "Remarks": {
             "row": [29, 30],
             "column": [20, 105],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": -1,
+                "left": "Remarks",
+                "right": "Payment"
+            }
         },
         "Payment": {
             "row": [29, 30],
             "column": [125, null],
-            "isFlex": 0
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": -1,
+                "left": "Payment",
+                "right": -1
+            }
         }
 }

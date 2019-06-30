@@ -8,7 +8,7 @@ if __name__ == '__main__':
     # file = os.listdir()
     # file = list(filter(lambda ef: ef[0] != "." and ef[-3:] == "pdf", file))
 
-    file = ["VN101466/SI_HANV07496600.pdf"]
+    file = ["SI-SGNV27883400.pdf"]
     for filename in file:
         # Covert PDF to string by page
         print(filename)
