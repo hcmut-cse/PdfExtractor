@@ -5,7 +5,7 @@ import os
 import re
 from difflib import SequenceMatcher
 
-PDF_TYPE = "VN101466"
+PDF_TYPE = "HUNG_TOTAL"
 # CURR_CONFIG = {}
 #
 # with open(PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         else:
             fullPdf = pdf[0].split('\n')
 
-        print("Number of lines in PDF: %d" % len(fullPdf))
+        # print("Number of lines in PDF: %d" % len(fullPdf))
 
         # Sort CONFIG from top to bottom, from left to right
         configByColumn = dict(sorted(CONFIG.items(), key=lambda kv: kv[1]['column'][0]))
@@ -207,8 +207,9 @@ if __name__ == '__main__':
                             # Get startRow to find left keyword
                             startRow = CURR_CONFIG[key]['row'][0]
                             leftFinding = CONFIG[key]['endObject'][margin]
+                            # if (CONFIG[key]['endObject']['top'][:4] != 'same' and leftFinding.strip() != ""):
+                            #     startRow -= 1
 
-                            # Find first row that has key word
                             # Find first row that has key word
                             while (True):
                                 if (re.search(leftFinding, fullPdf[startRow])):
@@ -260,6 +261,8 @@ if __name__ == '__main__':
                             # Get startRow to find right keyword
                             startRow = CURR_CONFIG[key]['row'][0]
                             rightFinding = CONFIG[key]['endObject'][margin]
+                            if (CONFIG[key]['endObject']['top'][:4] != 'same' and rightFinding.strip() != ""):
+                                startRow -= 1
 
                             # Find first row that has key word
                             while (True):
@@ -301,17 +304,18 @@ if __name__ == '__main__':
 
         # Process the subfields
         for key in CONFIG:
-            if (CONFIG[key]['hasSubfield']):
-                for subs in CONFIG[key]['subfields']:
-                    pos = 0
-                    reg = CONFIG[key]['subfields'][subs]
-                    if (reg != 10):
-                        result = re.search(reg, extractedData[key]).span()
-                        extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]+1]
-                        pos = result[1]
-                    else:
-                        extractedData[key+'_'+subs] = extractedData[key][pos:]
-                del extractedData[key]
+            if ('hasSubfield' in CONFIG[key]):
+                if (CONFIG[key]['hasSubfield']):
+                    for subs in CONFIG[key]['subfields']:
+                        pos = 0
+                        reg = CONFIG[key]['subfields'][subs]
+                        if (reg != 10):
+                            result = re.search(reg, extractedData[key]).span()
+                            extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
+                            pos = result[1]
+                        else:
+                            extractedData[key+'_'+subs] = extractedData[key][pos:]
+                    del extractedData[key]
 
         # Print data extracted
         # for key in extractedData:

@@ -80,7 +80,7 @@
                 "top": "Ocean vessel",
                 "bottom": "Port of discharge",
                 "left": -1,
-                "right": "Voy no"
+                "right": "        "
             }
         },
         "Voy no": {
@@ -93,8 +93,8 @@
             "endObject": {
                 "top": "Voy no",
                 "bottom": "Port of discharge",
-                "left": "Ocean vessel",
-                "right": "Place of loading"
+                "left": "        ",
+                "right": "        "
             }
         },
         "Place of loading": {
@@ -279,7 +279,7 @@
             "endObject": {
                 "top": "same_left",
                 "bottom": -1,
-                "left": "BKG",
+                "left": "BKG :",
                 "right": -1
             }
         },
@@ -293,7 +293,7 @@
             "endObject": {
                 "top": "BKG",
                 "bottom": -1,
-                "left": "HBL ",
+                "left": "HBL :",
                 "right": -1
             }
         }
