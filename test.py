@@ -5,7 +5,7 @@ import os
 import re
 from difflib import SequenceMatcher
 
-PDF_TYPE = "HUNG_TOTAL"
+PDF_TYPE = "VN101466"
 # CURR_CONFIG = {}
 #
 # with open(PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
@@ -78,8 +78,8 @@ if __name__ == '__main__':
             CURR_CONFIG[key]['column'] = CONFIG[key]['column']
 
         # Display fullPdf
-        # for i in fullPdf:
-        #     print(i)
+        for i in fullPdf:
+            print(i)
 
         extracted = []
         # Extract data
@@ -139,12 +139,13 @@ if __name__ == '__main__':
 
                         elif (margin == 'bottom'):
                             # Bottom object is under Top object
+                            # print("running bottom")
                             startRow = CURR_CONFIG[key]['row'][0] + 1
-
+                            print(CURR_CONFIG[key]['row'])
                             # Find first row that has keyword from startRow
                             while (True):
                                 if (re.search(CONFIG[key]['endObject']['bottom'], fullPdf[startRow])):
-
+                                    print(startRow)
                                     distance = startRow - CURR_CONFIG[key]['row'][1]
                                     nearestKey = key
                                     minDistance = len(fullPdf)
@@ -154,31 +155,32 @@ if __name__ == '__main__':
                                             if abs(CURR_CONFIG[keyE]['row'][0] - CURR_CONFIG[key]['row'][1]) < minDistance:
                                                 nearestKey = keyE
                                                 minDistance = abs(CURR_CONFIG[keyE]['row'][0] - CURR_CONFIG[key]['row'][1])
+                                    # print(nearestKey)
+
+                                    upperKey = key
+                                    minDistance = len(fullPdf)
+
+                                    for keyE in CURR_CONFIG:
+                                        if (keyE != key  and keyE != nearestKey and CONFIG[keyE]['row'][1] <= CONFIG[nearestKey]['row'][0]):
+                                            if abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0]) < minDistance:
+                                                upperKey = keyE
+                                                minDistance = abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0])
 
                                     # Find distance to move down
                                     if (distance > 0):
 
-                                        if (CURR_CONFIG[key]['row'][1] + distance > CURR_CONFIG[nearestKey]['row'][0] + 1):
-                                            distance = CURR_CONFIG[key]['row'][1] - CURR_CONFIG[nearestKey]['row'][0] + distance - 1
+                                        if (CURR_CONFIG[upperKey]['row'][1] < CURR_CONFIG[key]['row'][1] + distance):
+                                            distance = CURR_CONFIG[key]['row'][1] + distance - CURR_CONFIG[upperKey]['row'][1]
                                         else:
+                                            CURR_CONFIG[key]['row'][1] += distance
                                             break
 
                                     # Find distance to move up and move under block up
                                     elif (distance < 0):
 
-                                        upperKey = key
-                                        minDistance = len(fullPdf)
-
-                                        for keyE in CURR_CONFIG:
-                                            if (keyE != key  and keyE != nearestKey and CONFIG[keyE]['row'][1] <= CONFIG[nearestKey]['row'][0]):
-                                                if abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0]) < minDistance:
-                                                    upperKey = keyE
-                                                    minDistance = abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0])
-
-
                                         if (CURR_CONFIG[upperKey]['row'][1] > CURR_CONFIG[key]['row'][1] + distance):
                                             CURR_CONFIG[key]['row'][1] += distance
-                                            distance = CURR_CONFIG[upperKey]['row'][1] - CONFIG[upperKey]['row'][1]
+                                            distance = CURR_CONFIG[upperKey]['row'][1] - CONFIG[nearestKey]['row'][0]
                                             for keyE in CURR_CONFIG:
                                                 if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[upperKey]['row'][1] and keyE != upperKey):
 
@@ -226,12 +228,14 @@ if __name__ == '__main__':
                                 startCol = 0
 
                                 for keyE in extracted:
-                                    if (CURR_CONFIG[keyE]['row'][0] <= startRow and startRow < CURR_CONFIG[keyE]['row'][1]):
+                                    if (CURR_CONFIG[keyE]['row'][0] > startRow):
                                         if (CURR_CONFIG[keyE]['column'][1] > startCol):
                                             startCol = CURR_CONFIG[keyE]['column'][1]
+
                             else:
                                 startCol = 0
 
+                            # print(key)
                             # Find left keyword and calculate distance
                             startCol = startCol + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:]).span(0)[0]
                             distance = startCol + len(CONFIG[key]['endObject'][margin]) - CURR_CONFIG[key]['column'][0]
@@ -297,6 +301,10 @@ if __name__ == '__main__':
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
 
+            print(key)
+            print(row)
+            print(column)
+            # print(CURR_CONFIG)
             # Extract data and mark it as 'extracted'
             lines = fullPdf[row[0]:row[1]]
             extractedData[key] = '\n'.join([x[column[0]:column[1]].strip() for x in lines])
