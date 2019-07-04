@@ -36,7 +36,7 @@ if __name__ == '__main__':
             continueRemove = True
             while (True):
                 for i in range(len(fullPdf) - 1):
-                    if (''.join(fullPdf[0][row].split()) != ''.join(fullPdf[i+1][row].split())):
+                    if SequenceMatcher(None, ''.join(fullPdf[0][row].split()), ''.join(fullPdf[i+1][row].split())).ratio() < 0.8:
                         continueRemove = False
                         break
                 if (continueRemove):
@@ -141,11 +141,11 @@ if __name__ == '__main__':
                             # Bottom object is under Top object
                             # print("running bottom")
                             startRow = CURR_CONFIG[key]['row'][0] + 1
-                            print(CURR_CONFIG[key]['row'])
+                            # print(CURR_CONFIG[key]['row'])
                             # Find first row that has keyword from startRow
                             while (True):
                                 if (re.search(CONFIG[key]['endObject']['bottom'], fullPdf[startRow])):
-                                    print(startRow)
+                                    # print(startRow)
                                     distance = startRow - CURR_CONFIG[key]['row'][1]
                                     nearestKey = key
                                     minDistance = len(fullPdf)
