@@ -9,7 +9,10 @@ def removeHeaderAndFooter(pdf):
 
     fullPdf = []
     for i in range(len(pdf)):
-        fullPdf.append(pdf[i].split('\n'))
+        if (pdf[i].strip() != ''):
+            fullPdf.append(pdf[i].split('\n'))
+    if (len(fullPdf) == 1):
+        return fullPdf
     # Remove header
     row = 0
     continueRemove = True
@@ -47,6 +50,7 @@ def preProcessPdf(filename):
     with open(filename, "rb") as f:
         pdf = pdftotext.PDF(f)
     # Remove header & footer
+    # print(len(pdf))
     if (len(pdf) > 1):
         fullPdf = removeHeaderAndFooter(pdf)
         # Join PDF
