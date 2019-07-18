@@ -161,7 +161,7 @@
                 "top": "Container/Seal No.",
                 "bottom": "Total",
                 "left": -1,
-                "right": "  Packages"
+                "right": "Packages"
             }
         },
         "Packages": {

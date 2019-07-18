@@ -28,7 +28,8 @@ if __name__ == '__main__':
 
         # Preproces PDF
         fullPdf = preProcessPdf('../' + PDF_TYPE + '/' + file)
-
+        # for line in fullPdf:
+        #     print(line)
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG)
 

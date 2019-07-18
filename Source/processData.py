@@ -247,7 +247,42 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         # print(CURR_CONFIG)
         # Extract data and mark it as 'extracted'
         lines = fullPdf[row[0]:row[1]]
-        extractedData[key] = '\n'.join([x[column[0]:column[1]].strip() for x in lines])
+        dataBlock = []
+        formalLeft = False
+        formalRight = False
+        # Correct column + get information
+        for inform in lines:
+            if (column[0] > 0 and len(inform[column[0]:column[1]]) > 0):
+                if (inform[column[0]] != ' ' and inform[column[0] -1] == ' '):
+                    formalLeft = True
+
+                if (formalLeft and inform[column[0]] != ' ' and inform[column[0] - 1] != ' '):
+                    # print(key)
+                    i = 1
+                    while (inform[column[0] - i] == ' '):
+                        i += 1
+                    dataBlock.append(inform[column[0] - i - 1:column[1]].strip())
+                    continue
+            # print(key)
+            if (column[1] != None and len(inform[column[0]:column[1]]) > 0):
+                if (column[1] < len(inform)):
+                    # print(len(inform))
+                    # print(column[1])
+                    if (inform[column[1] - 1] == ' ' and inform[column[1]] != ' '):
+                        formalRight = True
+
+                    if (formalRight and inform[column[1]] != ' ' and inform[column[1] - 1] != ' '):
+                        # print(key)
+                        i = 1
+                        while (inform[column[1] - i] == ' '):
+                            i += 1
+                        dataBlock.append(inform[column[0]:column[1] - i - 1].strip())
+                        continue
+
+
+            dataBlock.append(inform[column[0]:column[1]].strip())
+
+        extractedData[key] = '\n'.join(dataBlock)
         extracted.append(key)
 
     extractedData = subfieldProcess(CONFIG, extractedData)
