@@ -10,6 +10,7 @@ if __name__ == '__main__':
     fileName = list(filter(lambda pdf: pdf[-3:] == 'pdf' ,os.listdir('../' + PDF_TYPE)))
 
     for file in fileName:
+        print(file)
         # Reset Current CONFIG
         with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
             CONFIG = json.load(json_file)

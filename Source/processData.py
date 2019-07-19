@@ -26,6 +26,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
     extractedData = {}
     for key in CONFIG:
         # print(key)
+        # print('--------------')
         if (not CONFIG[key]['isFlex']): # For fixxed elements
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
@@ -36,6 +37,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                     continue
                 else:
                     if (margin == 'top'):
+                        # print("running top")
                         # Find nearest upper block
                         if (len(extracted) > 0):
                             keyIndex = -1
@@ -84,6 +86,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         # print(CURR_CONFIG[key]['row'])
                         # Find first row that has keyword from startRow
                         while (True):
+                            # print(CONFIG[key]['endObject']['bottom'])
+                            # print(fullPdf[startRow])
                             if (re.search(CONFIG[key]['endObject']['bottom'], fullPdf[startRow])):
                                 # print(startRow)
                                 distance = startRow - CURR_CONFIG[key]['row'][1]
@@ -101,15 +105,16 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 minDistance = len(fullPdf)
 
                                 for keyE in CURR_CONFIG:
-                                    if (keyE != key  and keyE != nearestKey and CONFIG[keyE]['row'][1] <= CONFIG[nearestKey]['row'][0]):
+                                    if (CONFIG[keyE]['row'][1] == None):
+                                        continue
+                                    if (keyE != key and keyE != nearestKey and CONFIG[keyE]['row'][1] <= CONFIG[nearestKey]['row'][0]):
                                         if abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0]) < minDistance:
                                             upperKey = keyE
                                             minDistance = abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0])
 
                                 # Find distance to move down
                                 if (distance > 0):
-
-                                    if (CURR_CONFIG[upperKey]['row'][1] < CURR_CONFIG[key]['row'][1] + distance):
+                                    if (CURR_CONFIG[upperKey]['row'][1] > CURR_CONFIG[key]['row'][0] and CURR_CONFIG[upperKey]['row'][1] < CURR_CONFIG[key]['row'][1] + distance):
                                         distance = CURR_CONFIG[key]['row'][1] + distance - CURR_CONFIG[upperKey]['row'][1]
                                     else:
                                         CURR_CONFIG[key]['row'][1] += distance

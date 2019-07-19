@@ -23,6 +23,8 @@ def preProcessPdf(filename):
         fullPdf = pdf[0].split('\n')
 
     fullPdf = removeWatermark(filename, fullPdf)
+    # for line in fullPdf:
+    #     print(line)
     return fullPdf
 
 if __name__ == '__main__':
