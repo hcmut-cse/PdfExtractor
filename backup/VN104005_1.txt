@@ -1,0 +1,66 @@
+                                             ONE                                                                SEA WAY BILL                                    ONEYSGNV06780400
+                                                                                                                                                                                    B L NO
+ Shipper/Exporter (complex name and address)                                                                 Booking No
+INTIMEX BUON MA THUOT
+                                                                                                             Exporter references
+LOT CN3, TAN AN 2 INDUSTRIAL ZONE,
+KM 8, TAN AN WARD, BUON MA THUOT
+CITY, DAKLAK PROVINCE, VIETNAM
+                                                                                                                                                     Shipper
+ Consignee (complex name and address)                                                                        Forwarding agent - references
+KONINKLIJKE DOUWE EGBERTS B.V.
+OOSTERDOKSSTRAAT 80, AMSTERDAM 1011 DK,
+THE NETHERLANDS
+                                                                                                             Point and country of Origin          memoranda
+ Notify Paty (complex name and address)
+MOLENBERGNATIE N.V.
+                                                                                                             Domestic routing / export intruction
+                                                                                                                                                  not part of
+NOORDERLAAN 121
+ANTWERPEN 2030
+BELGIUM
+                                                                                                                                                 Bill of lading
+ Precarriage by                                        Place of receipt
+ NYK SWAN V. 008W                                      HOCHIMINH CITY
+Vessel                                                 Port of loading                                       Onward inland routing
+                                                       DIRECT
+ Port of discharge                                     Place of dilivery
+  ANTWERP                                              ANTWERP
+CARRIER'S RECEIPT                                                         PARTICULARS FURNISHED BY SHIPPER - CARRIER NOT RESPONSIBLE
+Container No ./Seal No.               No. of Containes               Kind of packages ; description of goods                                         Gross Weight                Mesasurement
+Marks and Numbers                     or pkgs
+                                                                      02X20'
+                                                                      VIETNAM ROBUSTA GR2 SC13 0.1%BLACK 0.5% BROKEN 1%BROWN
+                                                                      CONTRACT REF. 1005247.1354
+                                                                      PO # 5900049710
+ CONT NO                              SEAL NO                      BULK BAGS                      N.W(MTS)                                                  G.W(MTS)
+ NYKU3826741                               VN315641A                  1                                  21.600                                                   21.612
+ NYKU3839939                               VN315718A                  1                                  21.600                                                   21.612
+                                        TOTAL:                        2                                  43.200                                                   43.224
+                                                                                        ALSO PARTY:
+                                                                                        JACOBS DOUWE EGBERTS VIETNAM REP. OFFICE
+                                                                                        A: ROOM 203, 2ND FLOOR, METROPOLITAN BUILDING,
+                                                                                        235 DONG KHOI, DIST. 1, HO CHI MINH CITY, VIETNAM
+                                                                                        FCL/FCL
+                                                                                        SHIPMENT IN BULK
+                                                                                        TOTAL 02 BULKS; NW: 43.200 MTS;
+                                                                                        GW: 43.224 MTS; TARE WEIGHT: 0.024 MTS
+Freight & Charges                                                    Rate
+                                                                                        EACH CONTAINER CONTAINS:
+                                                                                        NW: 21.600 MTS; GW: 21.612 MTS;
+                                                                                        TARE WEIGHT: 0.012 MTS
+                                                                                        TARIFF CODE NO. 090111
+                                                                                        SERVICE CONTRACT: BASA00123A
+                                                                                        EACH CONTAINER WAS LINED WITH CARTON BOARD ON 6 SIDES
+                                                                                        2 BULK CONTAINER(S) EQUIVALENT TO 720 60 KG BAGS EACH OF
+                                                                                        CLEAN GREEN COFFEE IN BULK FOR ANY LIMITATION OF LIABILITY
+                                                                                        PURPOSES
+ Declared Value Charges                                     Total Prepaid
+ (see clause 6) for
+ Declared Value of US $                                                                 FREIGHT COLLECT
+Number og Original;l B(s)/L                                 Total collect               FREIGHT PAYABLE IN PRATTELN, SWITZERLAND BY CSA
+Place of issue                                             Date
+    HOCHIMINH CITY                                                   FEB 28, 2019
+                                                                                                                                                  By
+                                                                                                                                                                As Agents for the Master.
+

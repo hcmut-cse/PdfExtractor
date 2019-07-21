@@ -1,0 +1,56 @@
+                                                                                                            COMBINED TRANSPORT
+                                             ONE                                                                      BILL OF LADING                            SGNV33817500
+                                                                                                                                                                                    B L NO
+ Shipper/Exporter (complex name and address)                                                                 Booking No
+INTIMEX BUON MA THUOT
+                                                                                                             Exporter references
+LOT CN3, TAN AN 2 INDUSTRIAL ZONE,
+KM 8, TAN AN WARD, BUON MA THUOT
+CITY, DAKLAK PROVINCE, VIETNAM
+                                                                                                                                                     Shipper
+ Consignee (complex name and address)                                                                        Forwarding agent - references
+TO THE ORDER
+                                                                                                             Point and country of Origin          memoranda
+ Notify Paty (complex name and address)
+COPROCAFE IBERICA S.A.
+                                                                                                             Domestic routing / export intruction
+                                                                                                                                                  not part of
+RAFAEL CALVO 18
+28010 MADRID / SPAIN
+EORI - ESA28687994
+                                                                                                                                                 Bill of lading
+ Precarriage by                                        Place of receipt
+ ONE AQUILA V. 004W                                    HOCHIMINH CITY
+Vessel                                                 Port of loading                                       Onward inland routing
+ MUNCHEN BRIDGE V. 020W                                SINGAPORE
+ Port of discharge                                     Place of dilivery
+  BARCELONA                                            BARCELONA
+CARRIER'S RECEIPT                                                         PARTICULARS FURNISHED BY SHIPPER - CARRIER NOT RESPONSIBLE
+Container No ./Seal No.               No. of Containes               Kind of packages ; description of goods                                         Gross Weight                Mesasurement
+Marks and Numbers                     or pkgs
+                                                                      2X20'
+                                                                      VIETNAM ROBUSTA COFFEE BEANS GRADE 1, 1% BB, SCR 18
+ CONT NO                              SEAL NO                      BIG BAGS                       N.W(MTS)                                                  G.W(MTS)
+ TEMU0672530                               VN037613A                  20                                 20.000                                                   20.060
+ KKTU7976492                               VN037618A                  20                                 20.000                                                   20.060
+                                        TOTAL:                        40                                 40.000                                                   40.120
+                                                                                          FCL/FCL
+            MARKING:                                                                      SHIPMENT IN BIG BAGS
+            ROBUSTA 18 XT NEUMANN                                                         TOTAL 40 BIG BAGS; NW: 40.000 MTS;
+            ICO NO. 145/6762/171                                                          GW: 40.120 MTS
+            Z84490                                                                        HS CODE: 0901110000
+                                                                                          SERVICE CONTRACT NO. HAMB00178A
+Freight & Charges                                                    Rate
+                                                                                          INTENDED CONNECTING VESSEL:
+                                                                                          MUNCHEN BRIDGE V. 020W
+                                                                                          FREIGHT COLLECT
+                                                                                          FREIGHT PAYABLE IN SPAIN
+ Declared Value Charges                                     Total Prepaid
+ (see clause 6) for
+ Declared Value of US $
+Number og Original;l B(s)/L                                 Total collect
+Place of issue                                             Date
+    HOCHIMINH CITY                                                   APR 12, 2019
+                                                                                                                                                  By
+                                                                                                                                                                As Agents for the Master.
+
