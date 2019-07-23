@@ -34,6 +34,7 @@ Forwarding agent - references:
 ------------------------------------
 Point and country of Origin:
 
+
 ------------------------------------
 ------------------------------------
 Notify Paty:
@@ -91,7 +92,6 @@ FCL/FCL
 ------------------------------------
 ------------------------------------
 No. of Containes:
-or pkgs
 
 
 
@@ -138,13 +138,11 @@ BULK BAGS:
 N.W(MTS):
 21.600
 21.600
-43.200
 ------------------------------------
 ------------------------------------
 G.W(MTS):
 21.612
 21.612
-43.224
 ------------------------------------
 ------------------------------------
 Freight & Charges:
@@ -160,14 +158,14 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-SHIPMENT IN BU
+SHIPMENT IN
 FCL/FCL
 TOTAL 02 BULKS
-TOTAL NW: 43.2
-TOTAL TARE WEI
-TARIFF CODE NO
-SERVICE CONTRA
-2 BULK CONTAIN
+TOTAL NW: 43
+TOTAL TARE W
+TARIFF CODE
+SERVICE CONT
+2 BULK CONTA
 OF CLEAN GREEN
 ------------------------------------
 ------------------------------------

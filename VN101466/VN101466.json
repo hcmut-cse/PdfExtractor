@@ -1,7 +1,7 @@
 {
         "From": {
             "row": [7, 8],
-            "column": [29, 91],
+            "column": [29, 92],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",
@@ -23,7 +23,7 @@
         },
         "Tel": {
             "row": [8, 9],
-            "column": [29, 91],
+            "column": [29, 92],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",
@@ -45,7 +45,7 @@
         },
         "Booking No.": {
             "row": [9, 10],
-            "column": [29, 91],
+            "column": [29, 92],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",
@@ -210,7 +210,7 @@
         },
         "Remarks": {
             "row": [29, 30],
-            "column": [20, 105],
+            "column": [20, 106],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",

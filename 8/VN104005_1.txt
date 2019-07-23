@@ -34,6 +34,7 @@ Forwarding agent - references:
 ------------------------------------
 Point and country of Origin:
 
+
 ------------------------------------
 ------------------------------------
 Notify Paty:
@@ -47,6 +48,8 @@ BELGIUM
 ------------------------------------
 ------------------------------------
 Domestic routing / export intruction:
+
+
 
 
 
@@ -92,7 +95,6 @@ Container No ./Seal No.:
 ------------------------------------
 ------------------------------------
 No. of Containes:
-or pkgs
 
 
 
@@ -111,13 +113,9 @@ Gross Weight:
 
 
 
-
-
 ------------------------------------
 ------------------------------------
 Mesasurement:
-
-
 
 
 
@@ -141,13 +139,11 @@ BULK BAGS:
 N.W(MTS):
 21.600
 21.600
-43.200
 ------------------------------------
 ------------------------------------
 G.W(MTS):
 21.612
 21.612
-43.224
 ------------------------------------
 ------------------------------------
 Freight & Charges:
@@ -163,7 +159,7 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-EACH CONTAINER C
+EACH CONTAINER
 NW: 21.600 MTS;
 TARE WEIGHT: 0
 TARIFF CODE NO.
@@ -175,22 +171,14 @@ PURPOSES
 ------------------------------------
 ------------------------------------
 Unit:
-
-EGBERTS VIETNAM REP. OFFICE
-2ND FLOOR, METROPOLITAN BUILDING,
-OI, DIST. 1, HO CHI MINH CITY, VIETNAM
-
-BULK
-LKS; NW: 43.200 MTS;
-MTS; TARE WEIGHT: 0.024 MTS
-
-------------------------------------
-------------------------------------
-Prepaid:
-
-------------------------------------
-------------------------------------
-Collect:
+ONTAINS:
+GW: 21.612 MTS;
+.012 MTS
+090111
+CT: BASA00123A
+WAS LINED WITH CARTON BOARD ON 6 SIDES
+ER(S) EQUIVALENT TO 720 60 KG BAGS EACH OF
+FFEE IN BULK FOR ANY LIMITATION OF LIABILITY
 
 ------------------------------------
 ------------------------------------

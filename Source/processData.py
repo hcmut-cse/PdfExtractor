@@ -25,6 +25,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
     # Extract data
     extractedData = {}
     for key in CONFIG:
+        error = False
         print(key)
         print('--------------')
         if (not CONFIG[key]['isFlex']): # For fixxed elements
@@ -39,24 +40,31 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                     if (margin == 'top'):
                         # print("running top")
                         # Find nearest upper block
+                        nearestKey = key
                         if (len(extracted) > 0):
                             keyIndex = -1
                             minDistance = len(fullPdf)
                             for keyE in extracted:
-                                if (CONFIG[keyE]['row'][1] - 1 < CONFIG[key]['row'][0] and minDistance > abs(CONFIG[keyE]['row'][1] - CONFIG[key]['row'][0])):
+                                if CONFIG[keyE]['row'][1] == None:
+                                    continue
+                                tempDis = abs(CONFIG[keyE]['row'][1] - CONFIG[key]['row'][0])
+                                if (CONFIG[keyE]['row'][1] - 1 < CONFIG[key]['row'][0] and minDistance > tempDis and CONFIG[keyE]['row'][0] != CONFIG[key]['row'][0]):
                                     keyIndex = extracted.index(keyE)
-                                    minDistance = abs(CONFIG[keyE]['row'][1] - CONFIG[key]['row'][0])
+                                    minDistance = tempDis
 
                             if (keyIndex == -1):
                                 startRow = 0
                             else:
-                                startRow = CURR_CONFIG[extracted[keyIndex]]['row'][1]
+                                # print(extracted[keyIndex])
+                                nearestKey = extracted[keyIndex]
+                                startRow = CURR_CONFIG[nearestKey]['row'][1]
                         else:
                             startRow = 0
 
+                        print(startRow)
                         # Get keyword
                         if (CONFIG[key]['endObject']['top'][:4] == 'same'):
-                            topFinding = CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][-4:]]
+                            topFinding = CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]]
                             sameLine = 0
                         else:
                             topFinding = CONFIG[key]['endObject']['top']
@@ -64,18 +72,29 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
 
                         # Find first row that has keyword from startRow
                         while (True):
+                            # print(fullPdf[startRow])
                             if (re.search(topFinding, fullPdf[startRow])):
+                                # if (startRow > CURR_CONFIG[nearestKey]['row'][0] and nearestKey != key):
+                                    # print("DCM startrow")
+                                    # break
                                 distance = startRow - CURR_CONFIG[key]['row'][0] + sameLine
-
+                                # print("top distance " + str(distance))
                                 for keyE in CURR_CONFIG:
-                                    if (keyE != key and CONFIG[keyE]['row'][0] == CONFIG[key]['row'][0]):
+                                    if (keyE != key and keyE not in extracted and CURR_CONFIG[keyE]['row'][0] == CURR_CONFIG[key]['row'][0]):
                                         CURR_CONFIG[keyE]['row'][0] += distance
+                                        if (CURR_CONFIG[keyE]['row'][1] != None):
+                                            CURR_CONFIG[keyE]['row'][1] += distance
 
                                 # Move current block
-                                # for keyE in CURR_CONFIG:
-                                #     if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][1] and keyE != key):
-                                #         CURR_CONFIG[keyE]['row'] =  [i + distance for i in CURR_CONFIG[keyE]['row']]
-                                # CURR_CONFIG[key]['row'][1] += distance
+                                if (CURR_CONFIG[key]['row'][1] != None):
+                                    for keyE in CURR_CONFIG:
+                                        if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][1] and keyE != key and CURR_CONFIG[keyE]['row'][0] != CURR_CONFIG[key]['row'][0] + distance):
+                                            for i, val in enumerate(CURR_CONFIG[keyE]['row']):
+                                                if val != None:
+                                                    CURR_CONFIG[keyE]['row'][i] =  val + distance
+                                                else:
+                                                    CURR_CONFIG[keyE]['row'][i] = None
+                                    CURR_CONFIG[key]['row'][1] += distance
                                 CURR_CONFIG[key]['row'][0] += distance
                                 break;
 
@@ -83,15 +102,20 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 startRow += 1
                                 if (startRow == len(fullPdf)):
                                     break
-                        if (startRow == len(fullPdf)):
-                            break
+                        # print(startRow - CURR_CONFIG[nearestKey]['row'][1])
+                        # if (CURR_CONFIG[key]['row'][1] != None):
+                        #     if (startRow > CURR_CONFIG[key]['row'][1]):
 
+
+                        # print("TOP " + str(CURR_CONFIG[key]['row'][0]))
 
                             # Raise error
                     elif (margin == 'bottom'):
                         # Bottom object is under Top object
-                        # print("running bottom")
+                        print("running bottom")
                         startRow = CURR_CONFIG[key]['row'][0]
+                        if (re.search(CONFIG[key]['endObject']['bottom'], fullPdf[startRow - (CONFIG[key]['endObject']['top'][:4] != 'same')])):
+                            error = True
                         # print(CURR_CONFIG[key]['row'])
                         # Find first row that has keyword from startRow
                         while (True):
@@ -121,7 +145,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                             upperKey = keyE
                                             minDistance = abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0])
 
-                                # print(distance)
+                                print(distance)
                                 # Find distance to move down
                                 if (distance > 0):
                                     # print(CURR_CONFIG[upperKey]['row'][1] > CURR_CONFIG[key]['row'][0])
@@ -138,9 +162,12 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                         CURR_CONFIG[key]['row'][1] += distance
                                         distance = CURR_CONFIG[upperKey]['row'][1] - CONFIG[nearestKey]['row'][0]
                                         for keyE in CURR_CONFIG:
-                                            if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[upperKey]['row'][1] and keyE != upperKey):
-
-                                                CURR_CONFIG[keyE]['row'] =  [i + distance for i in CURR_CONFIG[keyE]['row']]
+                                            if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[upperKey]['row'][1] and keyE != upperKey and CONFIG[keyE]['row'][0] != CONFIG[key]['row'][0]):
+                                                for i, val in enumerate(CURR_CONFIG[keyE]['row']):
+                                                    if val != None:
+                                                        CURR_CONFIG[keyE]['row'][i] =  val + distance
+                                                    else:
+                                                        CURR_CONFIG[keyE]['row'][i] = None
                                         break
 
                                 else:
@@ -151,7 +178,13 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 # Move current block
                                 for keyE in CURR_CONFIG:
                                     if (keyE not in extracted and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][1] and keyE != key):
-                                        CURR_CONFIG[keyE]['row'] =  [i + distance for i in CURR_CONFIG[keyE]['row']]
+                                        if (keyE == "PLACE OF RECEIPT"):
+                                            print("AAAAAAAAA")
+                                        for i, val in enumerate(CURR_CONFIG[keyE]['row']):
+                                            if val != None:
+                                                CURR_CONFIG[keyE]['row'][i] =  val + distance
+                                            else:
+                                                CURR_CONFIG[keyE]['row'][i] = None
                                 CURR_CONFIG[key]['row'][1] += distance
 
                                 break
@@ -173,7 +206,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         # Find first row that has key word
                         while (True):
                             if (re.search(leftFinding, fullPdf[startRow])):
-                                break;
+                                break
                             else:
                                 startRow += 1
                                 if (startRow == len(fullPdf)):
@@ -186,28 +219,36 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                             startCol = 0
 
                             for keyE in extracted:
-                                if (CURR_CONFIG[keyE]['row'][0] > startRow):
+                                if (CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]):
                                     if (CURR_CONFIG[keyE]['column'][1] > startCol):
                                         startCol = CURR_CONFIG[keyE]['column'][1]
 
                         else:
                             startCol = 0
 
-                        # print(key)
+                        # print("startCol: "+str(startCol))
+                        # print(fullPdf[startRow][startCol:])
                         # Find left keyword and calculate distance
-                        startCol = startCol + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:]).span(0)[0]
-                        distance = startCol + len(CONFIG[key]['endObject'][margin]) - CURR_CONFIG[key]['column'][0]
+                        # startCol = startCol + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:]).span(0)[0]
+                        leftObj = re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:])
+                        if (leftObj != None):
+                            startCol = startCol + leftObj.span(0)[0] + len(CONFIG[key]['endObject'][margin])
+                            # print("startCol: "+str(startCol))
+                            distance = startCol - CURR_CONFIG[key]['column'][0]
+                        # else:
+                        #     distance = startCol -
 
                         # Move other right block
                         for keyE in CURR_CONFIG:
-                            if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                                                                        or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                            if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
+                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
+                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
 
-                                for i in range(len(CURR_CONFIG[keyE]['column'])):
-                                    if (CURR_CONFIG[keyE]['column'][i] != None):
-                                        CURR_CONFIG[keyE]['column'][i] += distance
-                                    else:
-                                        CURR_CONFIG[keyE]['column'][i] = None
+                                    for i in range(len(CURR_CONFIG[keyE]['column'])):
+                                        if (CURR_CONFIG[keyE]['column'][i] != None):
+                                            CURR_CONFIG[keyE]['column'][i] += distance
+                                        else:
+                                            CURR_CONFIG[keyE]['column'][i] = None
 
                         # Move current block
                         for i in range(len(CURR_CONFIG[key]['column'])):
@@ -238,24 +279,31 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         if (startRow == len(fullPdf)):
                             continue
 
-                        print(fullPdf[startRow][CURR_CONFIG[key]['column'][0]:])
+                        if (re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][CURR_CONFIG[key]['column'][0]:]) == None):
+                            break
                         # Find right keyword and calculate distance
                         startCol = CURR_CONFIG[key]['column'][0] + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][CURR_CONFIG[key]['column'][0]:]).span(0)[0]
                         distance = startCol - CURR_CONFIG[key]['column'][1]
 
                         # Move other right block
                         for keyE in CURR_CONFIG:
-                            if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                                                                        or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
-                                for i in range(len(CURR_CONFIG[keyE]['column'])):
-                                    if (CURR_CONFIG[keyE]['column'][i] != None):
-                                        CURR_CONFIG[keyE]['column'][i] += distance
-                                    else:
-                                        CURR_CONFIG[keyE]['column'][i] = None
+                            # print(CURR_CONFIG[keyE]['row'][1])
+                            if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
+                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
+                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                                    for i in range(len(CURR_CONFIG[keyE]['column'])):
+                                        if (CURR_CONFIG[keyE]['column'][i] != None):
+                                            CURR_CONFIG[keyE]['column'][i] += distance
+                                        else:
+                                            CURR_CONFIG[keyE]['column'][i] = None
 
                         # Move current block
                         CURR_CONFIG[key]['column'][1] += distance
 
+
+        if (error):
+            del CURR_CONFIG[key]
+            continue
         # Get row and column
         row = CURR_CONFIG[key]['row']
         column = CURR_CONFIG[key]['column']
@@ -268,7 +316,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         lines = fullPdf[row[0]:row[1]]
         dataBlock = []
         formalLeft = False
-        formalRight = False
+        formalRight = True
         # Correct column + get information
         for inform in lines:
             if (column[0] > 0 and len(inform[column[0]:column[1]]) > 0):

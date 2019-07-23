@@ -128,7 +128,7 @@
 	"Place of receipt":
 	{
 		"row": [22,23],
-		"column": [55,72],
+		"column": [55,110],
 		"isFlex": 1,
 		"endObject":
 		{
@@ -169,7 +169,7 @@
 
 	"Onward inland routing":
 	{
-		"row": [24,25],
+		"row": [24,26],
 		"column": [110,null],
 		"isFlex": 1,
 		"endObject":
@@ -198,7 +198,7 @@
 	"Place of dilivery":
 	{
 		"row": [25,26],
-		"column": [55,72],
+		"column": [55,110],
 		"isFlex": 1,
 		"endObject":
 		{
@@ -230,7 +230,7 @@
 		"isFlex": 1,
 		"endObject":
 		{
-			"top": "No. of Containes",
+			"top": "or pkgs",
 			"bottom": "SEAL NO",
 			"left": "Marks and Numbers",
 			"right": "Kind of packages ; description of goods"
@@ -379,7 +379,7 @@
 
 	"Unit":
 	{
-		"row": [42,51],
+		"row": [41,51],
 		"column": [101,148],
 		"isFlex": 1,
 		"endObject":
@@ -393,27 +393,27 @@
 
 	"Prepaid":
 	{
-		"row": [42,51],
+		"row": [41,51],
 		"column": [148,176],
 		"isFlex": 1,
 		"endObject":
 		{
 			"top": "Prepaid",
-			"bottom": "Total Prepaid",
-			"left": -1,
+			"bottom": "Declared Value Charges",
+			"left": "Unit",
 			"right": "Collect"
 		}
 	},
 
 	"Collect":
 	{
-		"row": [42,50],
+		"row": [41,51],
 		"column": [176,null],
 		"isFlex": 1,
 		"endObject":
 		{
 			"top": "Collect",
-			"bottom": "Total Prepaid",
+			"bottom": "Declared Value Charges",
 			"left": "Prepaid",
 			"right": -1
 		}

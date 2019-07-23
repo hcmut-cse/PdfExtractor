@@ -34,6 +34,7 @@ Forwarding agent - references:
 ------------------------------------
 Point and country of Origin:
 
+
 ------------------------------------
 ------------------------------------
 Notify Paty:
@@ -91,7 +92,6 @@ FCL/FCL
 ------------------------------------
 ------------------------------------
 No. of Containes:
-or pkgs
 
 
 
@@ -163,15 +163,15 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-SHIPMENT IN BU
+SHIPMENT IN
 TOTAL 3 BULKS
-TOTAL NW: 64.7
-TOTAL GW: 64.7
-TOTAL TARE WEI
+TOTAL NW: 64
+TOTAL GW: 64
+TOTAL TARE W
 4C LICENSE NO.
-TARIFF CODE NO
-SERVICE CONTRA
-3 BULK CONTAIN
+TARIFF CODE
+SERVICE CONT
+3 BULK CONTA
 ------------------------------------
 ------------------------------------
 Unit:
@@ -183,7 +183,7 @@ GHT: 0.036 MTS
 L-90012-75-1-0321
 . 090111
 CT: BASB00123A
-ER(S) EQUIVALENT TO 1080 60 KG BAG
+ER(S) EQUIVALENT TO 1080 60 KG B
 ------------------------------------
 ------------------------------------
 Prepaid:

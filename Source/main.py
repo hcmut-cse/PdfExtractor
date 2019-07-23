@@ -6,7 +6,7 @@ from preprocess import preProcessPdf
 from processData import extractData
 
 if __name__ == '__main__':
-    PDF_TYPE = "VN101466"
+    PDF_TYPE = "Vn101466"
     fileName = list(filter(lambda pdf: pdf[-3:] == 'pdf' ,os.listdir('../' + PDF_TYPE)))
     # fileName = ["SGNV33817500.pdf"]
 
