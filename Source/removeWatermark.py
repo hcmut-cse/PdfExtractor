@@ -29,7 +29,7 @@ def find_anomalies(df):
 	return pd.DataFrame(anomalies, columns = ['outlier-fontsize', 'outlier-letter'])
 
 def findWatermark(fileName):
-    os.system('pdf2txt.py -o output.html -t html ' + fileName)
+    os.system('pdf2txt.py -o output.html -t html \'' + fileName+'\'')
     with open('output.html', 'r') as htmlData:
         soup = BeautifulSoup(htmlData, features="html.parser")
 
