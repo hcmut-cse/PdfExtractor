@@ -6,7 +6,7 @@ import pdftotext
 from removeHeaderFooter import removeHeaderAndFooter
 from removeWatermark import removeWatermark
 
-def preProcessPdf(filename):
+def preProcessPdf(filename, HF_CONFIG):
     # for filename in file:
     # Covert PDF to string by page
     # print(filename)
@@ -15,12 +15,16 @@ def preProcessPdf(filename):
         pdf = pdftotext.PDF(f)
 
     # Remove header & footer
-    if (len(pdf) > 1):
-        fullPdf = removeHeaderAndFooter(pdf)
-        # Join PDF
-        fullPdf = [line for page in fullPdf for line in page]
-    else:
-        fullPdf = pdf[0].split('\n')
+    # if (len(pdf) > 1):
+    #     fullPdf = removeHeaderAndFooter(pdf)
+    #     # Join PDF
+    #     fullPdf = [line for page in fullPdf for line in page]
+    # else:
+            # fullPdf = pdf[0].split('\n')
+
+    fullPdf = removeHeaderAndFooter(pdf, HF_CONFIG)
+    # Join PDF
+    fullPdf = [line for page in fullPdf for line in page if line != '']
 
     fullPdf = removeWatermark(filename, fullPdf)
     # for line in fullPdf:

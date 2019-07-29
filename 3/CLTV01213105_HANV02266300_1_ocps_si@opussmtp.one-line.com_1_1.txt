@@ -1,0 +1,57 @@
+------------------------------------
+BILL OF LADING NO:
+BILL OF LADIN NO:
+------------------------------------
+------------------------------------
+Shipper:
+THANH HOA FISHERY IMPORT-EXPORT JOINT STOCK COMPANY
+LOT E, LE MON INDUSTRIAL ZONE, THANH HOA CITY, VIETNAM
+------------------------------------
+------------------------------------
+Consignee:
+TASMAN SEA, S.L.
+RAMBLA ANEL UIMERA,31
+08328 ALELLA (BARCELONA) ,SPAIN
+------------------------------------
+------------------------------------
+NOFIFY PARTY:
+TASMAN SEA SL.
+RAMBLA ANEL UIMERA,31
+08328 ALELLA (BARCELONA) ,SPAIN
+------------------------------------
+------------------------------------
+Port of Loading:
+4/ PORT OF LOADIN:      HAI ON PORT, VIETNAM
+------------------------------------
+------------------------------------
+Port of Discharge:
+5/ PORT OF DISCHARE : BARCELONA PORT, SPAIN
+------------------------------------
+------------------------------------
+TÊN HÀNG HÓA:
+FROZEN COOKED FULLY CLAM
+FREIHT PREPAID
+OODS ARE STORED IN REEFER CONTAINER SET AT MINUS 20 DEREES CELSIUS
+------------------------------------
+------------------------------------
+SỐ KIỆN:
+3,369       CTNS
+27,273.00  KS
+------------------------------------
+------------------------------------
+TÊN TÀU:
+NORDEMILIA 047S
+------------------------------------
+------------------------------------
+NGÀY CHẠY:
+S
+9
+------------------------------------
+------------------------------------
+CONT NO / SEAL NO:
+TTNU8190440/MOL062823N
+------------------------------------
+------------------------------------
+HS CODE:
+160
+------------------------------------

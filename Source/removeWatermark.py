@@ -105,6 +105,7 @@ def removeWatermark(fileName, pdf):
     for word in watermark: order.update({word:0})
     for line in pdf:
         for word in watermark:
+            if (word.strip() == ''): continue
             found=line.find(word)
             if (found!=-1):
                 tmp=1

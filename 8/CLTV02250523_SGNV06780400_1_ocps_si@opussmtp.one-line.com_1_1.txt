@@ -87,20 +87,6 @@ Place of dilivery:
 ANTWERP
 ------------------------------------
 ------------------------------------
-Container No ./Seal No.:
-
-
-
-
-------------------------------------
-------------------------------------
-No. of Containes:
-
-
-
-
-------------------------------------
-------------------------------------
 Kind of packages ; description of goods:
 
 02X20'
@@ -116,6 +102,20 @@ Gross Weight:
 ------------------------------------
 ------------------------------------
 Mesasurement:
+
+
+
+------------------------------------
+------------------------------------
+Container No ./Seal No.:
+
+
+
+
+------------------------------------
+------------------------------------
+No. of Containes:
+
 
 
 
@@ -159,26 +159,34 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-EACH CONTAINER
-NW: 21.600 MTS;
-TARE WEIGHT: 0
-TARIFF CODE NO.
-SERVICE CONTRA
-EACH CONTAINER
-2 BULK CONTAIN
-CLEAN GREEN CO
+EACH CONTAINER CON
+NW: 21.600 MTS; GW:
+TARE WEIGHT: 0.012
+TARIFF CODE NO. 09
+SERVICE CONTRACT:
+EACH CONTAINER WAS
+2 BULK CONTAINER(S)
+CLEAN GREEN COFFEE
 PURPOSES
 ------------------------------------
 ------------------------------------
 Unit:
-ONTAINS:
-GW: 21.612 MTS;
-.012 MTS
-090111
-CT: BASA00123A
-WAS LINED WITH CARTON BOARD ON 6 SIDES
-ER(S) EQUIVALENT TO 720 60 KG BAGS EACH OF
-FFEE IN BULK FOR ANY LIMITATION OF LIABILITY
+EP. OFFICE
+OLITAN BUILDING,
+MINH CITY, VIETNAM
+
+
+;
+.024 MTS
+
+
+;
+
+
+
+CARTON BOARD ON 6 SIDES
+TO 720 60 KG BAGS EACH OF
+ANY LIMITATION OF LIABILITY
 
 ------------------------------------
 ------------------------------------

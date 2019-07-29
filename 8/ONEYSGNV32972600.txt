@@ -83,20 +83,6 @@ Place of dilivery:
 BARCELONA
 ------------------------------------
 ------------------------------------
-Container No ./Seal No.:
-
-
-
-
-------------------------------------
-------------------------------------
-No. of Containes:
-
-
-
-
-------------------------------------
-------------------------------------
 Kind of packages ; description of goods:
 
 5X20'
@@ -112,6 +98,20 @@ Gross Weight:
 ------------------------------------
 ------------------------------------
 Mesasurement:
+
+
+
+------------------------------------
+------------------------------------
+Container No ./Seal No.:
+
+
+
+
+------------------------------------
+------------------------------------
+No. of Containes:
+
 
 
 
@@ -170,27 +170,25 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-F
-S
-T
-T
-4C
-T
-S
-5
-E
+FCL/FCL
+SHIPM
+TOTAL 5
+TARE
+4C LI
+TARIFF
+SERVICE
+5 BULK
+EACH OF
 ------------------------------------
 ------------------------------------
 Unit:
-/FCL
-PMENT IN BULK
-AL 5 BULKS; NW: 108.000 MTS; GW: 108.060 MTS;
-E WEIGHT: 0.060 MTS
-LICENSE NO. L-90012-75-1-0321
-ARIFF CODE NO. 090111
-ERVICE CONTRACT: BASB00123A
-BULK CONTAINER(S) EQUIVALENT TO 1800 60 KG BAGS
-ACH OF CLEAN GREEN COFFEE IN BULK FOR ANY
+BULKS; NW: 108.000 MTS; GW: 108.060 MTS;
+IGHT: 0.060 MTS
+NSE NO. L-90012-75-1-0321
+CODE NO. 090111
+CONTRACT: BASB00123A
+CONTAINER(S) EQUIVALENT TO 1800 60 KG B
+CLEAN GREEN COFFEE IN BULK FOR ANY
 ------------------------------------
 ------------------------------------
 Place of issue:

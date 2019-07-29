@@ -176,13 +176,13 @@ Prepaid:
 ------------------------------------
 ------------------------------------
 Collect:
-FREIGHT PREPAID
-EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON SIX
-SIDES
-21 FREE DEMURRAGE DAYS AT DESTINATION PORT
-INTENDED CONNECTING VESSEL: ???????????
-HS CODE: 090111 (DO NOT SHOW ON BILL)
-PLS SENT DRAFT B/L AS SOON AS POSSIBLE.
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Place of issue:

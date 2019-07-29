@@ -54,11 +54,11 @@ Domestic routing / export intruction:
 ------------------------------------
 ------------------------------------
 Precarriage by:
-DALIAN EXPRESS V.106E
+
 ------------------------------------
 ------------------------------------
 Place of receipt:
-HOCHIMINH CITY
+
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -82,16 +82,6 @@ Place of dilivery:
 EL DEKHEILA
 ------------------------------------
 ------------------------------------
-Container No ./Seal No.:
-
-FCL/FCL
-------------------------------------
-------------------------------------
-No. of Containes:
-640 BAGS
-
-------------------------------------
-------------------------------------
 Kind of packages ; description of goods:
 
 ------------------------------------
@@ -105,6 +95,16 @@ Gross Weight:
 Mesasurement:
 
 
+
+------------------------------------
+------------------------------------
+Container No ./Seal No.:
+
+FCL/FCL
+------------------------------------
+------------------------------------
+No. of Containes:
+640 BAGS
 
 ------------------------------------
 ------------------------------------
@@ -133,56 +133,36 @@ G.W(MTS):
 19.424
 ------------------------------------
 ------------------------------------
-Freight & Charges:
-
-
-
-
-
-
-
-
-------------------------------------
-------------------------------------
-Rate:
-FCL/F
-FREIGHT
-EACH
-SIDES
-21 FREE
-INTEN
-HS CO
-PLS S
-------------------------------------
-------------------------------------
 Unit:
-PREPAID
-NTAINER WAS LINED WITH CARTON 3 PLIES ON
-
-DEMURRAGE DAYS AT DESTINATION PORT
-D CONNECTING VESSEL: ???????????
-: 090111 (DO NOT SHOW ON BILL)
-T DRAFT B/L AS SOON AS POSSIBLE.
-------------------------------------
-------------------------------------
-Prepaid:
-
-SIX
-
-
-
-
-
-------------------------------------
-------------------------------------
-Collect:
 FREIGHT PREPAID
-EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON SIX
+EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON
 SIDES
 21 FREE DEMURRAGE DAYS AT DESTINATION PORT
 INTENDED CONNECTING VESSEL: ???????????
 HS CODE: 090111 (DO NOT SHOW ON BILL)
 PLS SENT DRAFT B/L AS SOON AS POSSIBLE.
+------------------------------------
+------------------------------------
+Freight & Charges:
+C
+HT P
+IES ON
+
+ATION
+????
+W ON
+POS
+------------------------------------
+------------------------------------
+Rate:
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Place of issue:
