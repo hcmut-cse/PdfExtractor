@@ -2,6 +2,17 @@ import numpy as np
 import re
 from difflib import SequenceMatcher
 
+def leftProcess(CONFIG, extractedData,synonymUsing):
+	#Process data with top = same_left
+	for key in CONFIG:
+		if (CONFIG[key]['endObject']['top'] == 'same_left' and key in extractedData):
+			if ('Synonym' in CONFIG[key] and synonymUsing[key]):
+				length=len(CONFIG[key]['Synonym']['Name'])+1
+			else:
+				length=len(key)+1
+			extractedData[key]=extractedData[key][length:]
+	return extractedData
+
 def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
@@ -256,6 +267,18 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 CURR_CONFIG[key]['column'][i] += distance
                             else:
                                 CURR_CONFIG[key]['column'][i] = None
+                                
+                        # If top = same_left 
+                        if (CONFIG[key]['endObject']['top'][:4] == 'same'):
+							for line in fullPdf:
+								if ('Synonym' in CONFIG[key] and synonymUsing[key]):
+									if line.find(CONFIG[key]['Synonym']['Name'])!=-1:
+										CURR_CONFIG[key]['column'][0] = line.find(CONFIG[key]['Synonym']['Name'])
+										break
+								else:
+									if line.find(key)!=-1:
+										CURR_CONFIG[key]['column'][0] = line.find(key)
+										break
 
                     elif (margin == 'right'):
                         if (CURR_CONFIG[key]['column'][1] == None):
@@ -353,7 +376,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         extractedData[key] = '\n'.join(dataBlock)
         print(extractedData[key])
         extracted.append(key)
-
+    
+    extractedData = leftProcess(CONFIG, extractedData,synonymUsing)
     extractedData = subfieldProcess(CONFIG, extractedData)
 
     return extractedData
