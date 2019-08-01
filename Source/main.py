@@ -5,21 +5,16 @@ import numpy as np
 from preprocess import preProcessPdf
 from processData import extractData
 
-
-
 if __name__ == '__main__':
-    PDF_TYPE = "12"
+    PDF_TYPE = "1"
     fileName = list(filter(lambda pdf: pdf[-3:] == 'pdf' ,os.listdir('../' + PDF_TYPE)))
-    # fileName = ["5.pdf"]
-    with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
-        ORIGINAL_CONFIG = json.load(json_file)
+    # fileName = ["SGNV33817500.pdf"]
 
     for file in fileName:
         print(file)
-
         # Reset Current CONFIG
-        CONFIG = ORIGINAL_CONFIG[0].copy()
-        HF_CONFIG = ORIGINAL_CONFIG[1].copy()
+        with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
+            CONFIG = json.load(json_file)
         CURR_CONFIG = {}
 
         # Sort CONFIG from top to bottom, from left to right
@@ -30,15 +25,15 @@ if __name__ == '__main__':
         # Create config for current pdf
         for key in CONFIG:
             CURR_CONFIG[key] = {}
-            CURR_CONFIG[key]['row'] = CONFIG[key]['row'].copy()
-            CURR_CONFIG[key]['column'] = CONFIG[key]['column'].copy()
+            CURR_CONFIG[key]['row'] = CONFIG[key]['row']
+            CURR_CONFIG[key]['column'] = CONFIG[key]['column']
 
         # Preproces PDF
-        fullPdf = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
+        fullPdf = preProcessPdf('../' + PDF_TYPE + '/' + file)
         # for line in fullPdf:
         #     print(line)
         # Extract data from PDF
-        extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG)
+        extractedData = extractData(file, fullPdf, CONFIG, CURR_CONFIG)
 
         # Save extracted result to file
         with open('../' + PDF_TYPE + '/' + file[:-3] + 'txt', 'w', encoding='utf8') as resultFile:
