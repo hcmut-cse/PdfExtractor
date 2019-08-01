@@ -61,7 +61,7 @@ PLACE OF RECEIPT:
 ------------------------------------
 ------------------------------------
 OCEAN VESSEL / VOYAGE:
-EASPAN THAMES V.010W
+SEASPAN THAMES V.010W
 ------------------------------------
 ------------------------------------
 PORT OF LOADING:
@@ -181,7 +181,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-3.728 CBM
+553.728 CBM
 
 
 

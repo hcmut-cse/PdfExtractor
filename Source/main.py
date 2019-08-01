@@ -8,7 +8,7 @@ from processData import extractData
 
 
 if __name__ == '__main__':
-    PDF_TYPE = "12"
+    PDF_TYPE = "4"
     fileName = list(filter(lambda pdf: pdf[-3:] == 'pdf' ,os.listdir('../' + PDF_TYPE)))
     # fileName = ["5.pdf"]
     with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:

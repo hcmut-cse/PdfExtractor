@@ -2,7 +2,7 @@
 SHIPPER / EXPORT:
 APEX IMP CO., LTD
 662/83 BUI DINH TUY ST, WARD 12, BINH THANH DIST, HCMC, VIET NAM
-E
+
 Tel.: 84-28-62713441               Fax: 84-28-35163182
 ------------------------------------
 ------------------------------------
@@ -45,7 +45,7 @@ NOTIFY PARTY:
 ------------------------------------
 ------------------------------------
 ALSO NOTIFY:
-einrich Bruening GmbH                                                              1 x 20' DC                                                      16434.84 KGS         28.000 CBM
+Heinrich Bruening GmbH                                                              1 x 20' DC                                                      16434.84 KGS         28.000 CBM
 Stenzelring 22
 CONTAINER SAID TO CONTAIN:
 ------------------------------------
@@ -70,7 +70,7 @@ NUMBER ORIGINAL BILL OF LADING ISSUED:
 
 
 FREIGHT COLLECT
-OARD THE VESSEL
+D ONBOARD THE VESSEL
 ------------------------------------
 ------------------------------------
 PORT OF DISCHARGE:
@@ -80,24 +80,24 @@ PORT OF DISCHARGE:
 ------------------------------------
 PLACE OF DELIVERY:
 
-SHIPPED O
+SHIPPE
 ------------------------------------
 ------------------------------------
 MARKS AND NUMBERS:
-Heinrich Bruening GmbH
-Stenzelring 22
 
-21107 Hamburg
+2
 
-
+g
 
 
 
 
-SHIPPING MARKS:
 
-WW320
-BOOKING NO: SGNV36897900
+
+:
+
+0
+0
 
 ------------------------------------
 ------------------------------------

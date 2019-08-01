@@ -1,186 +1,167 @@
 ------------------------------------
-SHIPPER / EXPORT:
-APEX IMP CO., LTD
-662/83 BUI DINH TUY ST, WARD 12, BINH THANH DIST, HCMC,VI T NAM
-
-Tel.: 84-28-62713441                 Fax: 84-28-35163182
-------------------------------------
-------------------------------------
-B/L NO:
-
+Booking Number:
 
 ------------------------------------
 ------------------------------------
-EXPORT REFERENCES:
+Shipper:
+VINALINK HANOI
+06TH FLOOR, LANG HA BUILDING, 14 LANG HA
+STREET,
+BA DINH DISTRICT, HANOI, VIET NAM
+TEL: (84) 4 3772 4234 FAX: (84) 4 3772
+4235
 
 ------------------------------------
 ------------------------------------
-CONSIGNEE:
-TRANSWORLD SHIPPING GMBH
+S/R Number:
+:  SEC19030012
 
-BURCHARDSTRASSE 24 D- 20095 HAMBURG EORI NO: DE 5587913
-PHONE+49 (0)40 325711-14
 
-FAX+49 (0)40 325711-29
-------------------------------------
-------------------------------------
-FREIGHT PAYABLE AT:
 
 ------------------------------------
 ------------------------------------
-TYE OF SERVICE:
-CY/CY; FCL/FCL
+Consignee:
+
+AGL CORPORATION ( APPLIED GREEN LOGISTICS)
+8-5-27 AKASAKA, MINATO- KU, TOKYO, JAPAN
+Tel: 0081-3-5412-5718 Fax: 0081-3-5412-5719
+
+
 
 ------------------------------------
 ------------------------------------
-CONTAINER NO:
-TRLU9513510/VN259165A
+FAX_1:
+:
 
 ------------------------------------
 ------------------------------------
-NOTIFY PARTY:
-
-SAME AS CONSIGNEE
-
-------------------------------------
-------------------------------------
-ALSO NOTIFY:
-
-NAC: SILEX-PROLOGUE
-------------------------------------
-------------------------------------
-PRE-CARRIAGE BY:
+ATTN_1:
+:
 
 ------------------------------------
 ------------------------------------
-PLACE OF RECEIPT:
-
+FROM:
+: VINALINK HANOI
 ------------------------------------
 ------------------------------------
-OCEAN VESSEL / VOYAGE:
-SEASPAN THAMES V.010W
+TEL_2:
+: 0000000000
 ------------------------------------
 ------------------------------------
-PORT OF LOADING:
-CAI MEP
+FAX_2:
+: 0000000000
 ------------------------------------
 ------------------------------------
-NUMBER ORIGINAL BILL OF LADING ISSUED:
+ATTN_2:
+: PHUONGLH
+------------------------------------
+------------------------------------
+Notify:
 
 
 
 
 ------------------------------------
 ------------------------------------
-PORT OF DISCHARGE:
-HAMBURG, GERMANY
+E-MAIL:
+: phuonglh@vinalinklogistics.com
 ------------------------------------
 ------------------------------------
-PLACE OF DELIVERY:
-HAMBURG, GERMANY
+REMARK:
+CANG XUAT HANG: TAN CANG, HAI PHONG
+DIA DIEM DICH BAO THUE: 03CEC04
+KHI GIAO HANG MANG THEO 3 BAN COPY TO KHAI + 2
+BAN MA VACH
 ------------------------------------
 ------------------------------------
-MARKS AND NUMBERS:
-
-
-N/M
-
-
-
-
-
-BOOKING NO: SGNV15203800
-
-
-
+M.Vessel/Voyage:
+QUEZON BRIDGE/230N
 ------------------------------------
 ------------------------------------
-NO.OF CONT:
-24 PALLETS
-
-
-
-
-
-
-
-
-
-
+ETD:
+: 2019-03-05
 ------------------------------------
 ------------------------------------
-DESCRIPTION OF PACKGES AND GOODS:
-
-SHIPPER'S LOAD, STOWAGE, COUNT AND SEAL
-1 x 40 DC
-CONTAINER SAID TO CONTAIN:
-TERRACOTTA & CERAMIC
-5180 SETS/ PCS= 24 PLTS and 24 CARTON
-BOXES
-ODER NO.: SILEX-BD
-
-07+15+17+18+20+21/18
-HS CODE :69149000
-FREIGHT COLLECT
+ETA:
+: 2019-03-12
 ------------------------------------
 ------------------------------------
-GROSS WEIGHT:
-
-
-17068.00 KGS
-
-
-
-
-
-
-
-
+Port of Loading:
+HAIPHONG, VIETNAM
+------------------------------------
+------------------------------------
+Port of Discharge:
+YOKOHAMA
+------------------------------------
+------------------------------------
+Delivery:
+YOKOHAMA
+------------------------------------
+------------------------------------
+Final Destination:
+YOKOHAMA
+------------------------------------
+------------------------------------
+Mark & Number:
 
 ------------------------------------
 ------------------------------------
-MEASUREMENT:
-
-
-50.170 CBM
-
-
-
-
-
-
-
-
+No of Package:
 
 ------------------------------------
 ------------------------------------
-SIGNED AT:
-HO CHI MINH
+Description of Goods:
+
+
+APPANEL (T-SHIRT)
+S CODE: 610910
+PO NO:
+583852
+602167
+588994
+594018
+588461
+574403
+593965
+595491
+583376
+587973
+594685
+594685
+
+PLEASE ISSUE SEAWAY
 ------------------------------------
 ------------------------------------
-DATE:
-31/01/19
+Weight:
+9,495.90 KGS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BILL
 ------------------------------------
 ------------------------------------
-SHIPPED ONBOARD THE VESSEL:
-31/01/19
-------------------------------------
-------------------------------------
-FREIGHT AND CHARES:
+Measurement:
+51.590 CBM
 
 
 
 
 
 
-
-
-
-
-
-------------------------------------
-------------------------------------
-PREPAID:
 
 
 
@@ -195,17 +176,6 @@ PREPAID:
 
 ------------------------------------
 ------------------------------------
-COLLECT:
-
-
-
-
-
-
-
-
-
-
-
-
+About:
+:
 ------------------------------------

@@ -226,7 +226,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         else:
                             startCol = 0
 
-                        # print("startCol: "+str(startCol))
+                        # print("startCol: " + str(startCol))
                         # print(fullPdf[startRow][startCol:])
                         # Find left keyword and calculate distance
                         # startCol = startCol + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:]).span(0)[0]
@@ -316,21 +316,34 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         lines = fullPdf[row[0]:row[1]]
         # print(lines[column[0]:column[1]])
         dataBlock = []
-        formalLeft = False
+        formalLeft = True
         formalRight = True
         # Correct column + get information
         for inform in lines:
             if (column[0] > 0 and len(inform[column[0]:column[1]]) > 0):
-                if (inform[column[0]] != ' ' and inform[column[0] -1] == ' '):
+                if (inform[column[0]] != ' ' and inform[column[0] - 1] == ' '):
                     formalLeft = True
 
                 if (formalLeft and inform[column[0]] != ' ' and inform[column[0] - 1] != ' '):
                     # print(key)
                     i = 1
-                    while (inform[column[0] - i] == ' '):
+                    while (inform[column[0] - i] != ' '):
                         i += 1
-                    dataBlock.append(inform[column[0] - i - 1:column[1]].strip())
-                    continue
+                    column[0] = column[0] - i - 1
+                    CURR_CONFIG[key]['column'][0] = column[0]
+                    #Dich chuyen cac block ben phai lai
+                    # for keyE in CURR_CONFIG:
+                    #     if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
+                    #         if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
+                    #                                                     or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                    #
+                    #             for i in range(len(CURR_CONFIG[keyE]['column'])):
+                    #                 if (CURR_CONFIG[keyE]['column'][i] != None):
+                    #                     CURR_CONFIG[keyE]['column'][i] -= (i + 1)
+                    #                 else:
+                    #                     CURR_CONFIG[keyE]['column'][i] = None
+                    # dataBlock.append(inform[column[0]:column[1]].strip())
+                    # continue
             # print(key)
             if (column[1] != None and len(inform[column[0]:column[1]]) > 0):
                 if (column[1] < len(inform)):
@@ -340,15 +353,32 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         formalRight = True
 
                     if (formalRight and inform[column[1]] != ' ' and inform[column[1] - 1] != ' '):
-                        # print(key)
                         i = 1
-                        while (inform[column[1] - i] == ' '):
+                        # print(inform[column[1]])
+                        while (inform[column[1] - i] != ' '):
                             i += 1
-                        dataBlock.append(inform[column[0]:column[1] - i - 1].strip())
-                        continue
+                            # if column[1] - i == column[0]:
+                            #     break
+                        # print(i)
+                        column[1] = column[1] - i - 1
+                        CURR_CONFIG[key]['column'][1] = column[1]
+                        for keyE in CURR_CONFIG:
+                            if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
+                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
+                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                                    # print(keyE)
+                                    for k in range(len(CURR_CONFIG[keyE]['column'])):
+                                        if (CURR_CONFIG[keyE]['column'][k] != None):
+                                            CURR_CONFIG[keyE]['column'][k] -= (i+1)
+                                        else:
+                                            CURR_CONFIG[keyE]['column'][k] = None
+                        # dataBlock.append(inform[column[0]:column[1]].strip())
+                        # continue
 
-
+            # print(column)
             dataBlock.append(inform[column[0]:column[1]].strip())
+
+        # print(CURR_CONFIG)
 
         extractedData[key] = '\n'.join(dataBlock)
         print(extractedData[key])

@@ -62,7 +62,7 @@ PLACE OF RECEIPT:
 ------------------------------------
 ------------------------------------
 OCEAN VESSEL / VOYAGE:
-M WISDOM V.001W
+YM WISDOM V.001W
 ------------------------------------
 ------------------------------------
 PORT OF LOADING:
@@ -186,7 +186,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-5.000 CBM
+25.000 CBM
 
 
 
