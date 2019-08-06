@@ -82,6 +82,16 @@ Place of dilivery:
 EL DEKHEILA
 ------------------------------------
 ------------------------------------
+Container No ./Seal No.:
+
+FCL/FCL
+------------------------------------
+------------------------------------
+No. of Containes:
+640 BAGS
+
+------------------------------------
+------------------------------------
 Kind of packages ; description of goods:
 
 ------------------------------------
@@ -95,16 +105,6 @@ Gross Weight:
 Mesasurement:
 
 
-
-------------------------------------
-------------------------------------
-Container No ./Seal No.:
-
-FCL/FCL
-------------------------------------
-------------------------------------
-No. of Containes:
-640 BAGS
 
 ------------------------------------
 ------------------------------------
@@ -148,27 +148,27 @@ Freight & Charges:
 ------------------------------------
 Rate:
 TOTAL N.W:
-TOTAL G.W: 3
+TOTAL G.W
 FCL/FCL
-FREIGHT PREP
-EACH CONTAINER
-SIDES
-21 FREE DEMU
-INTENDED CON
-HS CODE: 090
-PLS SENT DRAFT
+FREIGH
+EAC
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Unit:
-848 MTS
-
-D
-WAS LINED WITH CARTON 3 PLIES ON
-
-AGE DAYS AT DESTINATION PORT
-CTING VESSEL: ???????????
-1 (DO NOT SHOW ON BILL)
-B/L AS SOON AS POSSIBLE.
+TOTAL G.W: 38.848 MTS
+FCL/FCL
+FREIGHT PREPAID
+EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON
+SIDES
+21 FREE DEMURRAGE DAYS AT DESTINATION PORT
+INTENDED CONNECTING VESSEL: ???????????
+HS CODE: 090111 (DO NOT SHOW ON BILL)
+PLS SENT DRAFT B/L AS SOON AS POSSIBLE.
 ------------------------------------
 ------------------------------------
 Prepaid:

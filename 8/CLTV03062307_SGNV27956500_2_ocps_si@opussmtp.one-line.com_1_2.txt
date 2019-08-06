@@ -54,11 +54,11 @@ Domestic routing / export intruction:
 ------------------------------------
 ------------------------------------
 Precarriage by:
-
+DALIAN EXPRESS V.106E
 ------------------------------------
 ------------------------------------
 Place of receipt:
-
+HOCHIMINH CITY
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -82,6 +82,16 @@ Place of dilivery:
 EL DEKHEILA
 ------------------------------------
 ------------------------------------
+Container No ./Seal No.:
+
+FCL/FCL
+------------------------------------
+------------------------------------
+No. of Containes:
+640 BAGS
+
+------------------------------------
+------------------------------------
 Kind of packages ; description of goods:
 
 ------------------------------------
@@ -95,16 +105,6 @@ Gross Weight:
 Mesasurement:
 
 
-
-------------------------------------
-------------------------------------
-Container No ./Seal No.:
-
-FCL/FCL
-------------------------------------
-------------------------------------
-No. of Containes:
-640 BAGS
 
 ------------------------------------
 ------------------------------------
@@ -133,25 +133,15 @@ G.W(MTS):
 19.424
 ------------------------------------
 ------------------------------------
-Unit:
-FREIGHT PREPAID
-EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON
-SIDES
-21 FREE DEMURRAGE DAYS AT DESTINATION PORT
-INTENDED CONNECTING VESSEL: ???????????
-HS CODE: 090111 (DO NOT SHOW ON BILL)
-PLS SENT DRAFT B/L AS SOON AS POSSIBLE.
-------------------------------------
-------------------------------------
 Freight & Charges:
-C
-HT P
-IES ON
 
-ATION
-????
-W ON
-POS
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Rate:
@@ -165,10 +155,40 @@ Rate:
 
 ------------------------------------
 ------------------------------------
+Unit:
+FREIGHT PREPAID
+EACH CONTAINER WAS LINED WITH CARTON 3 PLIES ON
+SIDES
+21 FREE DEMURRAGE DAYS AT DESTINATION PORT
+INTENDED CONNECTING VESSEL: ???????????
+HS CODE: 090111 (DO NOT SHOW ON BILL)
+PLS SENT DRAFT B/L AS SOON AS POSSIBLE.
+------------------------------------
+------------------------------------
+Prepaid:
+
+SIX
+
+
+
+
+
+------------------------------------
+------------------------------------
+Collect:
+
+
+
+
+
+
+
+------------------------------------
+------------------------------------
 Place of issue:
-HOCHIMINH CITY
+
 ------------------------------------
 ------------------------------------
 Date:
-MAR 11,2019
+R 11,2019
 ------------------------------------

@@ -4,13 +4,13 @@ import json
 import numpy as np
 from preprocess import preProcessPdf
 from processData import extractData
-
-
+from posProcess import posProcessData
 
 if __name__ == '__main__':
-    PDF_TYPE = "4"
-    fileName = list(filter(lambda pdf: pdf[-3:] == 'pdf' ,os.listdir('../' + PDF_TYPE)))
-    # fileName = ["5.pdf"]
+    PDF_TYPE = "VN101466"
+    fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
+    # fileName = ["HANV06329700_6_mbl_swb.pdf"]
+
     with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
         ORIGINAL_CONFIG = json.load(json_file)
 
@@ -34,12 +34,15 @@ if __name__ == '__main__':
             CURR_CONFIG[key]['column'] = CONFIG[key]['column'].copy()
 
         # Preproces PDF
-        fullPdf = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
+        fullPdf, removed = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
         # for line in fullPdf:
         #     print(line)
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG)
 
+        extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
+        # for word in removed:
+        #     if (removed[word])
         # Save extracted result to file
         with open('../' + PDF_TYPE + '/' + file[:-3] + 'txt', 'w', encoding='utf8') as resultFile:
             for key in extractedData:

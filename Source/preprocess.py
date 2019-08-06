@@ -26,10 +26,10 @@ def preProcessPdf(filename, HF_CONFIG):
     # Join PDF
     fullPdf = [line for page in fullPdf for line in page if line != '']
 
-    fullPdf = removeWatermark(filename, fullPdf)
+    fullPdf, removed = removeWatermark(filename, fullPdf)
     # for line in fullPdf:
     #     print(line)
-    return fullPdf
+    return fullPdf, removed
 
 if __name__ == '__main__':
     file = os.listdir()

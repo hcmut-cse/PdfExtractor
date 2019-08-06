@@ -126,6 +126,8 @@ CBM:
 ------------------------------------
 Remarks:
 SEA WAYBILL/ HS CODE:61072100(pls dont
+show on bill), / HBL:YES/FREETIMES AT
+DEST 14 DEM + 7 DET
 ------------------------------------
 ------------------------------------
 Payment:

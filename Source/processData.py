@@ -2,25 +2,6 @@ import numpy as np
 import re
 from difflib import SequenceMatcher
 
-def leftProcess(CONFIG, extractedData,synonymUsing):
-	#Process data with top = same_left
-	for key in CONFIG:
-		if (CONFIG[key]['endObject']['top'] == 'same_left' and key in extractedData):
-			# Delete keyword at the beggining of the string
-			if ('Synonym' in CONFIG[key] and synonymUsing[key]):
-				length = len(CONFIG[key]['Synonym']['Name']) + 1
-			else:
-				length = len(key) + 1
-			extractedData[key] = extractedData[key][length:]
-			# Delete potential blanks
-			extractedData[key] = extractedData[key].lstrip()
-			# Delete colon ":" if exist
-			if (extractedData[key][:1] == ":"):
-				extractedData[key] = extractedData[key][1:]
-			# Delete leftover blanks
-			extractedData[key] = extractedData[key].lstrip()
-	return extractedData
-
 def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
@@ -123,13 +104,14 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 if (startRow == len(fullPdf)):
                                     break
                         # print(startRow - CURR_CONFIG[nearestKey]['row'][1])
-                        # if (CURR_CONFIG[key]['row'][1] != None):
-                        #     if (startRow > CURR_CONFIG[key]['row'][1]):
+                        if (CURR_CONFIG[key]['row'][1] != None):
+                            if (startRow > CURR_CONFIG[key]['row'][1]):
+                                error = 1
 
 
                         # print("TOP " + str(CURR_CONFIG[key]['row'][0]))
 
-                            # Raise error
+                        # Raise error
                     elif (margin == 'bottom'):
                         # Bottom object is under Top object
                         # print("running bottom")
@@ -237,6 +219,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                             startCol = 0
 
                             for keyE in extracted:
+                                if CURR_CONFIG[keyE]['row'][1] == None:
+                                    continue
                                 if (CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]):
                                     if (CURR_CONFIG[keyE]['column'][1] != None):
                                         if (CURR_CONFIG[keyE]['column'][1] > startCol):
@@ -260,8 +244,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         # Move other right block
                         for keyE in CURR_CONFIG:
                             if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
-                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                                if (keyE not in extracted and keyE != key and ((CONFIG[keyE]['row'][0] < CONFIG[key]['row'][1] and CONFIG[keyE]['row'][0] >= CONFIG[key]['row'][0])
+                                                                            or (CONFIG[keyE]['row'][1] <= CONFIG[key]['row'][1] and CONFIG[keyE]['row'][1] > CONFIG[key]['row'][0]))):
 
                                     for i in range(len(CURR_CONFIG[keyE]['column'])):
                                         if (CURR_CONFIG[keyE]['column'][i] != None):
@@ -275,18 +259,6 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                                 CURR_CONFIG[key]['column'][i] += distance
                             else:
                                 CURR_CONFIG[key]['column'][i] = None
-                                
-                        # If top = same_left
-                        if (CONFIG[key]['endObject']['top'][:4] == 'same'):
-							for line in fullPdf:
-								if ('Synonym' in CONFIG[key] and synonymUsing[key]):
-									if line.find(CONFIG[key]['Synonym']['Name'])!=-1:
-										CURR_CONFIG[key]['column'][0] = line.find(CONFIG[key]['Synonym']['Name'])
-										break
-								else:
-									if line.find(key)!=-1:
-										CURR_CONFIG[key]['column'][0] = line.find(key)
-										break
 
                     elif (margin == 'right'):
                         if (CURR_CONFIG[key]['column'][1] == None):
@@ -320,8 +292,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                         for keyE in CURR_CONFIG:
                             # print(CURR_CONFIG[keyE]['row'][1])
                             if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
-                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                                if (keyE not in extracted and keyE != key and ((CONFIG[keyE]['row'][0] < CONFIG[key]['row'][1] and CONFIG[keyE]['row'][0] >= CONFIG[key]['row'][0])
+                                                                            or (CONFIG[keyE]['row'][1] <= CONFIG[key]['row'][1] and CONFIG[keyE]['row'][1] > CONFIG[key]['row'][0]))):
+                                    print(keyE)
                                     for i in range(len(CURR_CONFIG[keyE]['column'])):
                                         if (CURR_CONFIG[keyE]['column'][i] != None):
                                             CURR_CONFIG[keyE]['column'][i] += distance
@@ -349,6 +322,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         dataBlock = []
         formalLeft = True
         formalRight = True
+        distance = 0
         # Correct column + get information
         for inform in lines:
             if (column[0] > 0 and len(inform[column[0]:column[1]]) > 0):
@@ -359,20 +333,12 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                     # print(key)
                     i = 1
                     while (inform[column[0] - i] != ' '):
+                        if i == column[0]:
+                            i = 0
+                            break
                         i += 1
                     column[0] = column[0] - i - 1
                     CURR_CONFIG[key]['column'][0] = column[0]
-                    #Dich chuyen cac block ben phai lai
-                    # for keyE in CURR_CONFIG:
-                    #     if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
-                    #         if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                    #                                                     or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
-                    #
-                    #             for i in range(len(CURR_CONFIG[keyE]['column'])):
-                    #                 if (CURR_CONFIG[keyE]['column'][i] != None):
-                    #                     CURR_CONFIG[keyE]['column'][i] -= (i + 1)
-                    #                 else:
-                    #                     CURR_CONFIG[keyE]['column'][i] = None
                     # dataBlock.append(inform[column[0]:column[1]].strip())
                     # continue
             # print(key)
@@ -391,23 +357,26 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
                             # if column[1] - i == column[0]:
                             #     break
                         # print(i)
-                        column[1] = column[1] - i - 1
+                        column[1] = column[1] - i
                         CURR_CONFIG[key]['column'][1] = column[1]
-                        for keyE in CURR_CONFIG:
-                            if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
-                                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
-                                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
-                                    # print(keyE)
-                                    for k in range(len(CURR_CONFIG[keyE]['column'])):
-                                        if (CURR_CONFIG[keyE]['column'][k] != None):
-                                            CURR_CONFIG[keyE]['column'][k] -= (i+1)
-                                        else:
-                                            CURR_CONFIG[keyE]['column'][k] = None
+                        distance += i
+
+        for keyE in CURR_CONFIG:
+            if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
+                if (keyE not in extracted and keyE != key and ((CURR_CONFIG[keyE]['row'][0] < CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][0] >= CURR_CONFIG[key]['row'][0])
+                                                            or (CURR_CONFIG[keyE]['row'][1] <= CURR_CONFIG[key]['row'][1] and CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]))):
+                    # print(keyE)
+                    for k in range(len(CURR_CONFIG[keyE]['column'])):
+                        if (CURR_CONFIG[keyE]['column'][k] != None):
+                            CURR_CONFIG[keyE]['column'][k] -= distance
+                        else:
+                            CURR_CONFIG[keyE]['column'][k] = None
                         # dataBlock.append(inform[column[0]:column[1]].strip())
                         # continue
 
             # print(column)
-            dataBlock.append(inform[column[0]:column[1]].strip())
+            # dataBlock.append(inform[column[0]:column[1]].strip())
+        dataBlock = [line[column[0]:column[1]].strip() for line in lines]
 
         # print(CURR_CONFIG)
 
@@ -415,7 +384,6 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG):
         print(extractedData[key])
         extracted.append(key)
 
-    extractedData = leftProcess(CONFIG, extractedData,synonymUsing)
     extractedData = subfieldProcess(CONFIG, extractedData)
 
     return extractedData
