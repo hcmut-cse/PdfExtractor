@@ -7,7 +7,7 @@ from processData import extractData
 from posProcess import posProcessData
 
 if __name__ == '__main__':
-    PDF_TYPE = "VN101466"
+    PDF_TYPE = "4"
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
     # fileName = ["HANV06329700_6_mbl_swb.pdf"]
 
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         # for line in fullPdf:
         #     print(line)
         # Extract data from PDF
-        extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG)
+        extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 
         extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
         # for word in removed:

@@ -1,6 +1,6 @@
 ------------------------------------
 From:
-MS. MAI KA
+MS. LINH
 ------------------------------------
 ------------------------------------
 To:
@@ -8,7 +8,7 @@ OCEAN NETWORK EXPRESS (VIETNAM) CO., LT
 ------------------------------------
 ------------------------------------
 Tel:
-
+0912868782
 ------------------------------------
 ------------------------------------
 Attn:
@@ -16,25 +16,27 @@ Attn:
 ------------------------------------
 ------------------------------------
 Booking No.:
-SGNV67342500
+
 ------------------------------------
 ------------------------------------
 Date:
-20 May, 2019
+01 Mar, 2019
 ------------------------------------
 ------------------------------------
 Shipper Name & Address:
-MOL LOGISTICS (VIETNAM) INC, Viet Nam 364
-CONG HOA STREET, TAN BINH DISTRICT HO CHI
-MINH CITY, VIETNAM Tel: 84.8.38 121 349
-Fax: 84.8.38.121 363
+MOL LOGISTICS (VIETNAM) INC.- HANOI BRANCH
+18 TH FL, HOABINH TOWER, 106 HOANG QUOC
+VIET, CAU GIAY, HA NOI, VIETNAM
+Tel: (84-4) 7 556 310 / 7 556 311                     Fax:
+(84-4) 7 556 309
 ------------------------------------
 ------------------------------------
 Consignee Name & Address:
-MOL LOGISTICS NETHERLANDS HOEFSMIDSTRAAT
-41 PO BOX 278, 3194 AA HOOGVLIET
--ROTTERDAM3190 AG HOOGVLIET, ROTTERDAM,
-NETHERLANDS
+MOL Logistics (Japan) Co., Ltd.
+Shin-Ochanomizu Building,
+3, Kanda Surugadai 4-chome, Chiyoda-ku,
+Tokyo 101-8330, Japan Tel :
++81-3-6731-7506 Fax : +81-3-6695-3850
 ------------------------------------
 ------------------------------------
 Notify Party:
@@ -42,92 +44,66 @@ SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 Port of Loading:
-HOCHIMINH,VIETNAM
+HAIPHONG, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-ROTTERDAM
+TOKYO,JAPAN
 
 ------------------------------------
 ------------------------------------
 Place of Delivery:
-ROTTERDAM
+TOKYO,JAPAN
 
 ------------------------------------
 ------------------------------------
 Vessel:
-YM WISDOM
-V.002W
+QUEZON BRIDGE
+230N
 ------------------------------------
 ------------------------------------
 Etd:
-24/05/2019
+MAR 06, 2019
 
 ------------------------------------
 ------------------------------------
 Container/Seal No.:
-TCLU2957263/VN125155A
+01X40´HC
+NYKU4190910/40HC/VN211869A
 
 
-
-SHIPPING MARKS:
-N/M, N/N
-FCIU9926121/VN125248A
-SHIPPING MARKS:
-N/M, N/N
 ------------------------------------
 ------------------------------------
 Packages:
-105 PKGS
+323 CTNS
 
-
-
-
-
-340 PKGS
 
 
 ------------------------------------
 ------------------------------------
 Description of Goods:
-(445 SETS)
-"JUKI" BRAND INDUSTRIAL SEWING
-MACHINE WITH STANDARD
-ACCESSORIES
-
-
-
-
-
+323 CARTONS OF FIBERGLASS
+REINFORCED BOX
+HS CODE: 39231090, 39231010 &
+39251000
 ------------------------------------
 ------------------------------------
 G.W (KGS):
-4,314.000
+3,278.000
 
-
-
-
-
-12,356.000
 
 
 ------------------------------------
 ------------------------------------
 CBM:
-13.302
+62.000
 
-
-
-
-
-29.614
 
 
 ------------------------------------
 ------------------------------------
 Remarks:
-SEA WAYBILL/       HBL:YES
-HS CODE : 84522900
+SEAWAY BILL
 ------------------------------------
 ------------------------------------
 Payment:

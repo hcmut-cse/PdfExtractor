@@ -2,7 +2,7 @@
 	{
 		"Shipper":
 		{
-			"row": [2,9],
+			"row": [1,9],
 			"column": [0,58],
 			"isFlex": 1,
 			"endObject":
@@ -41,14 +41,14 @@
 		},
 		"TO":
 		{
-			"row": [6,7],
+			"row": [6, 9],
 			"column": [66, null],
 			"isFlex": 1,
 			"endObject":
 			{
 				"top": "same_left",
-				"bottom": "TEL",
-				"left": "TO",
+				"bottom": "TEL   ",
+				"left": "TO   ",
 				"right": -1
 			}
 		},
@@ -68,7 +68,7 @@
 
 		"Notify":
 		{
-			"row": [18, 24],
+			"row": [17, 24],
 			"column": [0, 58],
 			"isFlex": 1,
 			"endObject":

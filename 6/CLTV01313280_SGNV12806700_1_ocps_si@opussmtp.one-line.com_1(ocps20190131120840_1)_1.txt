@@ -1,10 +1,10 @@
 ------------------------------------
 From:
-MS. MAI KA
+Ann Ly
 ------------------------------------
 ------------------------------------
 To:
-OCEAN NETWORK EXPRESS (VIETNAM) CO., LT
+ONE
 ------------------------------------
 ------------------------------------
 Tel:
@@ -16,25 +16,29 @@ Attn:
 ------------------------------------
 ------------------------------------
 Booking No.:
-SGNV67342500
+
 ------------------------------------
 ------------------------------------
 Date:
-20 May, 2019
+31 Jan, 2019
 ------------------------------------
 ------------------------------------
 Shipper Name & Address:
-MOL LOGISTICS (VIETNAM) INC, Viet Nam 364
-CONG HOA STREET, TAN BINH DISTRICT HO CHI
-MINH CITY, VIETNAM Tel: 84.8.38 121 349
-Fax: 84.8.38.121 363
+FOCUS SHIPPING CORP
+HOANG DIEU BUILDING 309 - 311 HOANG DIEU
+STREET, DIST 4, HO CHI MINH CITY, VIET NAM
+TEL : 84.8.39434265 ( 10 LINES ) EXT:
+(107)FAX : 84.8.39434261
+
 ------------------------------------
 ------------------------------------
 Consignee Name & Address:
-MOL LOGISTICS NETHERLANDS HOEFSMIDSTRAAT
-41 PO BOX 278, 3194 AA HOOGVLIET
--ROTTERDAM3190 AG HOOGVLIET, ROTTERDAM,
-NETHERLANDS
+S.Y. SHIPPING CORPORATION
+17100 PIONEER BLVD., SUITE 345, ARTESIA,
+CA 90701
+TEL: 562-467-5455 (EXT. 211)/ FAX:
+562-467-5466
+E-MAIL: IMPORT@SYWORLDWIDE.COM
 ------------------------------------
 ------------------------------------
 Notify Party:
@@ -42,58 +46,67 @@ SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 Port of Loading:
-HOCHIMINH,VIETNAM
+VUNGTAU, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-ROTTERDAM
+LOS ANGELES,CA,USA
 
 ------------------------------------
 ------------------------------------
 Place of Delivery:
-ROTTERDAM
+INDIANAPOLIS, IN
 
 ------------------------------------
 ------------------------------------
 Vessel:
-YM WISDOM
-V.002W
+NYK THEMIS
+V.059E
 ------------------------------------
 ------------------------------------
 Etd:
-24/05/2019
+02 FEB, 2019
 
 ------------------------------------
 ------------------------------------
 Container/Seal No.:
-TCLU2957263/VN125155A
-
-
-
-SHIPPING MARKS:
-N/M, N/N
-FCIU9926121/VN125248A
-SHIPPING MARKS:
-N/M, N/N
+01X20´DC                     01X20´DC
+MEN´S 67% NYLON 20% POLYESTER 13%
+SPANDEX WOVEN SWIM WEAR SHORT
+MEN´S 92% POLYESTER 8% SPANDEX
+WOVEN SWIM WEAR SHORT
+MEN´S 87% NYLON 13% SPANDEX WOVEN
+SWIM WEAR SHORT
+MEN´S 86% POLYESTER 14% SPANDEX
+WOVEN SWIM WEAR SHORT
+HS CODE: 6211.11
+SCAC CODE: FOSP
+AMS HBL: FOSPFSCIND190339
 ------------------------------------
 ------------------------------------
 Packages:
-105 PKGS
+556 CTNS
 
 
 
 
 
-340 PKGS
+
+
+
+
 
 
 ------------------------------------
 ------------------------------------
 Description of Goods:
-(445 SETS)
-"JUKI" BRAND INDUSTRIAL SEWING
-MACHINE WITH STANDARD
-ACCESSORIES
+5,528.73      25.00
+
+
+
+
+
+
 
 
 
@@ -102,34 +115,39 @@ ACCESSORIES
 ------------------------------------
 ------------------------------------
 G.W (KGS):
-4,314.000
 
 
 
 
 
-12,356.000
+
+
+
+
+
 
 
 ------------------------------------
 ------------------------------------
 CBM:
-13.302
 
 
 
 
 
-29.614
+
+
+
+
+
 
 
 ------------------------------------
 ------------------------------------
 Remarks:
-SEA WAYBILL/       HBL:YES
-HS CODE : 84522900
+SEAWAY BILL
 ------------------------------------
 ------------------------------------
 Payment:
-PREPAID
+O/F+ AMS: PP
 ------------------------------------
