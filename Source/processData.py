@@ -2,6 +2,48 @@ import numpy as np
 import re
 from difflib import SequenceMatcher
 
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+def longestSubstringFinder(string1, string2):
+    answer = ""
+    len1, len2 = len(string1), len(string2)
+    for i in range(len1):
+        match = ""
+        for j in range(len2):
+            if (i + j < len1 and string1[i + j] == string2[j]):
+                match += string2[j]
+            else:
+                if (len(match) > len(answer)): answer = match
+                match = ""
+    return answer
+def connectContent(length, extractedData):
+    count = 0
+    string = {}
+    stringValue = []
+    if (length == 2):
+        for key1 in list(extractedData):
+            for key2 in list(extractedData):
+                if (". . . . . . ." not in key2):
+                    if (len(key1) > 4):
+                        ratio = similar(key1, key2)
+                        if (ratio >= 0.9 and ratio < 1):
+                            count = count + 1
+                            commonString = longestSubstringFinder(key1, key2)
+                            content = extractedData[key1] + extractedData[key2]
+                            extractedData[commonString] = content
+                            del extractedData[key1]
+                            del extractedData[key2]
+                    elif (2 < len(key1) <= 4):
+                        ratio = similar(key1, key2)
+                        if (ratio >= 0.75):
+                            count = count + 1
+                            commonString = longestSubstringFinder(key1, key2)
+                            content = extractedData[key1] + extractedData[key2]
+                            extractedData[commonString] = content
+                            #del extractedData[key1]
+                            #del extractedData[key2]
+            if (count == 6):
+                break
 def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
