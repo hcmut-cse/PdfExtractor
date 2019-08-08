@@ -1,21 +1,21 @@
 ------------------------------------
-From::
+From:
 Tina Thuy
 ------------------------------------
 ------------------------------------
-Sent::
+Sent:
 Friday, 29 March 2019 3:50 PM
 ------------------------------------
 ------------------------------------
-To::
+To:
 VN HAN OFS SI; VN.HAN.DOC
 ------------------------------------
 ------------------------------------
-Cc::
+Cc:
 Tuan Trananh; Pearl Van; Suri Hanh; Kelly Huong; Thao Luuthu; Phuong Hoangthu
 ------------------------------------
 ------------------------------------
-Subject::
+Subject:
 SI // NAGOYA // HANV08626900
 ------------------------------------
 ------------------------------------
@@ -37,7 +37,7 @@ T: 81-3-6865-1572 F: 81-3-3455-1758
 DESCRIPTION OF GOODS:
 Sprocket Wheel,Plate,Arm,Shaft,Flange,Guide,Tention Pulley,Shaft tension,Collar,Shaft Idler,Rail,Housing,Cover,Base,Block,Stay,Oil
 Pan,Bracket,Knuckle,Spacer,Cap,Sleeve,Rod,Holder,Pin,ADJ Bolt,Stopper,Bush,Washer,Lid,Handle,M/G Frame
-1
+
 HS CODE: 732690
 ------------------------------------
 ------------------------------------
