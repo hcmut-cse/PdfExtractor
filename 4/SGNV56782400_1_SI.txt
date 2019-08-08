@@ -122,6 +122,10 @@ No of Package:
 (150) CARTONS
 ------------------------------------
 ------------------------------------
+Payment:
+FREIGHT PREPAID
+------------------------------------
+------------------------------------
 Description of Goods:
 SHIPPER'S LOAD & COUNT
 Said To Contain
