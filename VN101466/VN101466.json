@@ -209,6 +209,17 @@
                 "right": -1
             }
         },
+        "Total": {
+            "row": [28, 29],
+            "column": [0, null],
+            "isFlex": 1,
+            "endObject": {
+                "top": "same_left",
+                "bottom": "Remarks",
+                "left": "Total",
+                "right": -1
+            }
+        },
         "Remarks": {
             "row": [29, 30],
             "column": [20, 106],

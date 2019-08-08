@@ -29,11 +29,13 @@ Forwarding agent - references:
 ------------------------------------
 ------------------------------------
 Point and country of Origin:
+Point and country of Origin
 
 
 ------------------------------------
 ------------------------------------
 Notify Paty:
+Notify Paty (complex name and address)
 COPROCAFE IBERICA S.A.
 
 
@@ -83,6 +85,16 @@ Place of dilivery:
 BARCELONA
 ------------------------------------
 ------------------------------------
+Container No ./Seal No.:
+
+
+------------------------------------
+------------------------------------
+No. of Containes:
+
+
+------------------------------------
+------------------------------------
 Kind of packages ; description of goods:
 
 2X20'
@@ -97,16 +109,6 @@ Gross Weight:
 ------------------------------------
 Mesasurement:
 
-
-
-------------------------------------
-------------------------------------
-Container No ./Seal No.:
-
-
-------------------------------------
-------------------------------------
-No. of Containes:
 
 
 ------------------------------------
@@ -136,37 +138,31 @@ G.W(MTS):
 20.060
 ------------------------------------
 ------------------------------------
-Unit:
-SHIPMENT IN BIG BAGS
-TOTAL 40 BIG BAGS; NW:
-GW: 40.120 MTS
-HS CODE: 0901110000
-SERVICE CONTRACT NO. H
+Freight & Charges:
 
-INTENDED CONNECTING VE
+
+
+
+------------------------------------
+------------------------------------
+Rate:
+INTENDE
+MUNCHEN
+FREIGHT
+FREIGHT
+------------------------------------
+------------------------------------
+Unit:
+INTENDED CONNECTING VESSEL:
 MUNCHEN BRIDGE V. 020W
 FREIGHT COLLECT
 FREIGHT PAYABLE IN SPAIN
 ------------------------------------
 ------------------------------------
-Freight & Charges:
-INTENDED CONNECTING V
-MUNCHEN BRIDGE V.
-FREIGHT C
-FREIGHT PAYABLE IN
-------------------------------------
-------------------------------------
-Rate:
-
-
-
-
-------------------------------------
-------------------------------------
 Place of issue:
-HOCHIMINH CITY
+2,
 ------------------------------------
 ------------------------------------
 Date:
-APR 12, 2019
+2019
 ------------------------------------

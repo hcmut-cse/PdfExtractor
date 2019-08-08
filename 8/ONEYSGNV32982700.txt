@@ -83,6 +83,22 @@ Place of dilivery:
 BARCELONA
 ------------------------------------
 ------------------------------------
+Container No ./Seal No.:
+
+
+FCL/FCL
+
+
+------------------------------------
+------------------------------------
+No. of Containes:
+
+
+
+
+SHIPMENT IN BULK
+------------------------------------
+------------------------------------
 Kind of packages ; description of goods:
 
 2X20'
@@ -102,22 +118,6 @@ Mesasurement:
 
 
 
-------------------------------------
-------------------------------------
-Container No ./Seal No.:
-
-
-FCL/FCL
-
-
-------------------------------------
-------------------------------------
-No. of Containes:
-
-
-
-
-SHIPMENT IN BULK
 ------------------------------------
 ------------------------------------
 CONT NO:
@@ -158,27 +158,27 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-SHIPMENT IN
+SHIPMENT I
 FCL/FCL
-TOTAL 02 BULKS
-TOTAL NW: 43
-TOTAL TARE W
-TARIFF CODE
-SERVICE CONT
-2 BULK CONTA
-OF CLEAN GREEN
+TOTAL 0
+TOTA
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Unit:
-LK
-
-
-00 MTS; GW: 43.224 MTS
-GHT: 0.024 MTS
-. 090111
-CT: BASB00123A
-ER(S) EQUIVALENT TO 720 60 KG BAGS
-COFFEE IN BULK FOR ANY LIMITATION
+SHIPMENT IN BULK
+FCL/FCL
+TOTAL 02 BULKS
+TOTAL NW: 43.200 MTS; GW: 43.224 MTS
+TOTAL TARE WEIGHT: 0.024 MTS
+TARIFF CODE NO. 090111
+SERVICE CONTRACT: BASB00123A
+2 BULK CONTAINER(S) EQUIVALENT TO 720 60 KG BAGS
+OF CLEAN GREEN COFFEE IN BULK FOR ANY LIMITATION
 ------------------------------------
 ------------------------------------
 Prepaid:

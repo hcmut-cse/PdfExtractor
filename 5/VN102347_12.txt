@@ -168,7 +168,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-3.870 CBM
+153.870 CBM
 
 
 
@@ -232,7 +232,7 @@ COLLECT:
 
 
 
-be
+
 
 
 

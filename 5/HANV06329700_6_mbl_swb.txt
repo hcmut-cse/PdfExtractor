@@ -45,9 +45,9 @@ SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 ALSO NOTIFY:
+ALSO NOTIFY:
 
-
-
+NAC: PERARL- PROLOGUE
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
@@ -158,7 +158,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-0.000 CBM
+30.000 CBM
 
 
 

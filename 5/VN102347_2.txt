@@ -98,7 +98,7 @@ BOOKING NO: SGNV37769800
 
 
 
-FREIGHTCOLLECT
+
 ------------------------------------
 ------------------------------------
 NO.OF CONT:
@@ -135,7 +135,7 @@ NET WEIGHT: 35,000.00 LBS (15,876.00
 KGS)
 GROSS WEIGHT: 36,234.57 LBS (16,436.00
 KGS)
-
+FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
@@ -160,7 +160,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-6.000 CBM
+26.000 CBM
 
 
 

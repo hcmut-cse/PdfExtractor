@@ -45,9 +45,9 @@ SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 ALSO NOTIFY:
+ALSO NOTIFY:
 
-
-
+NAC: ISA-TRAESKO
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
@@ -147,7 +147,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-4.450 CBM
+254.450 CBM
 
 
 

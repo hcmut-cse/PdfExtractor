@@ -2,7 +2,7 @@
 SHIPPER / EXPORT:
 APEX IMP CO., LTD
 662/83 BUI DINH TUY ST, WARD 12, BINH THANH DIST, HCMC, VIET NAM
-E
+
 Tel.: 84-28-62713441               Fax: 84-28-35163182
 ------------------------------------
 ------------------------------------
@@ -45,9 +45,7 @@ NOTIFY PARTY:
 ------------------------------------
 ------------------------------------
 ALSO NOTIFY:
-einrich Bruening GmbH                                                              1 x 20' DC                                                      16434.84 KGS         28.000 CBM
-Stenzelring 22
-CONTAINER SAID TO CONTAIN:
+ERROR
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
@@ -59,31 +57,31 @@ PLACE OF RECEIPT:
 ------------------------------------
 ------------------------------------
 OCEAN VESSEL / VOYAGE:
-WW320
+SHANGHAI EXPRESS V.029W
 ------------------------------------
 ------------------------------------
 PORT OF LOADING:
-
+CAI MEP VIETNAM
 ------------------------------------
 ------------------------------------
 NUMBER ORIGINAL BILL OF LADING ISSUED:
 
 
-FREIGHT COLLECT
-OARD THE VESSEL
+
+
 ------------------------------------
 ------------------------------------
 PORT OF DISCHARGE:
-
-
+HAMBURG, GERMANY
 ------------------------------------
 ------------------------------------
 PLACE OF DELIVERY:
-
-SHIPPED O
+HAMBURG, GERMANY
 ------------------------------------
 ------------------------------------
 MARKS AND NUMBERS:
+
+ALSO NOTIFY PARTY:
 Heinrich Bruening GmbH
 Stenzelring 22
 
@@ -102,6 +100,7 @@ BOOKING NO: SGNV36897900
 ------------------------------------
 ------------------------------------
 NO.OF CONT:
+700 CARTONS
 
 
 
@@ -120,6 +119,8 @@ NO.OF CONT:
 ------------------------------------
 ------------------------------------
 DESCRIPTION OF PACKGES AND GOODS:
+
+SHIPPER'S LOAD, STOWAGE, COUNT AND SEAL
 1 x 20' DC
 
 CONTAINER SAID TO CONTAIN:
@@ -138,6 +139,8 @@ FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
+
+
 16434.84 KGS
 
 
@@ -156,6 +159,8 @@ GROSS WEIGHT:
 ------------------------------------
 ------------------------------------
 MEASUREMENT:
+
+
 28.000 CBM
 
 

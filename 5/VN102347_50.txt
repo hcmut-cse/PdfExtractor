@@ -92,7 +92,7 @@ WW240
 Lot no. P20949/1
 Production date: 08/Feb/2019
 BOOKING NO: SGNV12923700
-FREIGHTCOLLECT
+
 ------------------------------------
 ------------------------------------
 NO.OF CONT:
@@ -117,7 +117,7 @@ Net W t : 35,000 Lbs / 15,876 kgs
 Gross Wt : 36,111 Lbs / 16,380 kgs
 HS code: 08013200
 
-
+FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
@@ -136,7 +136,7 @@ GROSS WEIGHT:
 MEASUREMENT:
 
 
-5.000 CBM
+25.000 CBM
 
 
 
