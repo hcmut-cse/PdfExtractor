@@ -6,6 +6,7 @@ import numpy as np
 from preprocess import preProcessPdf
 from processData import extractData
 from posProcess import posProcessData
+import pdftotext
 
 def checkFolder(string):
     currentDir = os.listdir('../')
@@ -37,6 +38,16 @@ if __name__ == '__main__':
         HF_CONFIG = ORIGINAL_CONFIG[1].copy()
         CURR_CONFIG = {}
 
+        if (PDF_TYPE == "15"):
+            with open('../' + PDF_TYPE + '/' + file, "rb") as f:
+                pdf = pdftotext.PDF(f)
+            if (len(pdf) == 2):
+                CONFIG = CONFIG["multi"]
+            elif (len(pdf) == 3):
+                CONFIG = CONFIG["3"]
+            elif (len(pdf) == 1):
+                CONFIG = CONFIG["1"]
+
         # Sort CONFIG from top to bottom, from left to right
         configByColumn = dict(sorted(CONFIG.items(), key=lambda kv: kv[1]['column'][0]))
         CONFIG = dict(sorted(configByColumn.items(), key=lambda kv: kv[1]['row'][0]))
@@ -56,6 +67,11 @@ if __name__ == '__main__':
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 
         extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
+
+        if (PDF_TYPE == 15):
+            length = len(pdf)
+            if (length > 1):
+                connectContent(length, extractedData)
         # for word in removed:
         #     if (removed[word])
         # Save extracted result to file

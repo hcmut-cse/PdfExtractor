@@ -2,6 +2,24 @@ import numpy as np
 import re
 from difflib import SequenceMatcher
 
+def leftProcess(CONFIG, extractedData):
+    #Process data with top = same_left
+    for key in CONFIG:
+        if (CONFIG[key]['endObject']['top'] == 'same_left' and key in extractedData):
+            # Delete keyword at the beggining of the string
+            length = len(key)
+            # print(extractedData[key][0:length])
+            if (extractedData[key][0:length] == key):
+                extractedData[key] = extractedData[key][length:]
+            # Delete potential blanks
+            extractedData[key] = extractedData[key].lstrip()
+            # Delete colon ":" if exist
+            if (extractedData[key][:1] == ":"):
+                extractedData[key] = extractedData[key][1:]
+            # Delete leftover blanks
+            extractedData[key] = extractedData[key].lstrip()
+    return extractedData
+
 def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
@@ -11,9 +29,11 @@ def subfieldProcess(CONFIG, extractedData):
                     pos = 0
                     reg = CONFIG[key]['subfields'][subs]
                     if (reg != 10):
-                        result = re.search(reg, extractedData[key]).span()
-                        extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
-                        pos = result[1]
+                        result1 = re.search(reg, extractedData[key])
+                        if (result1 is not None):
+                            result = re.search(reg, extractedData[key]).span()
+                            extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
+                            pos = result[1]
                     else:
                         extractedData[key+'_'+subs] = extractedData[key][pos:]
                 del extractedData[key]
@@ -307,6 +327,12 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                 CURR_CONFIG[key]['column'][i] += distance
                             else:
                                 CURR_CONFIG[key]['column'][i] = None
+                        # If top = same_left
+                        if (CONFIG[key]['endObject']['top'][:4] == 'same'):
+                            for line in fullPdf:
+                                if line.find(key)!=-1:
+                                    CURR_CONFIG[key]['column'][0] = line.find(key)
+                                    break
 
                     elif (margin == 'right'):
                         if (CURR_CONFIG[key]['column'][1] == None):
@@ -433,6 +459,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         print(extractedData[key])
         extracted.append(key)
 
+    extractedData = leftProcess(CONFIG, extractedData)
     extractedData = subfieldProcess(CONFIG, extractedData)
 
     return extractedData
