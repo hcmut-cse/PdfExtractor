@@ -1,4 +1,5 @@
 from __future__ import division
+import argparse
 import os
 import json
 import numpy as np
@@ -6,8 +7,22 @@ from preprocess import preProcessPdf
 from processData import extractData
 from posProcess import posProcessData
 
+def checkFolder(string):
+    currentDir = os.listdir('../')
+    allFolder = [x for x in currentDir if os.path.isdir('../' + x)]
+    if string in allFolder:
+        return string
+    else:
+        print("No folder named %s" % string)
+        return -1
+
 if __name__ == '__main__':
-    PDF_TYPE = "5"
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--pdf_type', dest='pdf_type', type=checkFolder)
+    args = parser.parse_args()
+
+    PDF_TYPE = str(args.pdf_type)
+
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
     # fileName = ["VN102347_50.pdf"]
 
