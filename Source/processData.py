@@ -237,8 +237,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             key_left = CONFIG[key]['endObject']['left']
             key_right = CONFIG[key]['endObject']['right']
 
-            print("CURR_CONFIG[key]['row'][0]:",CURR_CONFIG[key]['row'][0])
-            print("CURR_CONFIG[key]['row'][1]:",CURR_CONFIG[key]['row'][1])
+            # print("CURR_CONFIG[key]['row'][0]:",CURR_CONFIG[key]['row'][0])
+            # print("CURR_CONFIG[key]['row'][1]:",CURR_CONFIG[key]['row'][1])
             # Đã có row mới, lúc này chưa cập nhật column
             # Xử lý center
             start_row, end_row = CURR_CONFIG[key]['row']
@@ -289,13 +289,13 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     lines.append(line[min_column:max_column])
 
             num = 1
-            print(min_column,column_temp,max_column)
+            # print(min_column,column_temp,max_column)
 
             rights = []
             lefts = []
             for line in lines:
 
-                print("line:","|",line,"|")
+                # print("line:","|",line,"|")
                 if (max_column_t == "max"):
                     temp = re.sub("[\s]+","",line[column_temp[1] - min_column:len(line)])
                     if not temp == "":
@@ -314,14 +314,14 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                 #print("left:","|",line[min_column - min_column:column_temp[1] - min_column],"|")
 
-            for right in rights:
-                print("right:","|", right)
-
-            for left in lefts:
-                print("left:","|", left,"|")
-
-            for left in lefts:
-                print("re_left:","|", left[::-1],"|")
+            # for right in rights:
+            #     print("right:","|", right)
+            #
+            # for left in lefts:
+            #     print("left:","|", left,"|")
+            #
+            # for left in lefts:
+            #     print("re_left:","|", left[::-1],"|")
 
             max_left_column = 0
             max_right_column = 0
@@ -452,15 +452,15 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                                     CURR_CONFIG[keyE]['row'][i] = None
                                     CURR_CONFIG[key]['row'][1] += distance
                                 CURR_CONFIG[key]['row'][0] += distance
-                                print(CURR_CONFIG)
+                                # print(CURR_CONFIG)
                                 break;
 
                             else:
                                 startRow += 1
                                 if (startRow == len(fullPdf)):
                                     break
-                        # print(startRow - CURR_CONFIG[nearestKey]['row'][1])
-                        if (someProblem):
+                                    
+                        if (someProblem or startRow == len(fullPdf)):
                             toFind = [k for k in removed]
                             for tf in toFind:
                                 if key in tf:
@@ -489,7 +489,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             if (startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1):
                                 error = 1
 
-                        print(error)
+                        # print(error)
                     elif (margin == 'bottom'):
                         # Bottom object is under Top object
                         # print("running bottom")

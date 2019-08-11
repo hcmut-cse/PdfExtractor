@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADING N                  HANV03032900OBILL OF LADING N                  HANV03032900:BILL OF LADING N                  HANV03032900
+ERROR
 ------------------------------------
 ------------------------------------
 Shipper:

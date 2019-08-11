@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADING N                  HANV12329400OBILL OF LADING N                  HANV12329400:BILL OF LADING N                  HANV12329400
+ERROR
 ------------------------------------
 ------------------------------------
 Shipper:
