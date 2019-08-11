@@ -108,6 +108,10 @@ NO.OF CONT:
 
 ------------------------------------
 ------------------------------------
+Payment:
+FREIGHT COLLECT
+------------------------------------
+------------------------------------
 DESCRIPTION OF PACKGES AND GOODS:
 
 SHIPPER'S LOAD, STOWAGE, COUNT AND SEAL

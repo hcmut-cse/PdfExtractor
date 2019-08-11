@@ -66,20 +66,19 @@ def leftProcess(CONFIG, extractedData):
 def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
-        if ('hasSubfield' in CONFIG[key]):
-            if (CONFIG[key]['hasSubfield']):
-                for subs in CONFIG[key]['subfields']:
-                    pos = 0
-                    reg = CONFIG[key]['subfields'][subs]
-                    if (reg != 10):
-                        result1 = re.search(reg, extractedData[key])
-                        if (result1 is not None):
-                            result = re.search(reg, extractedData[key]).span()
-                            extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
-                            pos = result[1]
-                    else:
-                        extractedData[key+'_'+subs] = extractedData[key][pos:]
-                del extractedData[key]
+        if ('subfields' in CONFIG[key]):
+            for subs in CONFIG[key]['subfields']:
+                pos = 0
+                reg = CONFIG[key]['subfields'][subs]
+                if (reg != 10):
+                    result1 = re.search(reg, extractedData[key])
+                    if (result1 is not None):
+                        result = re.search(reg, extractedData[key]).span()
+                        extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
+                        pos = result[1]
+                else:
+                    extractedData[key+'_'+subs] = extractedData[key][pos:]
+            del extractedData[key]
 
     return extractedData
 
@@ -96,7 +95,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             column = CURR_CONFIG[key]['column']
 
         elif ("isCenter" in CONFIG[key]):
-        	
+
             key_top = -1
 
             for margin in CONFIG[key]['endObject']:
@@ -265,9 +264,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             key_left = CONFIG[key]['endObject']['left']
             key_right = CONFIG[key]['endObject']['right']
 
-            print("CURR_CONFIG[key]['row'][0]:",CURR_CONFIG[key]['row'][0])                        
-            print("CURR_CONFIG[key]['row'][1]:",CURR_CONFIG[key]['row'][1])                       
-            # Đã có row mới, lúc này chưa cập nhật column                        
+            print("CURR_CONFIG[key]['row'][0]:",CURR_CONFIG[key]['row'][0])
+            print("CURR_CONFIG[key]['row'][1]:",CURR_CONFIG[key]['row'][1])
+            # Đã có row mới, lúc này chưa cập nhật column
             # Xử lý center
             start_row, end_row = CURR_CONFIG[key]['row']
             column_temp = []
@@ -280,7 +279,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             max_column_t = 0
             max_column = 0
 
-            temp_pdf = fullPdf 
+            temp_pdf = fullPdf
             for line in temp_pdf:
                 if not (key_left == -1):
                     kl = re.search(key_left, line)
@@ -294,7 +293,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     if (kr):
                         max_column = kr.start()
                 else:
-                    max_column_t = "max"                         
+                    max_column_t = "max"
 
             #take datablock
             multilines = fullPdf[start_row:end_row]
@@ -309,7 +308,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                 temp = re.sub("[\s]+","",temp)
                 if temp == "":
-                    continue 
+                    continue
 
                 if (max_column_t == "max"):
                     lines.append(line[min_column:])
@@ -328,18 +327,18 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     temp = re.sub("[\s]+","",line[column_temp[1] - min_column:len(line)])
                     if not temp == "":
                         rights.append(line[column_temp[1] - min_column:len(line)])
-                    
+
                     #print("right:","|",line[column_temp[1] - min_column:len(line)],"|")
                 else:
                     temp = re.sub("[\s]+","",line[column_temp[1] - min_column:max_column - min_column])
                     if not temp == "":
                         rights.append(line[column_temp[1] - min_column:max_column - min_column])
-                    
+
                     #print("right:","|",line[column_temp[1] - min_column:max_column - min_column],"|")
                 temp = re.sub("[\s]+","",line[min_column - min_column:column_temp[1] - min_column])
                 if not temp == "":
                     lefts.append(line[min_column - min_column:column_temp[1] - min_column])
-                
+
                 #print("left:","|",line[min_column - min_column:column_temp[1] - min_column],"|")
 
             for right in rights:
@@ -393,7 +392,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                 column_temp[1] = max_column - max_right_column
 
 
-            CURR_CONFIG[key]['column'][0] = column_temp[0] 
+            CURR_CONFIG[key]['column'][0] = column_temp[0]
             CURR_CONFIG[key]['column'][1] = column_temp[1]
 
         else:
@@ -780,7 +779,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         column[1] = column[1] - i
                         CURR_CONFIG[key]['column'][1] = column[1]
                         distance += i
-                        
+
             # Process for payment
             temp = inform[column[0]:column[1]].lower()
             isPayment = re.search("freight", temp)

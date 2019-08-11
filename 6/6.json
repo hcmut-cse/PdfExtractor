@@ -222,14 +222,14 @@
             },
             "subfields":
             {
-                "Total type": "([0-9]+)X([0-9]+)(\\´)(DC|RF|HC)",
+                "Total type": "(([0-9]+)X([0-9]+)(\\´)(DC|RF|HC) & )*(([0-9]+)X([0-9]+)(\\´)(DC|RF|HC))",
                 "Total Packages": "[0-9,.]* (CTNS|PKGS|PCS|PACKAGES|PKG)",
                 "Total G.W (KGS)": "[0-9]+(,)[0-9]+(\\.)[0-9]+",
                 "Total CBM": "[0-9.]+"
             }
         },
         "Remarks": {
-            "row": [29, 30],
+            "row": [29, null],
             "column": [20, 106],
             "isFlex": 1,
             "endObject": {
@@ -258,8 +258,8 @@
         "pages": "all"
       },
       "Footer": {
-        "row": [0, 0],
-        "column": [0, 0],
+        "row": [-2, null],
+        "column": [0, null],
         "pages": "all"
       }
     }

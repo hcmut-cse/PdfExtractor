@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADIN NO:
+BILL OF LADING N                  HANV03032900OBILL OF LADING N                  HANV03032900:BILL OF LADING N                  HANV03032900
 ------------------------------------
 ------------------------------------
 Shipper:
@@ -21,43 +21,45 @@ EORI NO IT 00161570478.TEL: 003905727791
 ------------------------------------
 ------------------------------------
 Port of Loading:
-4/ PORT OF LOADIN:      HAI ON PORT, VIETNAM
+HAI PHONG PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-5/ PORT OF DISCHARE : LIVORNO PORT, ITALY
+LIVORNO PORT, ITALY
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 TÊN HÀNG HÓA:
 FROZEN COOKED WHOLE CLAM SHELL ON (MERETRIX LYRATA)
-NET WEIHT:                24,000.00 KS
-FREE 5 DAY DEMURRAE , FREE 5 DAYS PLU-IN,
+NET WEIGHT:                24,000.00 KGS
+FREE 5 DAY DEMURRAGE , FREE 5 DAYS PLUG-IN,
+FREE 5 DAYS DETENTION AT DESTINATION
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
-FREE 5 DAYS DETENTION AT DESTINATION
-FREIHT PREPAID
-7/ROSS WEIHT:            26,304.00 KS
+/GROSS WEIGHT:            26,304.00 KGS
 ------------------------------------
 ------------------------------------
 SỐ KIỆN:
-2,400       CTNS
+/ (SỐ KIỆN ) :          2,400       CTNS
 ------------------------------------
 ------------------------------------
 TÊN TÀU:
-BOX ENDEAVOUR 0IU1QS1NC
+/ (TÊN TÀU) :           BOX ENDEAVOUR 0IU1QS1NC
 ------------------------------------
 ------------------------------------
 NGÀY CHẠY:
-2,400       CTNS
-BOX ENDEAVOUR 0IU1QS1NC
 FEB. 02, 2019
 ------------------------------------
 ------------------------------------
 CONT NO / SEAL NO:
-SZLU9233773/MOL041141L
+/CONT NO / SEAL NO :   SZLU9233773/MOL041141L
 ------------------------------------
 ------------------------------------
 HS CODE:
-160
+
 ------------------------------------

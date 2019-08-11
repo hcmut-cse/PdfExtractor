@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADIN NO:
+BILL OF LADING N                  HANV04380900OBILL OF LADING N                  HANV04380900:BILL OF LADING N                  HANV04380900
 ------------------------------------
 ------------------------------------
 Shipper:
@@ -21,39 +21,43 @@ LAS ROZAS 28290, MADRID,
 ------------------------------------
 ------------------------------------
 Port of Loading:
-4/ PORT OF LOADIN:      HAI ON PORT, VIETNAM
+HAI PHONG PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-5/ PORT OF DISCHARE : VALENCIA PORT, SPAIN
+VALENCIA PORT, SPAIN
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 TÊN HÀNG HÓA:
 FROZEN COOKED CLAM (MERETRIX LYRATA)
-CONTAINER SET AT MINUS 18 DEREES CELSIUS.
-FREIHT PREPAID
+CONTAINER SET AT MINUS 18 DEGREES CELSIUS.
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
-7/ ROSS WEIHT :            28,050.00 KS
+7/ GROSS WEIGHT :            28,050.00 KGS
 ------------------------------------
 ------------------------------------
 SỐ KIỆN:
-4,000 CTNS
+/ (SỐ KIỆN ) :                 4,000 CTNS
 ------------------------------------
 ------------------------------------
 TÊN TÀU:
-NORDEMILIA 049S
+/ (TÊN TÀU) :           NORDEMILIA 049S
 ------------------------------------
 ------------------------------------
 NGÀY CHẠY:
-NÀY CHẠY                FEB. 22, 2019
+FEB. 22, 2019
 ------------------------------------
 ------------------------------------
 CONT NO / SEAL NO:
-TCLU1373178/MOL041091L
+/CONT NO / SEAL NO :    TCLU1373178/MOL041091L
 ------------------------------------
 ------------------------------------
 HS CODE:
-160
+
 ------------------------------------

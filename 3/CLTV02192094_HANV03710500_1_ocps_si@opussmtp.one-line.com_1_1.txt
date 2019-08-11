@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADIN NO:
+BILL OF LADING N                  HANV03710500OBILL OF LADING N                  HANV03710500:BILL OF LADING N                  HANV03710500
 ------------------------------------
 ------------------------------------
 Shipper:
@@ -16,40 +16,40 @@ CTRA- ZEHETA BENIEL, KM.1 30130 BENIEL, MURCIA,SPAIN
 NOFIFY PARTY:
 DAYMAR FROST S.L.
 CTRA- ZEHETA BENIEL, KM.1 30130 BENIEL, MURCIA,SPAIN
-4/ PORT OF LOADIN:      HAI ON PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Loading:
-5/ PORT OF DISCHARE : VALENCIA, SPAIN
+HAI PHONG PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-6/ TÊN HÀN HÓA:
+VALENCIA, SPAIN
 ------------------------------------
 ------------------------------------
 TÊN HÀNG HÓA:
-ROSS WEIHT :             25,920.00 KS
-OODS ARE SHIPPED IN A REFRIERATED CONTAINER SET AT MINUS
-20 DEREES CELSIUS.
+FROZEN BOILED CLAM WITH SHELL
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
-FREIHT PREPAID
-7/ROSS WEIHT:            25,920.00 KS
+ERROR
 ------------------------------------
 ------------------------------------
 SỐ KIỆN:
-2,400       CTNS
+ERROR
 ------------------------------------
 ------------------------------------
 TÊN TÀU:
-NORDEMILIA 049S
+ERROR
+------------------------------------
+------------------------------------
+NGÀY CHẠY:
+FEB. 22, 2019
 ------------------------------------
 ------------------------------------
 CONT NO / SEAL NO:
-SEU9322115/MOL041100L
+/CONT NO / SEAL NO :   SEGU9322115/MOL041100L
 ------------------------------------
 ------------------------------------
 HS CODE:
-160
+
 ------------------------------------

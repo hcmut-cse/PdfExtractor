@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADIN NO:
+BILL OF LADING N                  HANV12329400OBILL OF LADING N                  HANV12329400:BILL OF LADING N                  HANV12329400
 ------------------------------------
 ------------------------------------
 Shipper:
@@ -9,47 +9,55 @@ LOT E, LE MON INDUSTRIAL ZONE, THANH HOA CITY, VIETNAM
 ------------------------------------
 ------------------------------------
 Consignee:
-TO 'FRIORIFICS FERRER, S.A.
-CARRER MAS DE BIAS 2, 08500 VIC, SPAIN
+TO 'FRIGORIFICS FERRER, S.A.
+CARRER MAS DE BIGAS 2, 08500 VIC, SPAIN
 ------------------------------------
 ------------------------------------
 NOFIFY PARTY:
 TO ECEIZA S.A. (TEL.607.220.677)
-4/ PORT OF LOADIN:       HAI ON, VIETNAM
-5/ PORT OF DISCHARE : BARCELONA PORT - SPAIN
 ------------------------------------
 ------------------------------------
 Port of Loading:
-6/ TÊN HÀN HÓA:
+HAI PHONG, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-FROZEN COOKED WHOLE CLAM (MERETRIX LYRATA)
+BARCELONA PORT - SPAIN
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 TÊN HÀNG HÓA:
+FROZEN COOKED WHOLE CLAM (MERETRIX LYRATA)
+NET WEIGHT: 24,000.00 KGS
 CBM:      56.00
-MARKED FREIHT PREPAID
-THE CARO WILL BE CARRIED AT THE OPTIMUM TEMPERATURE OF
+MARKED FREIGHT PREPAID
+THE CARGO WILL BE CARRIED AT THE OPTIMUM TEMPERATURE OF
+MINUS 20 CELSIUS DEGREES OR LOWER
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
-MINUS 20 CELSIUS DEREES OR LOWER
-7/ROSS WEIHT:            27,210.00 KS
+/GROSS WEIGHT:            27,210.00 KGS
 ------------------------------------
 ------------------------------------
 SỐ KIỆN:
-3,900      CTNS
+/ (SỐ KIỆN ) :           3,900      CTNS
 ------------------------------------
 ------------------------------------
 TÊN TÀU:
-MAX KIN 024S
+/ (TÊN TÀU) :            MAX KING 024S
+------------------------------------
+------------------------------------
+NGÀY CHẠY:
+MAY. 10,2019
 ------------------------------------
 ------------------------------------
 CONT NO / SEAL NO:
-KKFU6754264 /MOL056162N
+/CONT NO / SEAL NO :    KKFU6754264 /MOL056162N
 ------------------------------------
 ------------------------------------
 HS CODE:
-160
+
 ------------------------------------

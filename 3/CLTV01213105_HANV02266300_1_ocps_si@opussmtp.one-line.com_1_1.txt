@@ -1,6 +1,6 @@
 ------------------------------------
 BILL OF LADING NO:
-BILL OF LADIN NO:
+BILL OF LADING N   HANV02266300OBILL OF LADING N   HANV02266300:BILL OF LADING N   HANV02266300
 ------------------------------------
 ------------------------------------
 Shipper:
@@ -10,48 +10,55 @@ LOT E, LE MON INDUSTRIAL ZONE, THANH HOA CITY, VIETNAM
 ------------------------------------
 Consignee:
 TASMAN SEA, S.L.
-RAMBLA ANEL UIMERA,31
+RAMBLA ANGEL GUIMERA,31
 08328 ALELLA (BARCELONA) ,SPAIN
 ------------------------------------
 ------------------------------------
 NOFIFY PARTY:
 TASMAN SEA SL.
-RAMBLA ANEL UIMERA,31
+RAMBLA ANGEL GUIMERA,31
 08328 ALELLA (BARCELONA) ,SPAIN
 ------------------------------------
 ------------------------------------
 Port of Loading:
-4/ PORT OF LOADIN:      HAI ON PORT, VIETNAM
+HAI PHONG PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Port of Discharge:
-5/ PORT OF DISCHARE : BARCELONA PORT, SPAIN
+BARCELONA PORT, SPAIN
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT PREPAID
 ------------------------------------
 ------------------------------------
 TÊN HÀNG HÓA:
 FROZEN COOKED FULLY CLAM
-FREIHT PREPAID
-OODS ARE STORED IN REEFER CONTAINER SET AT MINUS 20 DEREES CELSIUS
+FREIGHT PREPAID
+GOODS ARE STORED IN REEFER CONTAINER SET AT MINUS 20 DEGREES CELSIUS
+7/ (SỐ KIỆN ) :          3,369       CTNS
+------------------------------------
+------------------------------------
+GROSS WEIGHT:
+8/ GROSS WEIGHT :         27,273.00  KGS
 ------------------------------------
 ------------------------------------
 SỐ KIỆN:
-3,369       CTNS
-27,273.00  KS
+
 ------------------------------------
 ------------------------------------
 TÊN TÀU:
-NORDEMILIA 047S
+/ (TÊN TÀU) :           NORDEMILIA 047S
 ------------------------------------
 ------------------------------------
 NGÀY CHẠY:
-S
-9
+JAN. 25, 2019
 ------------------------------------
 ------------------------------------
 CONT NO / SEAL NO:
-TTNU8190440/MOL062823N
+/CONT NO / SEAL NO :   TTNU8190440/MOL062823N
 ------------------------------------
 ------------------------------------
 HS CODE:
-160
+
 ------------------------------------
