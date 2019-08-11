@@ -424,10 +424,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             if (re.search(topFinding, fullPdf[startRow])):
                                 # print("TOPFOUNED")
                                 # print(startRow)
-                                if (nearestLowerKey != key and startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1):
-                                    print(startRow)
-                                    print(nearestLowerKey)
-                                    print(CURR_CONFIG[nearestLowerKey]['row'][0])
+                                if (nearestLowerKey != key and startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1 and len(extracted) > 0):
+                                    # print(startRow)
+                                    # print(nearestLowerKey)
+                                    # print(CURR_CONFIG[nearestLowerKey]['row'][0])
                                     someProblem = True
                                     break
 
@@ -773,7 +773,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     inform = ''.join(list_temp)
 
                     extractedData["Payment"] = PaymentData
-                    
+
                 payment = re.search("freight " + collect, temp)
                 if (payment):
                     start = payment.start() + column[0]
