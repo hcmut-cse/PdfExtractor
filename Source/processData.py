@@ -16,34 +16,7 @@ def longestSubstringFinder(string1, string2):
                 if (len(match) > len(answer)): answer = match
                 match = ""
     return answer
-def connectContent(length, extractedData):
-    count = 0
-    string = {}
-    stringValue = []
-    if (length == 2):
-        for key1 in list(extractedData):
-            for key2 in list(extractedData):
-                if (". . . . . . ." not in key2):
-                    if (len(key1) > 4):
-                        ratio = similar(key1, key2)
-                        if (ratio >= 0.9 and ratio < 1):
-                            count = count + 1
-                            commonString = longestSubstringFinder(key1, key2)
-                            content = extractedData[key1] + extractedData[key2]
-                            extractedData[commonString] = content
-                            del extractedData[key1]
-                            del extractedData[key2]
-                    elif (2 < len(key1) <= 4):
-                        ratio = similar(key1, key2)
-                        if (ratio >= 0.75):
-                            count = count + 1
-                            commonString = longestSubstringFinder(key1, key2)
-                            content = extractedData[key1] + extractedData[key2]
-                            extractedData[commonString] = content
-                            #del extractedData[key1]
-                            #del extractedData[key2]
-            if (count == 6):
-                break
+
 
 def leftProcess(CONFIG, extractedData):
     #Process data with top = same_left
@@ -785,8 +758,23 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             isPayment = re.search("freight", temp)
 
             if(isPayment):
-                alphabet = "[a-z]*"
-                payment = re.search("freight " + alphabet, temp)
+                prepaid = "prepaid"
+                collect = "collect"
+                payment = re.search("freight " + prepaid, temp)
+                if (payment):
+                    start = payment.start() + column[0]
+                    end = payment.end() + column[0]
+                    length = end - start
+
+                    PaymentData = inform[start:end]
+                    space = " " * len(inform[start:end])
+                    list_temp = list(inform)
+                    list_temp[start:end] = space
+                    inform = ''.join(list_temp)
+
+                    extractedData["Payment"] = PaymentData
+                    
+                payment = re.search("freight " + collect, temp)
                 if (payment):
                     start = payment.start() + column[0]
                     end = payment.end() + column[0]
