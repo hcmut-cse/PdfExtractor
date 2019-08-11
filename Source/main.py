@@ -6,6 +6,7 @@ import numpy as np
 from preprocess import preProcessPdf
 from processData import extractData
 from posProcess import posProcessData
+from connectContent import connectContent
 import pdftotext
 
 def checkFolder(string):
