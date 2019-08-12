@@ -767,10 +767,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     length = end - start
 
                     PaymentData = inform[start:end]
-                    space = " " * len(inform[start:end])
-                    list_temp = list(inform)
-                    list_temp[start:end] = space
-                    inform = ''.join(list_temp)
+                    #space = " " * len(inform[start:end])
+                    #list_temp = list(inform)
+                    #list_temp[start:end] = space
+                    #inform = ''.join(list_temp)
 
                     extractedData["Payment"] = PaymentData
 
@@ -781,10 +781,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     length = end - start
 
                     PaymentData = inform[start:end]
-                    space = " " * len(inform[start:end])
-                    list_temp = list(inform)
-                    list_temp[start:end] = space
-                    inform = ''.join(list_temp)
+                    #space = " " * len(inform[start:end])
+                    #list_temp = list(inform)
+                    #list_temp[start:end] = space
+                    #inform = ''.join(list_temp)
 
                     extractedData["Payment"] = PaymentData
 
