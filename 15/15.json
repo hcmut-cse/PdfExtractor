@@ -588,7 +588,7 @@
 					"isFlex": 1,
 					"endObject": 
 					{
-						"top": "same_left",
+						"top": "FREIGHT",
 						"bottom": "NO. OF ORIGINALS",
 						"left": "DOCUMENT REQUIRED",
 						"right": -1
@@ -627,7 +627,7 @@
 					"isFlex": 1,
 					"endObject": 
 					{
-						"top": "COPIES",
+						"top": "same_left",
 						"bottom": "PS",
 						"left": "FREIGHT PAYMENT",
 						"right": -1
@@ -640,7 +640,7 @@
 					"isFlex": 1,
 					"endObject": 
 					{
-						"top": "FREIGHT PAYMENT",
+						"top": "same_left",
 						"bottom": "CONTRACT NUMBER",
 						"left": "PS",
 						"right": -1
@@ -669,7 +669,7 @@
 					"endObject": 
 					{
 						"top": "MARKS & NOS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -682,7 +682,7 @@
 					"endObject": 
 					{
 						"top": "QTY",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "MARKS & NOS",
 						"right": "PCS"
 					}
@@ -695,7 +695,7 @@
 					"endObject": 
 					{
 						"top": "PCS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "MARKS & NOS",
 						"right": "DESCRIPTION OF GOODS"
 					}
@@ -708,7 +708,7 @@
 					"endObject": 
 					{
 						"top": "DESCRIPTION OF GOODS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "QTY       PCS",
 						"right": "GRSS WT KGS"
 					}
@@ -721,7 +721,7 @@
 					"endObject": 
 					{
 						"top": "GRSS WT KGS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "DESCRIPTION OF GOODS",
 						"right": "         CBM"
 					}
@@ -734,7 +734,7 @@
 					"endObject": 
 					{
 						"top": "CBM",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "GRSS WT KGS         ",
 						"right": -1
 					}
@@ -1036,7 +1036,7 @@
 					"isFlex": 1,
 					"endObject": 
 					{
-						"top": "same_left",
+						"top": "FREIGHT",
 						"bottom": "NO. OF ORIGINALS",
 						"left": "DOCUMENT REQUIRED",
 						"right": -1
@@ -1075,7 +1075,7 @@
 					"isFlex": 1,
 					"endObject": 
 					{
-						"top": "COPIES",
+						"top": "same_left",
 						"bottom": "PS",
 						"left": "FREIGHT PAYMENT",
 						"right": -1
@@ -1112,12 +1112,12 @@
 				"MARKS & NOS1":
 				{
 					"row": [27,28],
-					"column": [139,186],
+					"column": [139,185],
 					"isFlex": 1,
 					"endObject": 
 					{
 						"top": "MARKS & NOS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -1130,7 +1130,7 @@
 					"endObject": 
 					{
 						"top": "QTY",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "MARKS & NOS",
 						"right": "PCS"
 					}
@@ -1143,7 +1143,7 @@
 					"endObject": 
 					{
 						"top": "PCS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "QTY",
 						"right": "DESCRIPTION OF GOODS"
 					}
@@ -1156,7 +1156,7 @@
 					"endObject": 
 					{
 						"top": "DESCRIPTION OF GOODS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "QTY       PCS",
 						"right": "GRSS WT KGS"
 					}
@@ -1169,7 +1169,7 @@
 					"endObject": 
 					{
 						"top": "GRSS WT KGS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "DESCRIPTION OF GOODS",
 						"right": "         CBM"
 					}
@@ -1182,7 +1182,7 @@
 					"endObject": 
 					{
 						"top": "CBM",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "FREIGHT",
 						"left": "GRSS WT KGS         ",
 						"right": -1
 					}
