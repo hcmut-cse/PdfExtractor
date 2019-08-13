@@ -15,7 +15,7 @@ def checkFolder(string):
     if string in allFolder:
         return string
     else:
-        print("No folder named %s" % string)
+        # print("No folder named %s" % string)
         return -1
 
 if __name__ == '__main__':
@@ -28,11 +28,10 @@ if __name__ == '__main__':
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
     # fileName = ["CLTV01164093_HANV01321800_1_ocps_si@opussmtp.one-line.com_1_1.pdf"]
 
-    with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
-        ORIGINAL_CONFIG = json.load(json_file)
-
     for file in fileName:
-        print(file)
+        with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
+            ORIGINAL_CONFIG = json.load(json_file)
+        # print(file)
 
         # Reset Current CONFIG
         CONFIG = ORIGINAL_CONFIG[0].copy()
@@ -61,8 +60,8 @@ if __name__ == '__main__':
 
         # Preproces PDF
         fullPdf, removed = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
-        for line in fullPdf:
-            print(line)
+        # for line in fullPdf:
+            # print(line)
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 

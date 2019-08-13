@@ -222,7 +222,7 @@
             },
             "subfields":
             {
-                "Total type": "([0-9]+)X([0-9]+)(\\´)(DC|RF|HC)",
+                "Total type": "(([0-9]+)X([0-9]+)(\\´)(DC|RF|HC) & )*(([0-9]+)X([0-9]+)(\\´)(DC|RF|HC))",
                 "Total Packages": "[0-9,.]* (CTNS|PKGS|PCS|PACKAGES|PKG)",
                 "Total G.W (KGS)": "[0-9]+(,)[0-9]+(\\.)[0-9]+",
                 "Total CBM": "[0-9.]+"

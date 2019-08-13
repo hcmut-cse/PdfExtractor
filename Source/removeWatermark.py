@@ -156,5 +156,5 @@ def removeWatermark(fileName, pdf):
 		# print(newWord)
 		removed[newWord] = pos
 
-	print(removed)
+	# print(removed)
 	return pdfOut, removed

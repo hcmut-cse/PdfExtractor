@@ -47,10 +47,11 @@ def subfieldProcess(CONFIG, extractedData):
                     result1 = re.search(reg, extractedData[key])
                     if (result1 is not None):
                         result = re.search(reg, extractedData[key]).span()
-                        extractedData[key + '_' + subs] = extractedData[key][result[0]:result[1]]
+                        extractedData[subs] = extractedData[key][result[0]:result[1]]
                         pos = result[1]
+                        extractedData[key]=extractedData[key][pos:]
                 else:
-                    extractedData[key+'_'+subs] = extractedData[key][pos:]
+                    extractedData[subs] = extractedData[key][pos:]
             del extractedData[key]
 
     return extractedData
@@ -59,10 +60,25 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
     extracted = []
     # Extract data
     extractedData = {}
+    synonymUsing={}
     for key in CONFIG:
+        foundSynonym=0
+        if ('synonyms' in CONFIG[key]):
+            i=0
+            for synonym in CONFIG[key]['synonyms']:
+                checkedSynonym='synonym_'+str(i)
+                name=CONFIG[key]['synonyms'][checkedSynonym]['name']
+                for line in fullPdf:
+                    if line.find(name)!=-1:
+                        CONFIG[key]['endObject']=CONFIG[key]['synonyms'][checkedSynonym]['endObject'].copy()
+                        CONFIG[key]['column']=CONFIG[key]['synonyms'][checkedSynonym]['column'].copy()
+                        foundSynonym=1
+                        break
+                if (foundSynonym): break
+                i+=1
         error = False
-        print(key)
-        print('--------------')
+        # print(key)
+        # print('--------------')
         if (not CONFIG[key]['isFlex']): # For fixxed elements
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
@@ -705,9 +721,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         column = CURR_CONFIG[key]['column']
 
         # print(key)
-        print(row)
-        print(column)
-        print(CURR_CONFIG)
+        # print(row)
+        # print(column)
+        # print(CURR_CONFIG)
         # Extract data and mark it as 'extracted'
         lines = fullPdf[row[0]:row[1]]
         # print(lines[column[0]:column[1]])
@@ -808,7 +824,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         # print(CURR_CONFIG)
 
         extractedData[key] = '\n'.join(dataBlock)
-        print(extractedData[key])
+        # print(extractedData[key])
         extracted.append(key)
 
     extractedData = leftProcess(CONFIG, extractedData)
