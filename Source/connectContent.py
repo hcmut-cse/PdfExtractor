@@ -61,3 +61,4 @@ def connectContent(length, extractedData):
                             content = extractedData[common] + "\n" + extractedData[key]
                             extractedData[common] = content
                             del extractedData[key]
+    return extractedData

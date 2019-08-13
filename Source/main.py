@@ -38,10 +38,9 @@ if __name__ == '__main__':
         CONFIG = ORIGINAL_CONFIG[0].copy()
         HF_CONFIG = ORIGINAL_CONFIG[1].copy()
         CURR_CONFIG = {}
-
+        with open('../' + PDF_TYPE + '/' + file, "rb") as f:
+            pdf = pdftotext.PDF(f)
         if (PDF_TYPE == "15"):
-            with open('../' + PDF_TYPE + '/' + file, "rb") as f:
-                pdf = pdftotext.PDF(f)
             if (len(pdf) == 2):
                 CONFIG = CONFIG["multi"]
             elif (len(pdf) == 3):
@@ -68,11 +67,10 @@ if __name__ == '__main__':
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 
         extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
-
-        if (PDF_TYPE == 15):
-            length = len(pdf)
-            if (length > 1):
-                connectContent(length, extractedData)
+        
+        length = len(pdf)
+        if (length > 1):
+            extractedData = connectContent(length, extractedData)
         # for word in removed:
         #     if (removed[word])
         # Save extracted result to file
