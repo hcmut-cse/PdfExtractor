@@ -65,8 +65,8 @@ if __name__ == '__main__':
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 
-        extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
-        
+        # extractedData = posProcessData(extractedData, CURR_CONFIG, removed)
+
         length = len(pdf)
         if (length > 1):
             extractedData = connectContent(length, extractedData)

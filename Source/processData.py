@@ -1,6 +1,7 @@
 import numpy as np
 import re
 from difflib import SequenceMatcher
+from posProcess import posProcessData
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
@@ -475,7 +476,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                 startRow += 1
                                 if (startRow == len(fullPdf)):
                                     break
-                                    
+
                         if (someProblem or startRow == len(fullPdf)):
                             toFind = [k for k in removed]
                             for tf in toFind:
@@ -769,40 +770,6 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         CURR_CONFIG[key]['column'][1] = column[1]
                         distance += i
 
-            # Process for payment
-            temp = inform[column[0]:column[1]].lower()
-            isPayment = re.search("freight", temp)
-
-            if(isPayment):
-                prepaid = "prepaid"
-                collect = "collect"
-                payment = re.search("freight " + prepaid, temp)
-                if (payment):
-                    start = payment.start() + column[0]
-                    end = payment.end() + column[0]
-                    length = end - start
-
-                    PaymentData = inform[start:end]
-                    space = " " * len(inform[start:end])
-                    list_temp = list(inform)
-                    list_temp[start:end] = space
-                    inform = ''.join(list_temp)
-
-                    extractedData["Payment"] = PaymentData
-
-                payment = re.search("freight " + collect, temp)
-                if (payment):
-                    start = payment.start() + column[0]
-                    end = payment.end() + column[0]
-                    length = end - start
-
-                    PaymentData = inform[start:end]
-                    space = " " * len(inform[start:end])
-                    list_temp = list(inform)
-                    list_temp[start:end] = space
-                    inform = ''.join(list_temp)
-
-                    extractedData["Payment"] = PaymentData
 
         for keyE in CURR_CONFIG:
             if (CURR_CONFIG[keyE]['row'][1] != None and CURR_CONFIG[key]['row'][1] != None):
@@ -819,9 +786,43 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
             # print(column)
             # dataBlock.append(inform[column[0]:column[1]].strip())
-        dataBlock = [line[column[0]:column[1]].strip() for line in lines]
+        # dataBlock = [line[column[0]:column[1]].strip() for line in lines]
+        dataBlock = posProcessData([line[column[0]:column[1]] for line in lines], CURR_CONFIG[key], removed)
+        dataBlock = [x.strip() for  x in dataBlock]
+        # Process for payment
+        for l, lineInBlock in enumerate(dataBlock):
+            temp = lineInBlock.lower()
+            isPayment = re.search("freight", temp)
 
-        # print(CURR_CONFIG)
+            if(isPayment):
+                # print("RUN PAYMENTS")
+                prepaid = "prepaid"
+                collect = "collect"
+                payment = re.search("freight " + prepaid, temp)
+                if (payment):
+                    start = payment.start()
+                    end = payment.end()
+                    # length = end - start
+                    #
+                    PaymentData = lineInBlock[start:end]
+                    space = " " * len(lineInBlock[start:end])
+                    list_temp = list(lineInBlock)
+                    list_temp[start:end] = space
+                    dataBlock[l] = ''.join(list_temp)
+                    extractedData["Payment"] = PaymentData
+
+                payment = re.search("freight " + collect, temp)
+                if (payment):
+                    start = payment.start()
+                    end = payment.end()
+                    # length = end - start
+                    #
+                    PaymentData = lineInBlock[start:end]
+                    space = " " * len(lineInBlock[start:end])
+                    list_temp = list(lineInBlock)
+                    list_temp[start:end] = space
+                    dataBlock[l] = ''.join(list_temp)
+                    extractedData["Payment"] = PaymentData
 
         extractedData[key] = '\n'.join(dataBlock)
         # print(extractedData[key])
