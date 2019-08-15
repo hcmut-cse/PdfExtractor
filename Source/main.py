@@ -31,7 +31,7 @@ if __name__ == '__main__':
     for file in fileName:
         with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
             ORIGINAL_CONFIG = json.load(json_file)
-        # print(file)
+        print(file)
 
         # Reset Current CONFIG
         CONFIG = ORIGINAL_CONFIG[0].copy()

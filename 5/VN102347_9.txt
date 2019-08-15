@@ -160,7 +160,7 @@ FDA REGISTRATION NUMBER:
 N.W.: 35,000.00 LBS (15,876.00 KGS
 G.W.: 36,085.00 LBS (16,368.16 KGS)
 
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

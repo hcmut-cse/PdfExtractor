@@ -132,7 +132,7 @@ G.W: 17,816.54 KGS/32 PALLETS/ 15 CBM
 INVOICE NO.:D5-2019-0228-12
 MOAU0735101/ 082007N
 G.W: 16,866.14 KGS/ 33 PALLETS/15 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

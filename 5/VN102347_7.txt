@@ -148,7 +148,7 @@ TRHU3785299/ VN124710A/ GW: 19,720
 KGS/ 1700 CARTONS/ 26 CBM
 TCKU2944037/ VN124679A/ 19,720 KGS /
 1700 CARTONS/ 26 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

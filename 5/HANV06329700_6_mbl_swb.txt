@@ -44,8 +44,6 @@ SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 ALSO NOTIFY:
-ALSO NOTIFY:
-
 NAC: PERARL- PROLOGUE
 
 ------------------------------------
@@ -138,7 +136,7 @@ KGS/ 32 PALLETS/ 15 CBM
 INVOICE NO: D5-2019-0323-02
 TCLU3847445/ VN226000A/ G.W: 18315.24
 KGS/ 33 PALLETS/ 15 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

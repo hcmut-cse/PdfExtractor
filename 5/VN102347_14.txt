@@ -144,7 +144,7 @@ MOFU6730310/VN167649A/ GW: 14945
 KGS/ 24 PALLETS/ 50.66 CBM
 NYKU8525951/VN255442A/ GW: 16443
 KGS/ 24 PALLETS/ 50.95 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

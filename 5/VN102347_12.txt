@@ -145,7 +145,7 @@ TRLU9513510/VN259165A/ GW: 17068 KGS/
 24 PALLETS/ 50.17 CBM
 TLLU6053853/VN256632A/ GW: 15109 KGS/
 24 PALLETS/ 52.30 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

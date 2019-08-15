@@ -147,7 +147,7 @@ TCKU2826522/ VN314368A/ GW: 19,890
 KGS / 1700 CARTONS/ 26 CBM
 GLDU9491800/ VN314367A/ GW: 19,890
 KGS/ 1700 CARTONS/ 26 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:

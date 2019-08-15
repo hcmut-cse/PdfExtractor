@@ -758,7 +758,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     if (inform[column[1] - 1] == ' ' and inform[column[1]] != ' '):
                         formalRight = True
 
-                    if (formalRight and inform[column[1]] != ' ' and inform[column[1] - 1] != ' '):
+                    if (formalRight and ((inform[column[1]] != ' ' and inform[column[1] - 1] != ' ')
+                                    or  inform[column[1]] == ' ' and inform[column[1] - 1] != ' ')):
                         i = 1
                         # print(inform[column[1]])
                         while (inform[column[1] - i] != ' '):

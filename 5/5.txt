@@ -154,7 +154,7 @@ CRXU1688621/ VN124576A/ GW: 19,720
 KGS/ 1700 CARTONS/ 26 CBM
 GLDU9797811/ VN256327A/ GW: 19,720
 KGS/ 1700 CARTONS/ 26 CBM
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 GROSS WEIGHT:
