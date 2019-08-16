@@ -63,10 +63,27 @@ Payment:
 Freight Prepaid
 ------------------------------------
 ------------------------------------
-DATA_Name:
-Freight Prepaid
-Please issue SEAWAY BILL and send us draft bill for our checking as soon as possible. Thanks
-Best regards
+Bill type:
+Please issue SEAWAY BILL 
+------------------------------------
+------------------------------------
+Name:
+
 Ly Thanh Thao
-Mobile: +84 938303159
+
+------------------------------------
+------------------------------------
+Mobile:
++84 938303159
+------------------------------------
+------------------------------------
+Email:
+queenfarm@yahoo.com
+------------------------------------
+------------------------------------
+Leftovers:
+               
+and send us draft bill for our checking as soon as possible. Thanks
+Best regardsMobile: 
+Email: 
 ------------------------------------

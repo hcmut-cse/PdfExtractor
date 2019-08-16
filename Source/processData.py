@@ -41,20 +41,19 @@ def subfieldProcess(CONFIG, extractedData):
     # Process the subfields
     for key in CONFIG:
         if ('subfields' in CONFIG[key]):
+            # print(extractedData[key])
             for subs in CONFIG[key]['subfields']:
-                pos = 0
+                # print(subs)
                 reg = CONFIG[key]['subfields'][subs]
                 if (reg != 10):
                     result1 = re.search(reg, extractedData[key])
                     if (result1 is not None):
                         result = re.search(reg, extractedData[key]).span()
                         extractedData[subs] = extractedData[key][result[0]:result[1]]
-                        pos = result[1]
-                        extractedData[key]=extractedData[key][pos:]
+                        extractedData[key] = extractedData[key][0:result[0]] + extractedData[key][result[1]:]
                 else:
-                    extractedData[subs] = extractedData[key][pos:]
+                    extractedData[subs] = extractedData[key]
             del extractedData[key]
-
     return extractedData
 
 def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
@@ -713,10 +712,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         CURR_CONFIG[key]['column'][1] += distance
 
 
-        if (error):
-            del CURR_CONFIG[key]
-            extractedData[key] = "ERROR"
-            continue
+        # if (error):
+        #     del CURR_CONFIG[key]
+        #     extractedData[key] = "ERROR"
+        #     continue
         # Get row and column
         row = CURR_CONFIG[key]['row']
         column = CURR_CONFIG[key]['column']

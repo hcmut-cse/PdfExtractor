@@ -196,6 +196,17 @@
                 "bottom": -1,
                 "left": -1,
                 "right": -1
+            },
+            "hasSubfield": 1,
+            "subfields": {
+            	"BL type": "The type of BL\\: [A-Z]*\\n",
+            	"HS Code": "HS CODE\\: [0-9]*",
+            	"GW": "GW:[0-9\\s\\,]* KGS",
+            	"CBM": "CBM:[0-9\\s]*",
+            	"Quantity": "[0-9]+[PACKAGES]+",
+            	"CONT/SEAL NO": "1\\) .*\\n",
+            	"Tax code number of consignee": "Tax code number of consignee: [0-9\\s]*\\n",
+            	"Leftover": 10
             }
         }
     },

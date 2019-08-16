@@ -24,8 +24,8 @@ SAU TIEM DINH BA AGRICULTURAL MACHINERY COMPANY LIMITED
 ------------------------------------
 ------------------------------------
 ADD:
-:DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE,
-ETNAM
+DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE,
+VIETNAM
 ------------------------------------
 ------------------------------------
 Consignee:
@@ -33,16 +33,16 @@ AMH AGRI CARE MACHINERIES
 ------------------------------------
 ------------------------------------
 Add:
-:1002 ESCALONA BLDG MAHARLIKA HIWAY, CARIG SUR, TUGUEGARRAO CITY,
-GAYAN 3500 PHILIPPINES
+1002 ESCALONA BLDG MAHARLIKA HIWAY, CARIG SUR, TUGUEGARRAO CITY,
+CAGAYAN 3500 PHILIPPINES
 ------------------------------------
 ------------------------------------
 Phone:
-:(0917) 795 8200 (James C.Hernandez)
+(0917) 795 8200 (James C.Hernandez)
 ------------------------------------
 ------------------------------------
 Email:
-:jameschernandez@yahoo.com
+jameschernandez@yahoo.com
 ------------------------------------
 ------------------------------------
 Notify Party:
@@ -69,11 +69,41 @@ PLACE OF DELIVERY:
 MANILA NORTH HARBOUR
 ------------------------------------
 ------------------------------------
-DESCRIPTION OF GOODS:
+BL type:
+The type of BL: SEAWAY
+
+------------------------------------
+------------------------------------
+HS Code:
+HS CODE: 84335100
+------------------------------------
+------------------------------------
+GW:
+GW:20,000 KGS
+------------------------------------
+------------------------------------
+CBM:
+CBM:55 
+------------------------------------
+------------------------------------
+Quantity:
+20PACKGES
+------------------------------------
+------------------------------------
+CONT/SEAL NO:
+1) 40HC/FDCU0569553/707103M,  , , 
+
+------------------------------------
+------------------------------------
+Tax code number of consignee:
+Tax code number of consignee: 196 377 933
+
+------------------------------------
+------------------------------------
+Leftover:
 TRACTOR AND ACCESSORIES
 CONT/SEAL NO
-1) 40HC/FDCU0569553/707103M, GW:20,000 KGS , CBM:55 , 20PACKGES
-+The type of BL: SEAWAY
-+ HS CODE: 84335100 not shown on BL
+++  not shown on BL
 +We will pay prepaid
++1
 ------------------------------------

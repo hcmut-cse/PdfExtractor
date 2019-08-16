@@ -25,7 +25,7 @@ SAU TIEM DINH BA AGRICULTURAL MACHINERY COMPANY LIMITED
 ------------------------------------
 ------------------------------------
 ADD:
-:DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE, VIETNAM
+DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE, VIETNAM
 ------------------------------------
 ------------------------------------
 Consignee:
@@ -33,7 +33,7 @@ KOBESEAN TRADING
 ------------------------------------
 ------------------------------------
 Add:
-:RM 427 CALVO BLDG 266 ESCOLTA ST BRGY 291 ZONE 027 BINONDO MANILA 1006 PHILIPPINES
+RM 427 CALVO BLDG 266 ESCOLTA ST BRGY 291 ZONE 027 BINONDO MANILA 1006 PHILIPPINES
 ------------------------------------
 ------------------------------------
 Phone:
@@ -41,7 +41,7 @@ Phone:
 ------------------------------------
 ------------------------------------
 Email:
-:kobeseantrading@yahoo.com
+kobeseantrading@yahoo.com
 ------------------------------------
 ------------------------------------
 Notify Party:
@@ -68,16 +68,38 @@ PLACE OF DELIVERY:
 MANILA NORTH HARBOUR
 ------------------------------------
 ------------------------------------
-DESCRIPTION OF GOODS:
+BL type:
+The type of BL: SEAWAY
+
+------------------------------------
+------------------------------------
+HS Code:
+HS CODE: 84335100
+------------------------------------
+------------------------------------
+CBM:
+CBM:55
+
+------------------------------------
+------------------------------------
+Quantity:
+000KGS
+------------------------------------
+------------------------------------
+Tax code number of consignee:
+Tax code number of consignee: 235883753000
+
+------------------------------------
+------------------------------------
+Leftover:
 Agricultural machineries with accessories.
 +CONTAINER/SEAL:
-40HC/FDCU0429551/MOL736010M/GW:20,000KGS/CBM:55
-+The type of BL: SEAWAY
-+ HS CODE: 84335100 not shown on BL
+40HC/FDCU0429551/MOL736010M/GW:20,/++  not shown on BL
 +We will pay prepaid
-+Tax code number of consignee: 235883753000
-Thanks & Best regards.
++Thanks & Best regards.
 Brian (Mr.) / 0122 3773 148
 --------------------------------------
 DSK GLONET VIET NAM CO.,LTD
+Email: sales@dskglonet.com.vn
+1
 ------------------------------------

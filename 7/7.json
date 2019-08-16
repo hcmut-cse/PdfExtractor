@@ -197,11 +197,11 @@
 			"hasSubfield": 1,
 			"subfields":
 			{
-				"Prepaid": ".Prepaid ^\\n",
-				"Bill": "Please issue .^\\n",
-				"Mobile": "Mobile: .^\\n",
-				"Email": "Email: .^\\n",
-				"Name": 10
+				"Bill type": "Please issue [A-Z\\s\\-]*\\n?\\s?",
+				"Name": "\\n[A-Z]*[a-z]* [A-Z]*[a-z]* [A-Z]*[a-z]*\\n",
+				"Mobile": "\\+*[0-9]* [0-9]+",
+				"Email": "[a-z\\.]+@[a-z\\.]+",
+				"Leftovers": 10
 			}
 		}
 	},
@@ -213,7 +213,7 @@
         	"pages": "all"
       	},
       	"Footer": {
-        	"row": [-2, null],
+        	"row": [-1, null],
         	"column": [0, null],
         	"pages": "all"
       	}
