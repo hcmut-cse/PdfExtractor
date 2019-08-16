@@ -825,6 +825,27 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     dataBlock[l] = ''.join(list_temp)
                     extractedData["Payment"] = PaymentData
 
+        # Process for temperature notation
+        for l, lineInBlock in enumerate(dataBlock):
+            temp = lineInBlock.lower()
+            rows = len(dataBlock)
+            notation = re.search("[\s]+o[\s]+", temp)
+
+            if (notation & l >= (rows - 2)):
+                dataBlock.removed(lineInBlock)
+
+            temperature = re.search("(([+]|[-]|)([0-9]+)([\s]|[\s\s])(C|F))([^a-zA-Z])", temp)
+
+            if (temperature):
+                # print(temperature.group(2))
+                # print(temperature.group(3))
+                # print(temperature.group(4))
+                list_temp = list(lineInBlock)
+                list_temp[temperature.start(4):temperature.end(4)] = "o"
+                a[l] = ''.join(list_temp)
+
+
+                
         extractedData[key] = '\n'.join(dataBlock)
         # print(extractedData[key])
         extracted.append(key)
