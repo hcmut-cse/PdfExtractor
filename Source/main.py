@@ -26,7 +26,7 @@ if __name__ == '__main__':
     PDF_TYPE = str(args.pdf_type)
 
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
-    # fileName = ["CLTV01254029_SGNV11080700_1_ocps_si@opussmtp.one-line.com_3(ocps20190125134720_3)_1.pdf"]
+    # fileName = ["7.pdf"]
 
     for file in fileName:
         with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:
@@ -60,8 +60,8 @@ if __name__ == '__main__':
 
         # Preproces PDF
         fullPdf, removed = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
-        # for line in fullPdf:
-            # print(line)
+        for line in fullPdf:
+            print(line)
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 

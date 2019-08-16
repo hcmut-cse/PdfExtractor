@@ -50,10 +50,12 @@ def subfieldProcess(CONFIG, extractedData):
                     if (result1 is not None):
                         result = re.search(reg, extractedData[key]).span()
                         extractedData[subs] = extractedData[key][result[0]:result[1]]
-                        extractedData[key] = extractedData[key][0:result[0]] + extractedData[key][result[1]:]
+                        if key not in CONFIG[key]['subfields']:
+                            extractedData[key] = extractedData[key][0:result[0]] + extractedData[key][result[1]:]
                 else:
                     extractedData[subs] = extractedData[key]
-            del extractedData[key]
+            if key not in CONFIG[key]['subfields']:
+                del extractedData[key]
     return extractedData
 
 def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
@@ -661,11 +663,12 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             else:
                                 CURR_CONFIG[key]['column'][i] = None
                         # If top = same_left
-                        if (CONFIG[key]['endObject']['top'][:4] == 'same'):
-                            for line in fullPdf:
-                                if line.find(key)!=-1:
-                                    CURR_CONFIG[key]['column'][0] = line.find(key)
-                                    break
+                        if (CONFIG[key]['endObject']['top'] != -1):
+                            if (CONFIG[key]['endObject']['top'][:4] == 'same'):
+                                for line in fullPdf:
+                                    if line.find(key)!=-1:
+                                        CURR_CONFIG[key]['column'][0] = line.find(key)
+                                        break
 
                     elif (margin == 'right'):
                         if (CURR_CONFIG[key]['column'][1] == None):
@@ -712,10 +715,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         CURR_CONFIG[key]['column'][1] += distance
 
 
-        # if (error):
-        #     del CURR_CONFIG[key]
-        #     extractedData[key] = "ERROR"
-        #     continue
+        if (error):
+            del CURR_CONFIG[key]
+            extractedData[key] = "ERROR"
+            continue
         # Get row and column
         row = CURR_CONFIG[key]['row']
         column = CURR_CONFIG[key]['column']
@@ -790,39 +793,40 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         dataBlock = posProcessData([line[column[0]:column[1]] for line in lines], CURR_CONFIG[key], removed)
         dataBlock = [x.strip() for  x in dataBlock]
         # Process for payment
-        for l, lineInBlock in enumerate(dataBlock):
-            temp = lineInBlock.lower()
-            isPayment = re.search("freight", temp)
+        if key != 'Payment':
+            for l, lineInBlock in enumerate(dataBlock):
+                temp = lineInBlock.lower()
+                isPayment = re.search("freight", temp)
 
-            if(isPayment):
-                # print("RUN PAYMENTS")
-                prepaid = "prepaid"
-                collect = "collect"
-                payment = re.search("freight " + prepaid, temp)
-                if (payment):
-                    start = payment.start()
-                    end = payment.end()
-                    # length = end - start
-                    #
-                    PaymentData = lineInBlock[start:end]
-                    space = " " * len(lineInBlock[start:end])
-                    list_temp = list(lineInBlock)
-                    list_temp[start:end] = space
-                    dataBlock[l] = ''.join(list_temp)
-                    extractedData["Payment"] = PaymentData
+                if(isPayment):
+                    # print("RUN PAYMENTS")
+                    prepaid = "prepaid"
+                    collect = "collect"
+                    payment = re.search("freight " + prepaid, temp)
+                    if (payment):
+                        start = payment.start()
+                        end = payment.end()
+                        # length = end - start
+                        #
+                        PaymentData = lineInBlock[start:end]
+                        space = " " * len(lineInBlock[start:end])
+                        list_temp = list(lineInBlock)
+                        list_temp[start:end] = space
+                        dataBlock[l] = ''.join(list_temp)
+                        extractedData["Payment"] = PaymentData
 
-                payment = re.search("freight " + collect, temp)
-                if (payment):
-                    start = payment.start()
-                    end = payment.end()
-                    # length = end - start
-                    #
-                    PaymentData = lineInBlock[start:end]
-                    space = " " * len(lineInBlock[start:end])
-                    list_temp = list(lineInBlock)
-                    list_temp[start:end] = space
-                    dataBlock[l] = ''.join(list_temp)
-                    extractedData["Payment"] = PaymentData
+                    payment = re.search("freight " + collect, temp)
+                    if (payment):
+                        start = payment.start()
+                        end = payment.end()
+                        # length = end - start
+                        #
+                        PaymentData = lineInBlock[start:end]
+                        space = " " * len(lineInBlock[start:end])
+                        list_temp = list(lineInBlock)
+                        list_temp[start:end] = space
+                        dataBlock[l] = ''.join(list_temp)
+                        extractedData["Payment"] = PaymentData
 
         # Process for temperature notation
         for l, lineInBlock in enumerate(dataBlock):

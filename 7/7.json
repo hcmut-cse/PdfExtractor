@@ -182,14 +182,46 @@
 			}
 		},
 
-		"DATA":
+		"Payment":
 		{
-			"row": [25,null],
+			"row": [25,26],
 			"column": [0,null],
 			"isFlex": 1,
 			"endObject":
 			{
-				"top": "Gross Weight",
+				"top": -1,
+				"bottom": -1,
+				"left": -1,
+				"right": -1
+			}
+		},
+
+		"Bill type":
+		{
+			"row": [26,27],
+			"column": [0,null],
+			"isFlex": 1,
+			"endObject":
+			{
+				"top": -1,
+				"bottom": -1,
+				"left": -1,
+				"right": -1
+			},
+			"subfields":
+			{
+				"Bill type": "Please issue [A-Z\\s\\-]*\\n?\\s?"
+			}
+		},
+
+		"DATA":
+		{
+			"row": [27,null],
+			"column": [0,null],
+			"isFlex": 1,
+			"endObject":
+			{
+				"top": -1,
 				"bottom": -1,
 				"left": -1,
 				"right": -1
@@ -197,7 +229,6 @@
 			"hasSubfield": 1,
 			"subfields":
 			{
-				"Bill type": "Please issue [A-Z\\s\\-]*\\n?\\s?",
 				"Name": "\\n[A-Z]*[a-z]* [A-Z]*[a-z]* [A-Z]*[a-z]*\\n",
 				"Mobile": "\\+*[0-9]* [0-9]+",
 				"Email": "[a-z\\.]+@[a-z\\.]+",
@@ -205,7 +236,7 @@
 			}
 		}
 	},
-	
+
 	{
 		"Header": {
         	"row": [0, 0],
