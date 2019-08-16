@@ -828,12 +828,12 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         for l, lineInBlock in enumerate(dataBlock):
             temp = lineInBlock.lower()
             rows = len(dataBlock)
-            notation = re.search("[\s]+o[\s]+", temp)
+            notation = re.search("^o$", temp)
 
             if (notation and l >= (rows - 2)):
-                dataBlock.removed(lineInBlock)
+                dataBlock.remove(lineInBlock)
 
-            temperature = re.search("(([+]|[-]|)([0-9]+)([\s]|[\s\s])(C|F))([^a-zA-Z])", temp)
+            temperature = re.search("(([+]|[-]|)([0-9]+)([\s]|[\s\s])(c|f))([^a-zA-Z])", temp)
 
             if (temperature):
                 # print(temperature.group(2))
@@ -841,7 +841,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                 # print(temperature.group(4))
                 list_temp = list(lineInBlock)
                 list_temp[temperature.start(4):temperature.end(4)] = "o"
-                dataBlockl[l] = ''.join(list_temp)
+                dataBlock[l] = ''.join(list_temp)
 
 
 
