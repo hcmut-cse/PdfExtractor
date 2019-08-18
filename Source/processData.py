@@ -844,7 +844,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                 # print(temperature.group(3))
                 # print(temperature.group(4))
                 list_temp = list(lineInBlock)
-                list_temp[temperature.start(4):temperature.end(4)] = "o"
+                list_temp[temperature.start(4):temperature.end(4)] = " degrees "
                 dataBlock[l] = ''.join(list_temp)
 
 
