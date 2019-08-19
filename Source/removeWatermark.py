@@ -22,7 +22,8 @@ def find_anomalies(df):
 
 	# Generate outliers
 	for index, ele in enumerate(random_data):
-		if ele > upper_limit or ele < lower_limit:
+		# if ele > upper_limit or ele < lower_limit:
+		if ele > upper_limit:
 			anomalies.append([ele, df['letter'].iloc[index]] )
 
 	return pd.DataFrame(anomalies, columns = ['outlier-fontsize', 'outlier-letter'])
