@@ -671,10 +671,11 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                 CURR_CONFIG[key]['column'][i] += distance
                             else:
                                 CURR_CONFIG[key]['column'][i] = None
+
                         # If top = same_left
                         if (CONFIG[key]['endObject']['top'] != -1):
                             if (CONFIG[key]['endObject']['top'][:4] == 'same'):
-                                for line in fullPdf:
+                                for line in fullPdf[startRow:]:
                                     if line.find(key)!=-1:
                                         CURR_CONFIG[key]['column'][0] = line.find(key)
                                         break
