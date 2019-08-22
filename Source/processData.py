@@ -441,9 +441,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         someProblem = False
                         # Find first row that has keyword from startRow
                         while (True):
-                            # print(fullPdf[startRow])
+                            print(fullPdf[startRow])
                             if (re.search(topFinding, fullPdf[startRow])):
-                                # print("TOPFOUNED")
+                                print("TOPFOUNED")
                                 # print(startRow)
                                 if (nearestLowerKey != key and startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1 and len(extracted) > 0):
                                     print(startRow)
