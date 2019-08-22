@@ -22,7 +22,10 @@ Forwarding agent - Name and full address:
 ------------------------------------
 ------------------------------------
 Notify address:
-ERROR
+TRANSFORMACIONES DEL CARIBE,
+SOCIEDAD ANONIMA, 6 AVENIDA
+1-09 APTO, 1 ZONA 2 EL TESORO MIXCO, GUATEMALA
+NIT : 7692021-6
 ------------------------------------
 ------------------------------------
 Also notify:
@@ -54,15 +57,7 @@ PUERTO QUETZAL , GUATEMALA
 ------------------------------------
 ------------------------------------
 Place of delivery:
-ERROR
-------------------------------------
-------------------------------------
-Marks and Numbers:
-;
-------------------------------------
-------------------------------------
-Container No./Seal No.:
-;
+PUERTO QUETZAL , GUATEMALA
 ------------------------------------
 ------------------------------------
 Kind of Packages:
@@ -70,26 +65,41 @@ Kind of Packages:
 ------------------------------------
 ------------------------------------
 Description of goods:
-ERROR
+
+CASSIA GROUND 2% SVO
+NW: 7.00 MTS, GW: 7.084 MTS, 280 BAGS
+
+SHIPPED ON BOARD ON BIENDONG NAVIGATOR V.NB913N
+AT HAIPHONG, VIETNAM
+12 MAY, 2019
 ------------------------------------
 ------------------------------------
 Weight:
-ERROR
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Measurement:
-ERROR
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 CONTAINER/SEAL NO:
-051/VN225537A                                    CASSIA
+KKTU 8098051/VN225537A
 ------------------------------------
 ------------------------------------
-MARKINGS:
-
-SHIPPED
-
-
+Marks and Numbers:
+SHOWN ON BAGS
 ------------------------------------
 ------------------------------------
 B/L to be released at:

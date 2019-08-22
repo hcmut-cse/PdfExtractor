@@ -19,7 +19,10 @@ Forwarding agent - Name and full address:
 ------------------------------------
 ------------------------------------
 Notify address:
-ERROR
+1) JAYANTI SA
+RUE FRITZ-COURVOISIER LA
+CHAUZE-DE-FONDS 40 2300
+SWITZERLAND
 ------------------------------------
 ------------------------------------
 Also notify:
@@ -30,8 +33,6 @@ POLAND
 
 
 
-PARTICULARS FURNISHED BY SHIPPER
-f Packages; Description of goods                              Weight                 Measurement
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -47,15 +48,7 @@ COCHIN, INDIA
 ------------------------------------
 ------------------------------------
 Place of delivery:
-ERROR
-------------------------------------
-------------------------------------
-Marks and Numbers:
-ERROR
-------------------------------------
-------------------------------------
-Container No./Seal No.:
-ERROR
+COCHIN, INDIA
 ------------------------------------
 ------------------------------------
 Kind of Packages:
@@ -63,31 +56,59 @@ ERROR
 ------------------------------------
 ------------------------------------
 Description of goods:
-ERROR
+
+VIETNAM BLACK PEPPER 5
+CLEAN PR FREE
+NW: 14.00 MTS, GW: 14.
+- Importer GSTIN – 32A
+- Importer IEC - 28803
+- Importer's official
+14 DAYS OF FREE DETENT
+PO No. IIMDPOEU/1819/0
+Lot no. IX2BPWONT1802
+SHIPPED ON BOARD ON YM
+AT HOCHIMINH, VIETNAM
+14 MAR, 2019
 ------------------------------------
 ------------------------------------
 Weight:
-ERROR
+
+VIETNAM BLACK PEPPER 500 G/L                         14.042 MTS
+CLEAN PR FREE
+NW: 14.00 MTS, GW: 14.042 MTS, 280 BAGS
+- Importer GSTIN – 32AAACI6463L1ZH
+- Importer IEC - 288033787
+- Importer's official e mail ID – imports@jayanti.com & ramesh@jayanti.com
+14 DAYS OF FREE DETENTION AND DEMURRAGE AT COCHIN
+PO No. IIMDPOEU/1819/00126
+Lot no. IX2BPWONT180259
+SHIPPED ON BOARD ON YM WISDOM V.001W
+AT HOCHIMINH, VIETNAM
+14 MAR, 2019
 ------------------------------------
 ------------------------------------
 Measurement:
-ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 CONTAINER/SEAL NO:
-PEPPER 500 G/L                         14.042 MTS
+VN3070663
 
 ------------------------------------
 ------------------------------------
-MARKINGS:
-
-
-orter's official e mail ID –
-14 DAYS
-
-
-
-
+Marks and Numbers:
 
 ------------------------------------
 ------------------------------------

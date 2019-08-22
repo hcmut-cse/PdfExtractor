@@ -18,7 +18,10 @@ Forwarding agent - Name and full address:
 ------------------------------------
 ------------------------------------
 Notify address:
-ERROR
+SATYAM AGRO PVT.LTD
+BIRGUNJ, NEPAL
+PAN NO:305530677
+EMAIL : ktm@shivamgroup.com.np
 ------------------------------------
 ------------------------------------
 Also notify:
@@ -29,8 +32,6 @@ Also notify:
 
 
 
-ULARS FURNISHED BY SHIPPER
-; Description of goods                             Weight           Measurement
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -46,15 +47,7 @@ KOLKATA, INDIA
 ------------------------------------
 ------------------------------------
 Place of delivery:
-ERROR
-------------------------------------
-------------------------------------
-Marks and Numbers:
-ERROR
-------------------------------------
-------------------------------------
-Container No./Seal No.:
-ERROR
+KOLKATA, INDIA
 ------------------------------------
 ------------------------------------
 Kind of Packages:
@@ -62,33 +55,66 @@ ERROR
 ------------------------------------
 ------------------------------------
 Description of goods:
-ERROR
+
+1120 BAGS VIETNAM BLACK PEPPER 5MM BOLD
+TOTAL QUANTITY: 28.00 MT
+H.S. CODE NO.: 0904.11.20
+THE NAME OF THE L/C ISSUING BANK: LAXMI BANK LIMITED - NEPAL
+L/C NUMBER: 005LCNI19030169. L/C ISSUE DATE: 01 Mar, 2019
+CONTAINER DETENTION CHARGES ARE IN TRANSIT FREE FOR 28 DAYS AFTER DISCHA
+.
+CUSTOMS ENTRY POINT AS DRYPORT CUSTOMS OFFICE, SIRSIYA,NEPAL .
+PLACE OF FINAL DESTINATION/FOR TRANSPORTATION TO/ PLACE OF DELIVERY :
+BIRGUNJ, NEPAL VIA DRY PORT CUSTOM OFFICE
+PORT OF DISCHARGE AS KOLKATA, INDIA IN TRANSIT TO BIRGUNJ ,NEPAL VIA DRY
+SHIPPED ON BOARD ON NYK WREN V.005W
+AT HOCHIMINH PORT, VIETNAM
+09 Mar, 2019
 ------------------------------------
 ------------------------------------
 Weight:
-ERROR
+
+
+28.224 MTS
+
+PAL
+
+YS AFTER DISCHARGE OF CARGO AT
+
+PAL .
+F DELIVERY :
+
+,NEPAL VIA DRY PORT CUSTOM OFFICE .
+V.005W
+
+
 ------------------------------------
 ------------------------------------
 Measurement:
-ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 CONTAINER/SEAL NO:
-LACK PEPPER 5MM BOLD
-TOTAL QUANTITY: 28.00 MT
-H.S. CODE
+278/VN303808A
+
+
 ------------------------------------
 ------------------------------------
-MARKINGS:
-
-CHA
-
-
-ACE
-
-TA,
-
-
+Marks and Numbers:
 
 ------------------------------------
 ------------------------------------

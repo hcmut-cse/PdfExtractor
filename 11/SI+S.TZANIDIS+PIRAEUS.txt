@@ -19,7 +19,8 @@ Forwarding agent - Name and full address:
 ------------------------------------
 ------------------------------------
 Notify address:
-ERROR
+S.TZANIDIS S.A
+TATOIOU 81 ( EX337) , 13677 ACHARNES -GREECE
 ------------------------------------
 ------------------------------------
 Also notify:
@@ -28,10 +29,6 @@ Also notify:
 
 
 
-PARTICULARS FURNISHED BY SHIPPER
-ges; Description of goods                                    Weight          Measurement
-
-WHOLE BLACK PEPPER 500 G/L FAQ
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -47,15 +44,7 @@ PIRAEUS, GREECE
 ------------------------------------
 ------------------------------------
 Place of delivery:
-ERROR
-------------------------------------
-------------------------------------
-Marks and Numbers:
-ERROR
-------------------------------------
-------------------------------------
-Container No./Seal No.:
-ERROR
+PIRAEUS, GREECE
 ------------------------------------
 ------------------------------------
 Kind of Packages:
@@ -63,32 +52,59 @@ ERROR
 ------------------------------------
 ------------------------------------
 Description of goods:
-ERROR
+
+WHOLE BLACK PEPPER 500 G/L FAQ
+NW: 9.00 MTS, GW: 9.036 MTS, 360 BAGS
+WHOLE BLACK PEPPER 520 G/L SPIRAL CLEANED
+NW: 4.00 MTS, GW: 4.016 MTS, 160 BAGS
+WHITE PEPPER 630 DW SPIRAL CLEANED
+NW: 1.00MTS, GW: 1.004 MTS, 40 BAGS
+TOTAL :
+NET WEIGHT                     14.00MTS
+GROSS WEIGHT                   14.056 MTS        560 BAGS
+SHIPPED ON BOARD ON MADRID EXPRESS V.002W
+AT HOCHIMINH, VIETNAM
+03 MAY, 2019
 ------------------------------------
 ------------------------------------
 Weight:
-ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 Measurement:
-ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 CONTAINER/SEAL NO:
-ERROR
+763800/ VN322698A
 ------------------------------------
 ------------------------------------
-MARKINGS:
-
-
-
-
-
-
-GROSS WEIGHT
-
-
-
+Marks and Numbers:
+ON BAGS
 ------------------------------------
 ------------------------------------
 B/L to be released at:

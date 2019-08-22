@@ -18,7 +18,10 @@ Forwarding agent - Name and full address:
 ------------------------------------
 ------------------------------------
 Notify address:
-ERROR
+SATYAM AGRO PVT.LTD
+BIRGUNJ, NEPAL
+PAN NO:305530677
+EMAIL : ktm@shivamgroup.com.np
 ------------------------------------
 ------------------------------------
 Also notify:
@@ -29,8 +32,6 @@ Also notify:
 
 
 
-ULARS FURNISHED BY SHIPPER
-; Description of goods                             Weight          Measurement
 ------------------------------------
 ------------------------------------
 Vessel:
@@ -46,15 +47,7 @@ KOLKATA, INDIA
 ------------------------------------
 ------------------------------------
 Place of delivery:
-ERROR
-------------------------------------
-------------------------------------
-Marks and Numbers:
-ERROR
-------------------------------------
-------------------------------------
-Container No./Seal No.:
-ERROR
+KOLKATA, INDIA
 ------------------------------------
 ------------------------------------
 Kind of Packages:
@@ -62,33 +55,66 @@ ERROR
 ------------------------------------
 ------------------------------------
 Description of goods:
-ERROR
+
+1120 BAGS VIETNAM BLACK PEPPER 550 ASTA
+TOTAL QUANTITY: 16.00 MT
+H.S. CODE NO.: 0904.11.20
+
+
+NER DETENTION CHARGES ARE IN TRANSIT FREE FOR 21 DA
+
+S ENTRY POINT AS DRYPORT CUSTOMS OFFICE, SIRSIYA,NE
+LAND HAULAGE CHARGES FROM KOLKATA TO THE FINAL DEST
+ANT ACCOUNT.
+F DISCHARGE AS KOLKATA, INDIA IN TRANSIT TO BIRGUNJ
+SHIPPED ON BOARD ON NYK WREN
+AT HOCHIMINH PORT, VIETNAM
+07 Mar, 2019
 ------------------------------------
 ------------------------------------
 Weight:
-ERROR
+
+IETNAM BLACK PEPPER 550 ASTA
+TOTAL QUANTITY: 16.00 MT                          28.224 MTS
+H.S. CODE NO.: 0904.11.20
+
+
+S ARE IN TRANSIT FREE FOR 21 DAYS AFTER DISCHARGE OF CARGO AT
+
+PORT CUSTOMS OFFICE, SIRSIYA,NEPAL .
+FROM KOLKATA TO THE FINAL DESTINATION BIRATNAGAR NEPAL ARE ON
+
+TA, INDIA IN TRANSIT TO BIRGUNJ ,NEPAL VIA DRY PORT CUSTOM OFFICE .
+SHIPPED ON BOARD ON NYK WREN V.005W
+AT HOCHIMINH PORT, VIETNAM
+07 Mar, 2019
 ------------------------------------
 ------------------------------------
 Measurement:
-ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------------------------------
 ------------------------------------
 CONTAINER/SEAL NO:
-LACK PEPPER 550 ASTA
-TOTAL QUANTITY: 16.00 MT
-H.S. CODE
+7980/VN270638A
+
+
 ------------------------------------
 ------------------------------------
-MARKINGS:
-
-CHARGES ARE IN TRANSI
-
-CUSTOMS ENTRY PO
-ARGES FROM KOLKATA TO
-
-TA, INDIA IN TRANSIT
-
-
+Marks and Numbers:
 
 ------------------------------------
 ------------------------------------
