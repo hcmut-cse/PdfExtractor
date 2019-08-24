@@ -1,6 +1,6 @@
 [
     {
-	
+
         "Shipper": {
             "row": [3, 9],
             "column": [0, 90],
@@ -102,7 +102,7 @@
         },
         "Port of discharge": {
             "row": [21, 22],
-            "column": [0, 40],
+            "column": [0, 45],
             "isFlex": 1,
             "endObject": {
                 "top": "Port of discharge",
@@ -299,7 +299,7 @@
             }
         }
     },
-    
+
     {
         "Header": {
             "row": [0, 0],
