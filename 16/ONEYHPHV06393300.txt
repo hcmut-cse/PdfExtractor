@@ -269,6 +269,7 @@ Kind of Packages:
 ------------------------------------
 ------------------------------------
 ATTACHED SHEET:
+Date : 17-May-19                                                                                 Page 1 of 1
 RE : VESSEL : YM UNISON V.080E                       DESTINATION : ROCHELLE, IL
 1) ASSIGNED CONTAINER NO.        0625/2019              2) ASSIGNED CONTAINER NO.      0626/2019
 S/O NO.         : HPHV06393300                          S/O NO.       : HPHV06606700

@@ -26,7 +26,7 @@ if __name__ == '__main__':
     PDF_TYPE = str(args.pdf_type)
 
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
-    # fileName = ["16.pdf"]
+    # fileName = ["CLTV01102313_SGNV00095400_1_ocps_si@opussmtp.one-line.com_1(ocps20190110110324_1)_1.pdf"]
 
     for file in fileName:
         with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:

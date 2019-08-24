@@ -414,7 +414,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             else:
                                 # print(extracted[keyIndex])
                                 nearestUpperKey = extracted[keyIndex]
-                                print(nearestUpperKey)
+                                # print(nearestUpperKey)
                                 startRow = CURR_CONFIG[nearestUpperKey]['row'][1]
                         else:
                             startRow = 0
@@ -487,7 +487,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                 if key in tf:
                                     startRow = removed[tf][0] + 1
 
-                                    distance = startRow - CURR_CONFIG[key]['row'][0] + sameLine
+                                    distance = startRow - CURR_CONFIG[key]['row'][0] - (not  sameLine)
                                     for keyE in CURR_CONFIG:
                                         if (keyE != key and keyE not in extracted and CURR_CONFIG[keyE]['row'][0] == CURR_CONFIG[key]['row'][0]):
                                             CURR_CONFIG[keyE]['row'][0] += distance
@@ -605,11 +605,31 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             continue
 
                         # Get startRow to find left keyword
-                        startRow = CURR_CONFIG[key]['row'][0]
+                        if (len(extracted) > 0):
+                            keyIndex = -1
+                            minDistance = len(fullPdf)
+                            for keyE in extracted:
+                                if CONFIG[keyE]['row'][1] == None:
+                                    continue
+                                tempDis = abs(CONFIG[keyE]['row'][1] - CONFIG[key]['row'][0])
+                                if (((CONFIG[keyE]['row'][1] - 1 < CONFIG[key]['row'][0] and CONFIG[key]['endObject']['top'][:4] == 'same')
+                                    or (CONFIG[keyE]['row'][1] < CONFIG[key]['row'][0] and CONFIG[key]['endObject']['top'][:4] != 'same'))
+                                    and minDistance > tempDis and CONFIG[keyE]['row'][0] != CONFIG[key]['row'][0]):
+                                    keyIndex = extracted.index(keyE)
+                                    minDistance = tempDis
+
+                            if (keyIndex == -1):
+                                startRow = 0
+                            else:
+                                # print(extracted[keyIndex])
+                                startRow = CURR_CONFIG[extracted[keyIndex]]['row'][1]
+                        else:
+                            startRow = 0
+                        # startRow = CURR_CONFIG[key]['row'][0]
                         leftFinding = CONFIG[key]['endObject'][margin]
                         # if (CONFIG[key]['endObject']['top'][:4] != 'same' and leftFinding.strip() != ""):
                         #     startRow -= 1
-
+                        # print(startRow)
                         # Find first row that has key word
                         while (True):
                             if (re.search(leftFinding, fullPdf[startRow])):
@@ -624,9 +644,14 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         # Get startCol to find left keyword
                         if (len(extracted) > 0):
                             startCol = 0
-
                             for keyE in extracted:
+                                # print(keyE)
+                                # print(CURR_CONFIG[keyE]['row'])
                                 if CURR_CONFIG[keyE]['row'][1] == None:
+                                    # print("RUNNNNNNNNNNNNNNNNN++++++++++++++++++++++++++++++")
+                                    if (CURR_CONFIG[keyE]['column'][1] != None):
+                                        if (CURR_CONFIG[keyE]['column'][1] > startCol):
+                                            startCol = CURR_CONFIG[keyE]['column'][1]
                                     continue
                                 if (CURR_CONFIG[keyE]['row'][1] > CURR_CONFIG[key]['row'][0]):
                                     if (CURR_CONFIG[keyE]['column'][1] != None):
@@ -641,10 +666,11 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         # Find left keyword and calculate distance
                         # startCol = startCol + re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:]).span(0)[0]
                         leftObj = re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][startCol:])
-                        if (leftObj != None):
+                        tempLeft = re.search(CONFIG[key]['endObject'][margin], fullPdf[startRow][:startCol])
+                        if (leftObj != None and tempLeft == None):
                             startCol = startCol + leftObj.span(0)[0] + len(CONFIG[key]['endObject'][margin])
                             # print("startCol: "+str(startCol))
-                            distance = startCol - CURR_CONFIG[key]['column'][0]
+                        distance = startCol - CURR_CONFIG[key]['column'][0]
 
 
 
@@ -685,7 +711,27 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                             continue
 
                         # Get startRow to find right keyword
-                        startRow = CURR_CONFIG[key]['row'][0]
+                        if (len(extracted) > 0):
+                            keyIndex = -1
+                            minDistance = len(fullPdf)
+                            for keyE in extracted:
+                                if CONFIG[keyE]['row'][1] == None:
+                                    continue
+                                tempDis = abs(CONFIG[keyE]['row'][1] - CONFIG[key]['row'][0])
+                                if (((CONFIG[keyE]['row'][1] - 1 < CONFIG[key]['row'][0] and CONFIG[key]['endObject']['top'][:4] == 'same')
+                                    or (CONFIG[keyE]['row'][1] < CONFIG[key]['row'][0] and CONFIG[key]['endObject']['top'][:4] != 'same'))
+                                    and minDistance > tempDis and CONFIG[keyE]['row'][0] != CONFIG[key]['row'][0]):
+                                    keyIndex = extracted.index(keyE)
+                                    minDistance = tempDis
+
+                            if (keyIndex == -1):
+                                startRow = 0
+                            else:
+                                # print(extracted[keyIndex])
+                                startRow = CURR_CONFIG[extracted[keyIndex]]['row'][1]
+                        else:
+                            startRow = 0
+                        # startRow = CURR_CONFIG[key]['row'][0]
                         rightFinding = CONFIG[key]['endObject'][margin]
                         if (CONFIG[key]['endObject']['top'][:4] != 'same' and rightFinding.strip() != ""):
                             startRow -= 1
@@ -803,6 +849,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         # dataBlock = [line[column[0]:column[1]].strip() for line in lines]
         dataBlock = posProcessData([line[column[0]:column[1]] for line in lines], CURR_CONFIG[key], removed)
         dataBlock = [x.strip() for  x in dataBlock]
+        # print(CURR_CONFIG)
         # Process for payment
         if key != 'Payment':
             for l, lineInBlock in enumerate(dataBlock):

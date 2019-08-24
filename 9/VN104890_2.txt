@@ -9,22 +9,26 @@ FAX: (+84-28) 3520.0061
 ------------------------------------
 ------------------------------------
 SI BOOKING NO.:
-
+SGNV02257600
 ------------------------------------
 ------------------------------------
-Consignee ( if "Order" state Notify Party):
+Consignee:
 F.V.G SERVICES BVBA
 PEERDERBAAN 49/4
 BE 3940 HECHTEL-EKSEL
 TEL: +32(0)11 530 222 FAX: +32(0) 2 792 54 12
 ------------------------------------
 ------------------------------------
-Notify Party (ONLY if not stated above: otherwiseleave blank) :
+Notify Party:
 SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 Also Notify Party:
 
+------------------------------------
+------------------------------------
+Excess Value Declaration:
+HOCHIMINH PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Local vessel:
@@ -36,7 +40,7 @@ HOCHIMINH PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 (Ocean) Vessel:
-
+SHANGHAI EXPRESS V.028W
 ------------------------------------
 ------------------------------------
 Port of loading:
@@ -48,7 +52,7 @@ ANTWERP, BELGIUM
 ------------------------------------
 ------------------------------------
 Final destination:
-P, BELGIUM
+ANTWERP, BELGIUM
 ------------------------------------
 ------------------------------------
 Marks and Nos; Container No:
@@ -93,12 +97,14 @@ CBM
 ------------------------------------
 SHIPPED ON BOARD:
 JAN 17, 2019
-Weight and measurement of
-Containers not to be included
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 Freight and charges:
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 Revenue tons:

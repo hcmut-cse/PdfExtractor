@@ -16,13 +16,17 @@
 #                     data[key] = '\n'.join(newData)
 #                     print(word)
 #     return data
+import copy
 
-def posProcessData(data, config, removedData):
+def posProcessData(data, _config, removedData):
     newData = data.copy()
-
+    config = copy.deepcopy(_config)
     for word in removedData:
         if (config['row'][1] == None):
             config['row'][1] = removedData[word][0] + 1
+        # print("WATERMARKINGGGGGGGG>>>>>>")
+        # print([config['row'][0], config['row'][1]])
+        # print(removedData[word][0])
         if (removedData[word][0] in range(config['row'][0], config['row'][1])):
             if (config['column'][1] == None):
                 config['column'][1] = removedData[word][2] + 1

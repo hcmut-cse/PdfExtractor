@@ -12,42 +12,42 @@
                 "right": "SI BOOKING NO."
             }
         },
-        "Consignee ( if \"Order\" state Notify Party)": {
-            "row": [10, 14],
-            "column": [0, 90],
-            "isFlex": 1,
-            "endObject": {
-                "top": "Consignee ( if \"Order\" state Notify Party)",
-                "bottom": "Notify Party (ONLY if not stated above: otherwiseleave blank) ",
-                "left": -1,
-                "right": "SI BOOKING NO."
-            }
-        },
-        "Notify Party (ONLY if not stated above: otherwiseleave blank) ": {
-            "row": [15, 16],
-            "column": [0, 85],
-            "isFlex": 1,
-            "endObject": {
-                "top": "Notify Party (ONLY if not stated above: otherwiseleave blank) ",
-                "bottom": "Local vessel",
-                "left": -1,
-                "right": "Also Notify Party"
-            }
-        },
         "SI BOOKING NO.": {
             "row": [7, 8],
             "column": [90, null],
             "isFlex": 1,
             "endObject": {
-                "top": "SI BOOKING NO.",
-                "bottom": "SI BOOKING NO.",
-                "left": "Shipper",
+                "top": "same_left",
+                "bottom": -1,
+                "left": "SI BOOKING NO.",
                 "right": -1
+            }
+        },
+        "Consignee": {
+            "row": [10, 14],
+            "column": [0, 90],
+            "isFlex": 1,
+            "endObject": {
+                "top": "Consignee \\( if \"Order\" state Notify Party\\)",
+                "bottom": "Notify Party \\(ONLY if not stated above: otherwiseleave blank\\) ",
+                "left": -1,
+                "right": "SI BOOKING NO."
+            }
+        },
+        "Notify Party": {
+            "row": [15, 16],
+            "column": [0, 90],
+            "isFlex": 1,
+            "endObject": {
+                "top": "Notify Party \\(ONLY if not stated above: otherwiseleave blank\\) ",
+                "bottom": "Local vessel",
+                "left": -1,
+                "right": "Also Notify Party"
             }
         },
         "Also Notify Party": {
             "row": [15, 16],
-            "column": [85, null],
+            "column": [90, null],
             "isFlex": 1,
             "endObject": {
                 "top": "Also Notify Party",
@@ -58,18 +58,18 @@
         },
         "Local vessel": {
             "row": [17, 18],
-            "column": [0, 40],
+            "column": [0, 45],
             "isFlex": 1,
             "endObject": {
                 "top": "Local vessel",
-                "bottom": "(Ocean) Vessel",
+                "bottom": "\\(Ocean\\) Vessel",
                 "left": -1,
                 "right": "From"
             }
         },
         "From": {
             "row": [17, 18],
-            "column": [40, 85],
+            "column": [45, 90],
             "isFlex": 1,
             "endObject": {
                 "top": "From",
@@ -80,10 +80,10 @@
         },
         "(Ocean) Vessel": {
             "row": [19, 20],
-            "column": [0, 40],
+            "column": [0, 45],
             "isFlex": 1,
             "endObject": {
-                "top": "(Ocean) Vessel",
+                "top": "\\(Ocean\\) Vessel",
                 "bottom": "Port of discharge",
                 "left": -1,
                 "right": "Port of loading"
@@ -91,12 +91,12 @@
         },
         "Port of loading": {
             "row": [19, 20],
-            "column": [40, 85],
+            "column": [45, 90],
             "isFlex": 1,
             "endObject": {
                 "top": "Port of loading",
                 "bottom": "Final destination",
-                "left": "(Ocean) Vessel",
+                "left": "\\(Ocean\\) Vessel",
                 "right": "Excess Value Declaration"
             }
         },
@@ -113,7 +113,7 @@
         },
         "Final destination": {
             "row": [21, 22],
-            "column": [45, 85],
+            "column": [45, 90],
             "isFlex": 1,
             "endObject": {
                 "top": "Final destination",
@@ -178,12 +178,12 @@
             }
         },
         "SHIPPED ON BOARD": {
-            "row": [30, 33],
+            "row": [30, 31],
             "column": [134, null],
             "isFlex": 1,
             "endObject": {
                 "top": "SHIPPED ON BOARD",
-                "bottom": "Collect",
+                "bottom": -1,
                 "left": -1,
                 "right": -1
             }
@@ -303,12 +303,12 @@
     {
         "Header": {
             "row": [0, 0],
-            "column": [0, null],
+            "column": [0, 0],
             "pages": "all"
         },
         "Footer": {
-            "row": [-2, null],
-            "column": [0, null],
+            "row": [0, 0],
+            "column": [0, 0],
             "pages": "all"
         }
     }

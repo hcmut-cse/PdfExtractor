@@ -9,22 +9,26 @@ FAX: (+84-28) 3520.0061
 ------------------------------------
 ------------------------------------
 SI BOOKING NO.:
-
+SGNV13382700
 ------------------------------------
 ------------------------------------
-Consignee ( if "Order" state Notify Party):
+Consignee:
 F.V.G SERVICES BVBA
 PEERDERBAAN 49/4
 BE 3940 HECHTEL-EKSEL
 TEL: +32(0)11 530 222 FAX: +32(0) 2 792 54 12
 ------------------------------------
 ------------------------------------
-Notify Party (ONLY if not stated above: otherwiseleave blank) :
+Notify Party:
 SAME AS CONSIGNEE
 ------------------------------------
 ------------------------------------
 Also Notify Party:
 
+------------------------------------
+------------------------------------
+Excess Value Declaration:
+HOCHIMINH PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 Local vessel:
@@ -36,7 +40,7 @@ HOCHIMINH PORT, VIETNAM
 ------------------------------------
 ------------------------------------
 (Ocean) Vessel:
-
+MADRID EXPRESS V.001W
 ------------------------------------
 ------------------------------------
 Port of loading:
@@ -48,7 +52,7 @@ ANTWERP, BELGIUM
 ------------------------------------
 ------------------------------------
 Final destination:
-P, BELGIUM
+ANTWERP, BELGIUM
 ------------------------------------
 ------------------------------------
 Marks and Nos; Container No:
@@ -60,9 +64,9 @@ CY/CY- FCL/FCL
 
 
 
-NYKU8052170 / VN315186A / 101CTNS / 5,018
-NYKU8033930 / VN287031A / 101CTNS / 5,018
-BSIU4042892 / VN287885A / 101CTNS / 5,018
+NYKU8052170 / VN315186A /
+NYKU8033930 / VN287031A /
+BSIU4042892 / VN287885A /
 ------------------------------------
 ------------------------------------
 Number and kind of packages:
@@ -74,9 +78,9 @@ CHAIR
 HS CODE:94016990
 TABLE,SIDEBOARD, VITRINE,HUTCH, TV UNIT
 HS CODE: 94033000
-0KGS / 54.31CBM
-0KGS / 54.31CBM
-0KGS / 54.31CBM
+101CTNS / 5,018.00KGS / 54.31CBM
+101CTNS / 5,018.00KGS / 54.31CBM
+101CTNS / 5,018.00KGS / 54.31CBM
 ------------------------------------
 ------------------------------------
 Gross weight:
@@ -109,12 +113,14 @@ CBM
 ------------------------------------
 SHIPPED ON BOARD:
 FEB 21, 2019
-Weight and measurement of
-Containers not to be included
+------------------------------------
+------------------------------------
+Payment:
+FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 Freight and charges:
-FREIGHT COLLECT
+               
 ------------------------------------
 ------------------------------------
 Revenue tons:
