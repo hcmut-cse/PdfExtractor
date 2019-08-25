@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from difflib import SequenceMatcher
-from posProcess import posProcessData
+from .posProcess import posProcessData
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
