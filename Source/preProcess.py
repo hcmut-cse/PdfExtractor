@@ -3,8 +3,8 @@ import os
 import re
 import numpy as np
 import pdftotext
-from removeHeaderFooter import removeHeaderAndFooter
-from removeWatermark import removeWatermark
+from .removeHeaderFooter import removeHeaderAndFooter
+from .removeWatermark import removeWatermark
 
 def preProcessPdf(filename, HF_CONFIG):
     # for filename in file:
