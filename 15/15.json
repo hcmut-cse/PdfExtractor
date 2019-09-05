@@ -1,13 +1,13 @@
 [
 	{
-		"1": 
+		"1":
 		{
-				"LINE AGENT": 
+				"LINE AGENT":
 				{
 					"row": [1,6],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "LINE AGENT",
 						"bottom": "SHIPPER",
@@ -15,12 +15,12 @@
 						"right": "OBL INSTRUCTIONS"
 					}
 				},
-				"OBL INSTRUCTIONS": 
+				"OBL INSTRUCTIONS":
 				{
 					"row": [4,6],
 					"column": [230,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "OBL INSTRUCTIONS",
 						"bottom": "NOTIFY",
@@ -28,12 +28,12 @@
 						"right": -1
 					}
 				},
-				"SHIPPER": 
+				"SHIPPER":
 				{
 					"row": [8,13],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "SHIPPER",
 						"bottom": "CONSIGNEE",
@@ -41,12 +41,12 @@
 						"right": "NOTIFY"
 					}
 				},
-				"NOTIFY": 
+				"NOTIFY":
 				{
 					"row": [8,13],
 					"column": [229,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "NOTIFY",
 						"bottom": "CONSIGNEE",
@@ -54,12 +54,12 @@
 						"right": -1
 					}
 				},
-				"CONSIGNEE": 
+				"CONSIGNEE":
 				{
 					"row": [15,18],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CONSIGNEE",
 						"bottom": "PLACE OF RECEIPT",
@@ -67,12 +67,12 @@
 						"right": -1
 					}
 				},
-				"PLACE OF RECEIPT                              ": 
+				"PLACE OF RECEIPT                              ":
 				{
 					"row": [19,20],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "OCEAN VESSEL . .                              ",
@@ -80,12 +80,12 @@
 						"right": "PRE-CARRIAGE BY ."
 					}
 				},
-				"OCEAN VESSEL . .                              ": 
+				"OCEAN VESSEL . .                              ":
 				{
 					"row": [20,21],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF LOADING .",
@@ -93,12 +93,12 @@
 						"right": "VOYAGE"
 					}
 				},
-				"PORT OF LOADING .                             ": 
+				"PORT OF LOADING .                             ":
 				{
 					"row": [21,22],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF DISCHARGE",
@@ -106,12 +106,12 @@
 						"right": "ETS . . . . . . ."
 					}
 				},
-				"PORT OF DISCHARGE                             ": 
+				"PORT OF DISCHARGE                             ":
 				{
 					"row": [22,23],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PLACE OF DELIVERY",
@@ -119,12 +119,12 @@
 						"right": "ETA"
 					}
 				},
-				"PLACE OF DELIVERY                             ": 
+				"PLACE OF DELIVERY                             ":
 				{
 					"row": [23,24],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -133,12 +133,12 @@
 					}
 				},
 
-				"INSURANCE . . . .                             ": 
+				"INSURANCE . . . .                             ":
 				{
 					"row": [25,26],
 					"column": [186,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MARKS & NOS",
@@ -146,12 +146,12 @@
 						"right": "ETA"
 					}
 				},
-				"PRE-CARRIAGE BY .              ": 
+				"PRE-CARRIAGE BY .              ":
 				{
 					"row": [19,20],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "VOYAGE . . . . .",
@@ -159,12 +159,12 @@
 						"right": -1
 					}
 				},
-				"VOYAGE . . . . .              ": 
+				"VOYAGE . . . . .              ":
 				{
 					"row": [20,21],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETS . . . . . . .",
@@ -172,12 +172,12 @@
 						"right": -1
 					}
 				},
-				"ETS . . . . . . .              ": 
+				"ETS . . . . . . .              ":
 				{
 					"row": [21,22],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETA . . . . . . .",
@@ -185,12 +185,12 @@
 						"right": -1
 					}
 				},
-				"ETA . . . . . . .              ": 
+				"ETA . . . . . . .              ":
 				{
 					"row": [22,23],
 					"column": [262,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -198,12 +198,12 @@
 						"right": -1
 					}
 				},
-				"MOVEMENT . . . .              ": 
+				"MOVEMENT . . . .              ":
 				{
 					"row": [24,25],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "INSURANCE",
@@ -211,12 +211,12 @@
 						"right": -1
 					}
 				},
-				"DOCUMENT REQUIRED": 
+				"DOCUMENT REQUIRED":
 				{
 					"row": [30,31],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "NO. OF ORIGINALS",
@@ -224,12 +224,12 @@
 						"right": -1
 					}
 				},
-				"NO. OF ORIGINALS": 
+				"NO. OF ORIGINALS":
 				{
 					"row": [32,33],
 					"column": [157,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "COPIES",
@@ -237,12 +237,12 @@
 						"right": -1
 					}
 				},
-				"COPIES": 
+				"COPIES":
 				{
 					"row": [33,34],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "FREIGHT PAYMENT",
@@ -250,25 +250,38 @@
 						"right": -1
 					}
 				},
-				"FREIGHT PAYMENT": 
+				"FREIGHT PAYMENT":
 				{
 					"row": [34,35],
-					"column": [158,null],
+					"column": [158,174],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PS",
 						"left": "FREIGHT PAYMENT",
+						"right": "RATED SWB"
+					}
+				},
+				"RATED SWB":
+				{
+					"row": [34,35],
+					"column": [185,null],
+					"isFlex": 1,
+					"endObject":
+					{
+						"top": "same_left",
+						"bottom": "PS",
+						"left": "RATED SWB \\:",
 						"right": -1
 					}
 				},
-				"PS": 
+				"PS":
 				{
-					"row": [35,36],
+					"row": [35,37],
 					"column": [142,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "CONTRACT NUMBER",
@@ -276,12 +289,12 @@
 						"right": -1
 					}
 				},
-				"CONTRACT NUMBER": 
+				"CONTRACT NUMBER":
 				{
 					"row": [37,38],
 					"column": [155,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "SECURITY FILING UNDERTAKEN BY KUEHNE + NAGEL",
@@ -291,12 +304,12 @@
 				},
 
 
-				"MARKS & NOS": 
+				"MARKS & NOS":
 				{
 					"row": [27,28],
 					"column": [139,186],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "MARKS & NOS",
 						"bottom": "DOCUMENT REQUIRED",
@@ -304,12 +317,12 @@
 						"right": "QTY       PCS"
 					}
 				},
-				"QTY": 
+				"QTY":
 				{
 					"row": [27,39],
 					"column": [185,195],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "DOCUMENT REQUIRED",
@@ -317,12 +330,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS": 
+				"PCS":
 				{
 					"row": [27,39],
 					"column": [195,215],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "DOCUMENT REQUIRED",
@@ -330,12 +343,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS": 
+				"DESCRIPTION OF GOODS":
 				{
-					"row": [27,37],
+					"row": [27,28],
 					"column": [215,258],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "DOCUMENT REQUIRED",
@@ -343,12 +356,12 @@
 						"right": "GRSS WT KGS"
 					}
 				},
-				"GRSS WT KGS": 
+				"GRSS WT KGS":
 				{
 					"row": [27,28],
 					"column": [258,265],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "DOCUMENT REQUIRED",
@@ -356,12 +369,12 @@
 						"right": "         CBM"
 					}
 				},
-				"CBM": 
+				"CBM":
 				{
 					"row": [27,28],
 					"column": [265,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "DOCUMENT REQUIRED",
@@ -370,14 +383,14 @@
 					}
 				}
 		},
-		"multi": 
+		"multi":
 		{
-				"LINE AGENT": 
+				"LINE AGENT":
 				{
 					"row": [1,6],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "LINE AGENT",
 						"bottom": "SHIPPER",
@@ -385,12 +398,12 @@
 						"right": "OBL INSTRUCTIONS"
 					}
 				},
-				"OBL INSTRUCTIONS": 
+				"OBL INSTRUCTIONS":
 				{
 					"row": [4,6],
 					"column": [230,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "OBL INSTRUCTIONS",
 						"bottom": "NOTIFY",
@@ -398,12 +411,12 @@
 						"right": -1
 					}
 				},
-				"SHIPPER": 
+				"SHIPPER":
 				{
 					"row": [8,13],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "SHIPPER",
 						"bottom": "CONSIGNEE",
@@ -411,12 +424,12 @@
 						"right": "NOTIFY"
 					}
 				},
-				"NOTIFY": 
+				"NOTIFY":
 				{
 					"row": [8,13],
 					"column": [229,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "NOTIFY",
 						"bottom": "CONSIGNEE",
@@ -424,12 +437,12 @@
 						"right": -1
 					}
 				},
-				"CONSIGNEE": 
+				"CONSIGNEE":
 				{
 					"row": [15,18],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CONSIGNEE",
 						"bottom": "PLACE OF RECEIPT",
@@ -437,12 +450,12 @@
 						"right": -1
 					}
 				},
-				"PLACE OF RECEIPT                              ": 
+				"PLACE OF RECEIPT                              ":
 				{
 					"row": [19,20],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "OCEAN VESSEL . .                              ",
@@ -450,12 +463,12 @@
 						"right": "PRE-CARRIAGE BY ."
 					}
 				},
-				"OCEAN VESSEL . .                              ": 
+				"OCEAN VESSEL . .                              ":
 				{
 					"row": [20,21],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF LOADING .",
@@ -463,12 +476,12 @@
 						"right": "VOYAGE"
 					}
 				},
-				"PORT OF LOADING .                             ": 
+				"PORT OF LOADING .                             ":
 				{
 					"row": [21,22],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF DISCHARGE",
@@ -476,12 +489,12 @@
 						"right": "ETS . . . . . . ."
 					}
 				},
-				"PORT OF DISCHARGE                             ": 
+				"PORT OF DISCHARGE                             ":
 				{
 					"row": [22,23],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PLACE OF DELIVERY",
@@ -489,12 +502,12 @@
 						"right": "ETA"
 					}
 				},
-				"PLACE OF DELIVERY                             ": 
+				"PLACE OF DELIVERY                             ":
 				{
 					"row": [23,24],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -503,12 +516,12 @@
 					}
 				},
 
-				"INSURANCE . . . .                             ": 
+				"INSURANCE . . . .                             ":
 				{
 					"row": [25,26],
 					"column": [186,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MARKS & NOS",
@@ -516,12 +529,12 @@
 						"right": "ETA"
 					}
 				},
-				"PRE-CARRIAGE BY .              ": 
+				"PRE-CARRIAGE BY .              ":
 				{
 					"row": [19,20],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "VOYAGE . . . . .",
@@ -529,12 +542,12 @@
 						"right": -1
 					}
 				},
-				"VOYAGE . . . . .              ": 
+				"VOYAGE . . . . .              ":
 				{
 					"row": [20,21],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETS . . . . . . .",
@@ -542,12 +555,12 @@
 						"right": -1
 					}
 				},
-				"ETS . . . . . . .              ": 
+				"ETS . . . . . . .              ":
 				{
 					"row": [21,22],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETA . . . . . . .",
@@ -555,12 +568,12 @@
 						"right": -1
 					}
 				},
-				"ETA . . . . . . .              ": 
+				"ETA . . . . . . .              ":
 				{
 					"row": [22,23],
 					"column": [262,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -568,12 +581,12 @@
 						"right": -1
 					}
 				},
-				"MOVEMENT . . . .              ": 
+				"MOVEMENT . . . .              ":
 				{
 					"row": [24,25],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "INSURANCE",
@@ -581,12 +594,12 @@
 						"right": -1
 					}
 				},
-				"DOCUMENT REQUIRED": 
+				"DOCUMENT REQUIRED":
 				{
 					"row": [30,31],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "FREIGHT",
 						"bottom": "NO. OF ORIGINALS",
@@ -594,12 +607,12 @@
 						"right": -1
 					}
 				},
-				"NO. OF ORIGINALS": 
+				"NO. OF ORIGINALS":
 				{
 					"row": [32,33],
 					"column": [157,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "COPIES",
@@ -607,12 +620,12 @@
 						"right": -1
 					}
 				},
-				"COPIES": 
+				"COPIES":
 				{
 					"row": [33,34],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "FREIGHT PAYMENT",
@@ -620,25 +633,38 @@
 						"right": -1
 					}
 				},
-				"FREIGHT PAYMENT": 
+				"FREIGHT PAYMENT":
 				{
 					"row": [34,35],
-					"column": [158,null],
+					"column": [158,174],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PS",
 						"left": "FREIGHT PAYMENT",
+						"right": "RATED SWB"
+					}
+				},
+				"RATED SWB":
+				{
+					"row": [34,35],
+					"column": [185,null],
+					"isFlex": 1,
+					"endObject":
+					{
+						"top": "same_left",
+						"bottom": "PS",
+						"left": "RATED SWB \\:",
 						"right": -1
 					}
 				},
-				"PS": 
+				"PS":
 				{
 					"row": [35,36],
 					"column": [142,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "CONTRACT NUMBER",
@@ -646,12 +672,12 @@
 						"right": -1
 					}
 				},
-				"CONTRACT NUMBER": 
+				"CONTRACT NUMBER":
 				{
 					"row": [37,38],
 					"column": [155,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "SECURITY FILING UNDERTAKEN BY KUEHNE + NAGEL",
@@ -666,7 +692,7 @@
 					"row": [27,28],
 					"column": [139,186],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "MARKS & NOS",
 						"bottom": "FREIGHT",
@@ -674,12 +700,12 @@
 						"right": "QTY       PCS"
 					}
 				},
-				"QTY1": 
+				"QTY1":
 				{
 					"row": [27,28],
 					"column": [185,195],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "FREIGHT",
@@ -687,12 +713,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS1": 
+				"PCS1":
 				{
 					"row": [27,28],
 					"column": [195,215],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "FREIGHT",
@@ -700,12 +726,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS1": 
+				"DESCRIPTION OF GOODS1":
 				{
-					"row": [27,37],
+					"row": [27,28],
 					"column": [215,258],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "FREIGHT",
@@ -713,12 +739,12 @@
 						"right": "GRSS WT KGS"
 					}
 				},
-				"GRSS WT KGS1": 
+				"GRSS WT KGS1":
 				{
 					"row": [27,28],
 					"column": [258,265],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "FREIGHT",
@@ -726,12 +752,12 @@
 						"right": "         CBM"
 					}
 				},
-				"CBM1": 
+				"CBM1":
 				{
 					"row": [27,28],
 					"column": [265,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "FREIGHT",
@@ -739,7 +765,7 @@
 						"right": -1
 					}
 				},
-				"MARKS & NOS2": 
+				"MARKS & NOS2":
 				{
 					"row": [61,108],
 					"column": [0,14],
@@ -752,12 +778,12 @@
 						"right": "QTY       PCS"
 					}
 				},
-				"QTY2": 
+				"QTY2":
 				{
 					"row": [61,108],
 					"column": [15,19],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "2  OF   2",
@@ -765,12 +791,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS2": 
+				"PCS2":
 				{
 					"row": [61,105],
 					"column": [19,27],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "2  OF   2",
@@ -778,12 +804,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS2": 
+				"DESCRIPTION OF GOODS2":
 				{
 					"row": [61,108],
 					"column": [27,52],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "2  OF   2",
@@ -791,12 +817,12 @@
 						"right": "GRSS WT KGS"
 					}
 				},
-				"GRSS WT KGS2": 
+				"GRSS WT KGS2":
 				{
 					"row": [61,105],
 					"column": [52,64],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "2  OF   2",
@@ -804,12 +830,12 @@
 						"right": "         CBM"
 					}
 				},
-				"CBM2": 
+				"CBM2":
 				{
 					"row": [61,105],
 					"column": [64,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "2  OF   2",
@@ -820,12 +846,12 @@
 		},
 		"3":
 		{
-				"LINE AGENT": 
+				"LINE AGENT":
 				{
 					"row": [1,6],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "LINE AGENT",
 						"bottom": "SHIPPER",
@@ -833,12 +859,12 @@
 						"right": "OBL INSTRUCTIONS"
 					}
 				},
-				"OBL INSTRUCTIONS": 
+				"OBL INSTRUCTIONS":
 				{
 					"row": [4,6],
 					"column": [230,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "OBL INSTRUCTIONS",
 						"bottom": "NOTIFY",
@@ -846,12 +872,12 @@
 						"right": -1
 					}
 				},
-				"SHIPPER": 
+				"SHIPPER":
 				{
 					"row": [8,13],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "SHIPPER",
 						"bottom": "CONSIGNEE",
@@ -859,12 +885,12 @@
 						"right": "NOTIFY"
 					}
 				},
-				"NOTIFY": 
+				"NOTIFY":
 				{
 					"row": [8,13],
 					"column": [229,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "NOTIFY",
 						"bottom": "CONSIGNEE",
@@ -872,12 +898,12 @@
 						"right": -1
 					}
 				},
-				"CONSIGNEE": 
+				"CONSIGNEE":
 				{
 					"row": [15,18],
 					"column": [139,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CONSIGNEE",
 						"bottom": "PLACE OF RECEIPT",
@@ -885,12 +911,12 @@
 						"right": -1
 					}
 				},
-				"PLACE OF RECEIPT                              ": 
+				"PLACE OF RECEIPT                              ":
 				{
 					"row": [19,20],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "OCEAN VESSEL . .                              ",
@@ -898,12 +924,12 @@
 						"right": "PRE-CARRIAGE BY ."
 					}
 				},
-				"OCEAN VESSEL . .                              ": 
+				"OCEAN VESSEL . .                              ":
 				{
 					"row": [20,21],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF LOADING .",
@@ -911,12 +937,12 @@
 						"right": "VOYAGE"
 					}
 				},
-				"PORT OF LOADING .                             ": 
+				"PORT OF LOADING .                             ":
 				{
 					"row": [21,22],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PORT OF DISCHARGE",
@@ -924,12 +950,12 @@
 						"right": "ETS . . . . . . ."
 					}
 				},
-				"PORT OF DISCHARGE                             ": 
+				"PORT OF DISCHARGE                             ":
 				{
 					"row": [22,23],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PLACE OF DELIVERY",
@@ -937,12 +963,12 @@
 						"right": "ETA"
 					}
 				},
-				"PLACE OF DELIVERY                             ": 
+				"PLACE OF DELIVERY                             ":
 				{
 					"row": [23,24],
 					"column": [186,230],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -951,12 +977,12 @@
 					}
 				},
 
-				"INSURANCE . . . .                             ": 
+				"INSURANCE . . . .                             ":
 				{
 					"row": [25,26],
 					"column": [186,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MARKS & NOS",
@@ -964,12 +990,12 @@
 						"right": "ETA"
 					}
 				},
-				"PRE-CARRIAGE BY .              ": 
+				"PRE-CARRIAGE BY .              ":
 				{
 					"row": [19,20],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "VOYAGE . . . . .",
@@ -977,12 +1003,12 @@
 						"right": -1
 					}
 				},
-				"VOYAGE . . . . .              ": 
+				"VOYAGE . . . . .              ":
 				{
 					"row": [20,21],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETS . . . . . . .",
@@ -990,12 +1016,12 @@
 						"right": -1
 					}
 				},
-				"ETS . . . . . . .              ": 
+				"ETS . . . . . . .              ":
 				{
 					"row": [21,22],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "ETA . . . . . . .",
@@ -1003,12 +1029,12 @@
 						"right": -1
 					}
 				},
-				"ETA . . . . . . .              ": 
+				"ETA . . . . . . .              ":
 				{
 					"row": [22,23],
 					"column": [262,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "MOVEMENT . . . .",
@@ -1016,12 +1042,12 @@
 						"right": -1
 					}
 				},
-				"MOVEMENT . . . .              ": 
+				"MOVEMENT . . . .              ":
 				{
 					"row": [24,25],
 					"column": [263,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "INSURANCE",
@@ -1029,12 +1055,12 @@
 						"right": -1
 					}
 				},
-				"DOCUMENT REQUIRED": 
+				"DOCUMENT REQUIRED":
 				{
 					"row": [30,31],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "FREIGHT",
 						"bottom": "NO. OF ORIGINALS",
@@ -1042,12 +1068,12 @@
 						"right": -1
 					}
 				},
-				"NO. OF ORIGINALS": 
+				"NO. OF ORIGINALS":
 				{
 					"row": [32,33],
 					"column": [157,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "COPIES",
@@ -1055,12 +1081,12 @@
 						"right": -1
 					}
 				},
-				"COPIES": 
+				"COPIES":
 				{
 					"row": [33,34],
 					"column": [158,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "FREIGHT PAYMENT",
@@ -1068,25 +1094,38 @@
 						"right": -1
 					}
 				},
-				"FREIGHT PAYMENT": 
+				"FREIGHT PAYMENT":
 				{
 					"row": [34,35],
-					"column": [158,null],
+					"column": [158,174],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "PS",
 						"left": "FREIGHT PAYMENT",
+						"right": "RATED SWB"
+					}
+				},
+				"RATED SWB":
+				{
+					"row": [34,35],
+					"column": [185,null],
+					"isFlex": 1,
+					"endObject":
+					{
+						"top": "same_left",
+						"bottom": "PS",
+						"left": "RATED SWB \\:",
 						"right": -1
 					}
 				},
-				"PS": 
+				"PS":
 				{
-					"row": [35,36],
+					"row": [35,37],
 					"column": [142,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "CONTRACT NUMBER",
@@ -1094,12 +1133,12 @@
 						"right": -1
 					}
 				},
-				"CONTRACT NUMBER": 
+				"CONTRACT NUMBER":
 				{
 					"row": [37,38],
 					"column": [155,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "same_left",
 						"bottom": "SECURITY FILING UNDERTAKEN BY KUEHNE + NAGEL",
@@ -1114,7 +1153,7 @@
 					"row": [27,28],
 					"column": [139,185],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "MARKS & NOS",
 						"bottom": "FREIGHT",
@@ -1122,12 +1161,12 @@
 						"right": "QTY       PCS"
 					}
 				},
-				"QTY1": 
+				"QTY1":
 				{
 					"row": [27,28],
 					"column": [186,215],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "FREIGHT",
@@ -1135,12 +1174,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS1": 
+				"PCS1":
 				{
 					"row": [27,28],
 					"column": [186,215],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "FREIGHT",
@@ -1148,12 +1187,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS1": 
+				"DESCRIPTION OF GOODS1":
 				{
-					"row": [27,37],
+					"row": [27,28],
 					"column": [215,258],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "FREIGHT",
@@ -1161,12 +1200,12 @@
 						"right": "GRSS WT KGS"
 					}
 				},
-				"GRSS WT KGS1": 
+				"GRSS WT KGS1":
 				{
 					"row": [27,28],
 					"column": [258,265],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "FREIGHT",
@@ -1174,12 +1213,12 @@
 						"right": "         CBM"
 					}
 				},
-				"CBM1": 
+				"CBM1":
 				{
 					"row": [27,28],
 					"column": [265,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "FREIGHT",
@@ -1187,7 +1226,7 @@
 						"right": -1
 					}
 				},
-				"MARKS & NOS2": 
+				"MARKS & NOS2":
 				{
 					"row": [61,105],
 					"column": [0,14],
@@ -1200,12 +1239,12 @@
 						"right": "QTY       PCS"
 					}
 				},
-				"QTY2": 
+				"QTY2":
 				{
 					"row": [61,105],
 					"column": [14,27],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "2  OF   3",
@@ -1213,12 +1252,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS2": 
+				"PCS2":
 				{
 					"row": [61,105],
 					"column": [14,27],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "2  OF   3",
@@ -1226,12 +1265,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS2": 
+				"DESCRIPTION OF GOODS2":
 				{
 					"row": [61,108],
 					"column": [27,52],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "2  OF   3",
@@ -1244,7 +1283,7 @@
 					"row": [61,105],
 					"column": [52,64],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "2  OF   3",
@@ -1252,12 +1291,12 @@
 						"right": "          CBM"
 					}
 				},
-				"CBM2": 
+				"CBM2":
 				{
 					"row": [61,105],
 					"column": [64,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "2  OF   3",
@@ -1265,7 +1304,7 @@
 						"right": -1
 					}
 				},
-				"MARKS & NOS3": 
+				"MARKS & NOS3":
 				{
 					"row": [117,126],
 					"column": [0,14],
@@ -1278,12 +1317,12 @@
 						"right": "QTY"
 					}
 				},
-				"QTY3": 
+				"QTY3":
 				{
 					"row": [117,126],
 					"column": [15,19],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "QTY",
 						"bottom": "3  OF   3",
@@ -1291,12 +1330,12 @@
 						"right": "PCS"
 					}
 				},
-				"PCS3": 
+				"PCS3":
 				{
 					"row": [117,126],
 					"column": [19,26],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "PCS",
 						"bottom": "3  OF   3",
@@ -1304,12 +1343,12 @@
 						"right": "DESCRIPTION OF GOODS"
 					}
 				},
-				"DESCRIPTION OF GOODS3": 
+				"DESCRIPTION OF GOODS3":
 				{
 					"row": [117,126],
 					"column": [26,56],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "DESCRIPTION OF GOODS",
 						"bottom": "3  OF   3",
@@ -1317,12 +1356,12 @@
 						"right": "GRSS WT KGS"
 					}
 				},
-				"GRSS WT KGS3": 
+				"GRSS WT KGS3":
 				{
 					"row": [117,126],
 					"column": [56,74],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "GRSS WT KGS",
 						"bottom": "3  OF   3",
@@ -1330,12 +1369,12 @@
 						"right": "         CBM"
 					}
 				},
-				"CBM3": 
+				"CBM3":
 				{
 					"row": [117,126],
 					"column": [74,null],
 					"isFlex": 1,
-					"endObject": 
+					"endObject":
 					{
 						"top": "CBM",
 						"bottom": "3  OF   3",
