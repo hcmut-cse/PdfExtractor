@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from difflib import SequenceMatcher
-from posProcess import posProcessData
+from .posProcess import posProcessData
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
@@ -819,7 +819,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                     if (CONFIG[key]['endObject']['right'] == -1):
                         continue
-                        
+
                     if (formalRight and CONFIG[key]['endObject']['right'].strip() != '' and ((inform[column[1]] != ' ' and inform[column[1] - 1] != ' ')
                                     or  inform[column[1]] == ' ' and inform[column[1] - 1] != ' ')):
                         i = 1
