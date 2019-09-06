@@ -56,68 +56,24 @@
             }
         },
         "Shipper": {
-            "row": [8, 9],
+            "row": [8, 10],
             "column": [8, null],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",
-                "bottom": "ADD:",
+                "bottom": "Consignee:",
                 "left": "Shipper:",
                 "right": -1
             }
         },
-        "ADD": {
-            "row": [9, 10],
-            "column": [4, null],
-            "isFlex": 1,
-            "endObject": {
-                "top": "same_left",
-                "bottom": "Consignee:",
-                "left": "ADD:",
-                "right": -1
-            }
-        },
         "Consignee": {
-            "row": [10, 11],
+            "row": [10, 14],
             "column": [10, null],
             "isFlex": 1,
             "endObject": {
                 "top": "same_left",
-                "bottom": "Add:",
-                "left": "Consignee:",
-                "right": -1
-            }
-        },
-        "Add": {
-            "row": [11, 12],
-            "column": [4, null],
-            "isFlex": 1,
-            "endObject": {
-                "top": "same_left",
-                "bottom": "Phone:",
-                "left": "Add:",
-                "right": -1
-            }
-        },
-        "Phone": {
-            "row": [12, 13],
-            "column": [6, null],
-            "isFlex": 1,
-            "endObject": {
-                "top": "same_left",
-                "bottom": "Email:",
-                "left": "Phone:",
-                "right": -1
-            }
-        },
-        "Email": {
-            "row": [13, 14],
-            "column": [6, null],
-            "isFlex": 1,
-            "endObject": {
-                "top": "same_left",
                 "bottom": "Notify Party:",
-                "left": "Email:",
+                "left": "Consignee:",
                 "right": -1
             }
         },

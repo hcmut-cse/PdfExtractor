@@ -1,7 +1,7 @@
 import numpy as np
 import re
 from difflib import SequenceMatcher
-from .posProcess import posProcessData
+from posProcess import posProcessData
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
@@ -513,6 +513,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                         # print(error)
                     elif (margin == 'bottom'):
+                        if (error): continue
                         # Bottom object is under Top object
                         # print("running bottom")
                         startRow = CURR_CONFIG[key]['row'][0]
@@ -601,7 +602,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                     break
 
                     elif (margin == 'left'):
-                        if (CURR_CONFIG[key]['column'][0] == None):
+                        if (CURR_CONFIG[key]['column'][0] == None or error):
                             continue
 
                         # Get startRow to find left keyword
@@ -707,7 +708,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                         break
 
                     elif (margin == 'right'):
-                        if (CURR_CONFIG[key]['column'][1] == None):
+                        if (CURR_CONFIG[key]['column'][1] == None or error):
                             continue
 
                         # Get startRow to find right keyword

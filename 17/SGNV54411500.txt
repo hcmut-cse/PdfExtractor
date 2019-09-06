@@ -21,28 +21,16 @@ SI BKG:SGNV54411500
 ------------------------------------
 Shipper:
 SAU TIEM DINH BA AGRICULTURAL MACHINERY COMPANY LIMITED
-------------------------------------
-------------------------------------
-ADD:
-DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE,
+ADD:DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE,
 VIETNAM
 ------------------------------------
 ------------------------------------
 Consignee:
 AMH AGRI CARE MACHINERIES
-------------------------------------
-------------------------------------
-Add:
-1002 ESCALONA BLDG MAHARLIKA HIWAY, CARIG SUR, TUGUEGARRAO CITY,
+Add:1002 ESCALONA BLDG MAHARLIKA HIWAY, CARIG SUR, TUGUEGARRAO CITY,
 CAGAYAN 3500 PHILIPPINES
-------------------------------------
-------------------------------------
-Phone:
-(0917) 795 8200 (James C.Hernandez)
-------------------------------------
-------------------------------------
-Email:
-jameschernandez@yahoo.com
+Phone:(0917) 795 8200 (James C.Hernandez)
+Email:jameschernandez@yahoo.com
 ------------------------------------
 ------------------------------------
 Notify Party:

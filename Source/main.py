@@ -60,8 +60,8 @@ if __name__ == '__main__':
 
         # Preproces PDF
         fullPdf, removed = preProcessPdf('../' + PDF_TYPE + '/' + file, HF_CONFIG)
-        # for line in fullPdf:
-        #     print(line)
+        for line in fullPdf:
+            print(line)
         # Extract data from PDF
         extractedData = extractData(fullPdf, CONFIG, CURR_CONFIG, removed)
 

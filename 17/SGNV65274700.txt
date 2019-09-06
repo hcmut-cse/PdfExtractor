@@ -22,26 +22,14 @@ SI BKG:SGNV65274700
 ------------------------------------
 Shipper:
 SAU TIEM DINH BA AGRICULTURAL MACHINERY COMPANY LIMITED
-------------------------------------
-------------------------------------
-ADD:
-DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE, VIETNAM
+ADD:DINH BA HAMLET/ TAN HO CO COMUNE, TAN HONG DISTRICT DONG THAP PROVINCE, VIETNAM
 ------------------------------------
 ------------------------------------
 Consignee:
 KOBESEAN TRADING
-------------------------------------
-------------------------------------
-Add:
-RM 427 CALVO BLDG 266 ESCOLTA ST BRGY 291 ZONE 027 BINONDO MANILA 1006 PHILIPPINES
-------------------------------------
-------------------------------------
-Phone:
-+63 9176817804 Charisse Mei M.OBRA(not show on bl)
-------------------------------------
-------------------------------------
-Email:
-kobeseantrading@yahoo.com
+Add:RM 427 CALVO BLDG 266 ESCOLTA ST BRGY 291 ZONE 027 BINONDO MANILA 1006 PHILIPPINES
+Phone: +63 9176817804 Charisse Mei M.OBRA(not show on bl)
+Email:kobeseantrading@yahoo.com
 ------------------------------------
 ------------------------------------
 Notify Party:

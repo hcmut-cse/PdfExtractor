@@ -302,8 +302,6 @@
 						"right": -1
 					}
 				},
-
-
 				"MARKS & NOS":
 				{
 					"row": [27,28],
@@ -312,7 +310,7 @@
 					"endObject":
 					{
 						"top": "MARKS & NOS",
-						"bottom": "DOCUMENT REQUIRED",
+						"bottom": "TOTAL",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -695,7 +693,7 @@
 					"endObject":
 					{
 						"top": "MARKS & NOS",
-						"bottom": "FREIGHT",
+						"bottom": "TOTAL",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -773,7 +771,7 @@
 					"endObject":
 					{
 						"top": "MARKS & NOS",
-						"bottom": "2  OF   2",
+						"bottom": "TOTAL",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -1156,7 +1154,7 @@
 					"endObject":
 					{
 						"top": "MARKS & NOS",
-						"bottom": "FREIGHT",
+						"bottom": "TOTAL",
 						"left": -1,
 						"right": "QTY       PCS"
 					}
@@ -1312,7 +1310,7 @@
 					"endObject":
 					{
 						"top": "MARKS & NOS",
-						"bottom": "3  OF   3",
+						"bottom": "TOTAL",
 						"left": -1,
 						"right": "QTY"
 					}

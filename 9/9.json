@@ -123,29 +123,29 @@
             }
         },
         "Excess Value Declaration": {
-            "row": [16, 17],
-            "column": [85, null],
+            "row": [17, 22],
+            "column": [90, null],
             "isFlex": 1,
             "endObject": {
                 "top": "Excess Value Declaration",
-                "bottom": "Excess Value Declaration",
+                "bottom": "Port of discharge",
                 "left": "From",
                 "right": -1
             }
         },
         "Marks and Nos; Container No": {
-            "row": [23, 29],
+            "row": [24, 29],
             "column": [0, 43],
             "isFlex": 1,
             "endObject": {
-                "top": "Marks and Nos; Container No",
+                "top": "Seal No.",
                 "bottom": "SHIPPED ON BOARD",
                 "left": -1,
                 "right": "Number and kind of packages"
             }
         },
         "Number and kind of packages": {
-            "row": [23, 29],
+            "row": [24, 29],
             "column": [43, 132],
             "isFlex": 1,
             "endObject": {
@@ -156,22 +156,22 @@
             }
         },
         "Gross weight": {
-            "row": [23, 29],
+            "row": [24, 29],
             "column": [132, 157],
             "isFlex": 1,
             "endObject": {
-                "top": "Gross weight",
+                "top": "Said to be",
                 "bottom": "SHIPPED ON BOARD",
                 "left": "Number and kind of packages",
                 "right": "Measureme"
             }
         },
         "Measureme": {
-            "row": [23, 29],
+            "row": [24, 29],
             "column": [157, null],
             "isFlex": 1,
             "endObject": {
-                "top": "Measureme",
+                "top": "Said to",
                 "bottom": "SHIPPED ON BOARD",
                 "left": "Gross weight",
                 "right": -1
