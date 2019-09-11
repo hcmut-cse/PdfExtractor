@@ -18,20 +18,7 @@ DADV00348700
 ------------------------------------
 ------------------------------------
 DATA2:
-CONSIGNEE:                                                                                                      PANALPINA WORLD TRANSPORT (VN) LTD
-PANALPINA BSC CHARLESTON AS AGENT 3rd floor, Hai Au building,
-PANTAINER(H.K)LTD.                                                                                              39B Truong Son Street, Ward 4,
-207 EAST BAY STREET 2ND FLOOR,                                                                                  Tan Binh District Ho Chi Minh City,
-CHARLESTON, SC 29401 UNITED STATES Vietnam
-EMAIL:IMPORT.FCL-USA@PANALPINA.COM Phone:+84(8)73021122
------------------------------                                                                                   Fax:+8435471332
-NOTIFY:                                                                                                         HONG.TRUONG@PANALPINA.COM
-PANALPINA, INC.
-5700 LAKE WRIGHT DRIVE, SUITE 408
-NORFOLK VA 23502 USA VIRGINIA
-AS AGENT FOR AND ON BEHALF OF
-PANTAINER(H.K.)LIMITED
-________________________________________________________________________
+ERROR
 ------------------------------------
 ------------------------------------
 CONSIGNEE:
@@ -44,7 +31,12 @@ CONSIGNEE:
 ------------------------------------
 ------------------------------------
 NOTIFY:
-
+PANALPINA, INC.
+5700 LAKE WRIGHT DRIVE, SUITE 408
+NORFOLK VA 23502 USA VIRGINIA
+AS AGENT FOR AND ON BEHALF OF
+PANTAINER(H.K.)LIMITED
+__________________________________
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
@@ -72,22 +64,7 @@ NEW YORK
 ------------------------------------
 ------------------------------------
 MARKS & NOS.:
-CONT-NO TCNU6370564
-SL:VN132953A
-
-NO MARKS
-CONT-NO TEMU7876602
-SL:VN132953A
-
-NO MARKS
-
-
-
-
-
-
-
-
+ERROR
 ------------------------------------
 ------------------------------------
 QUANT.PACKAGE:

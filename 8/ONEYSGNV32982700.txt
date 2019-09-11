@@ -46,7 +46,7 @@ BARCELONA 08040 SPAIN
 ------------------------------------
 ------------------------------------
 Domestic routing / export intruction:
-
+not part of
 
 
 
@@ -136,13 +136,11 @@ BULK BAGS:
 ------------------------------------
 ------------------------------------
 N.W(MTS):
-21.600
-21.600
+ERROR
 ------------------------------------
 ------------------------------------
 G.W(MTS):
-21.612
-21.612
+ERROR
 ------------------------------------
 ------------------------------------
 Freight & Charges:
@@ -158,10 +156,10 @@ Freight & Charges:
 ------------------------------------
 ------------------------------------
 Rate:
-SHIPMENT I
-FCL/FCL
-TOTAL 0
-TOTA
+
+
+
+
 
 
 
@@ -177,8 +175,8 @@ TOTAL NW: 43.200 MTS; GW: 43.224 MTS
 TOTAL TARE WEIGHT: 0.024 MTS
 TARIFF CODE NO. 090111
 SERVICE CONTRACT: BASB00123A
-2 BULK CONTAINER(S) EQUIVALENT TO 720 60 KG BAGS
-OF CLEAN GREEN COFFEE IN BULK FOR ANY LIMITATION
+2 BULK CONTAINER(S) EQUIVALENT TO 720
+OF CLEAN GREEN COFFEE IN BULK FOR ANY
 ------------------------------------
 ------------------------------------
 Prepaid:
@@ -189,8 +187,8 @@ Prepaid:
 
 
 
-EACH
-OF
+60 KG BAGS EACH
+LIMITATION OF
 ------------------------------------
 ------------------------------------
 Collect:

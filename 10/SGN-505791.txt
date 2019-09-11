@@ -18,20 +18,7 @@ SGNV67652900
 ------------------------------------
 ------------------------------------
 DATA2:
-CONSIGNEE:                                                                                                      PANALPINA WORLD TRANSPORT (VN) LTD
-PANALPINA WORLD TRANSPORT PTY. LTD.3rd floor, Hai Au building,
-1 MACE WAY                                                                                                      39B Truong Son Street, Ward 4,
-MELBOURNE AIRPORT 3045 AUSTRALIA                                                                                Tan Binh District Ho Chi Minh City,
-AS AGENT FOR AND ON BEHALF                                                                                      Vietnam
-OF PANTAINER (H.K.) LIMITED                                                                                     Phone:+84(8)73021122
------------------------------                                                                                   Fax:+8435471332
-NOTIFY:                                                                                                         MY.TRAN@PANALPINA.COM
-PANALPINA WORLD TRANSPORT PTY. LTD.
-1 MACE WAY
-MELBOURNE AIRPORT 3045 AUSTRALIA
-AS AGENT FOR AND ON BEHALF
-OF PANTAINER (H.K.) LIMITED
-________________________________________________________________________
+ERROR
 ------------------------------------
 ------------------------------------
 CONSIGNEE:
@@ -44,7 +31,12 @@ CONSIGNEE:
 ------------------------------------
 ------------------------------------
 NOTIFY:
-
+PANALPINA WORLD TRANSPORT PTY. LTD
+1 MACE WAY
+MELBOURNE AIRPORT 3045 AUSTRALIA
+AS AGENT FOR AND ON BEHALF
+OF PANTAINER (H.K.) LIMITED
+__________________________________
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
@@ -72,29 +64,7 @@ PLACE OF DELIVERY:
 ------------------------------------
 ------------------------------------
 MARKS & NOS.:
-CONT-NO 1111
-SL:1111
-
-555430
-TAYLOR MADE
-PO.NO.
-230417,234162,
-234163,234164,
-234165,234166,
-233399,233795
-PALLET NO. 1G-5G
-CONTAINING
-1-435CARTONS
-C/NO: 1AD-22AD
-C/NO: 1BQ-7BQ
-MADE IN VIETNAM
-
-555970
-TAYLOR MADE
-PO.NO.
-233399,233795
-C/NO: 1GA-16GA
-
+ERROR
 ------------------------------------
 ------------------------------------
 QUANT.PACKAGE:

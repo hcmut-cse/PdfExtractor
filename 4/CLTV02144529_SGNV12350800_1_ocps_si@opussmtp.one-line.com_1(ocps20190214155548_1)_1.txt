@@ -76,8 +76,12 @@ E-MAIL:
 air-sgn@smartcgo.com
 ------------------------------------
 ------------------------------------
+Remark:
+SEAWAY BILL
+------------------------------------
+------------------------------------
 REMARK:
-SEAWAY BILL // DONT SHOW RATE ON SEAWAY BL
+            // DONT SHOW RATE ON SEAWAY BL
 1. HS CODE: 87089510
 PLS DONT SHOW HS CODE ON BL
 2. ISSUED HBL# SCSS-190215

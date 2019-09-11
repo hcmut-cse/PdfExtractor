@@ -18,16 +18,7 @@ DADV00348700
 ------------------------------------
 ------------------------------------
 DATA2:
-CONSIGNEE:                                                                                                      PANALPINA WORLD TRANSPORT (VN) LTD
-PANALPINA BSC CHARLESTON AS AGENT                                                                               3rd floor, Hai Au building,
-PANTAINER(H.K)LTD.                                                                                              39B Truong Son Street, Ward 4,
-207 EAST BAY STREET 2ND FLOOR,                                                                                 Tan Binh District Ho Chi Minh City,
-CHARLESTON, SC 29401 UNITED STATES                                                                              Vietnam
-EMAIL:IMPORT.FCL-USA@PANALPINA.COM                                                                              Phone:+84(8)73021122
------------------------------                                                                                   Fax:+8435471332
-NOTIFY:                                                                                                         HONG.TRUONG@PANALPINA.COM
-PANTAINER(H.K.)LIMITED
-________________________________________________________________________
+ERROR
 ------------------------------------
 ------------------------------------
 CONSIGNEE:
@@ -40,27 +31,28 @@ CONSIGNEE:
 ------------------------------------
 ------------------------------------
 NOTIFY:
-ERROR
+PANTAINER(H.K.)LIMITED
+__________________________________
 ------------------------------------
 ------------------------------------
 PRE-CARRIAGE BY:
-
+ERROR
 ------------------------------------
 ------------------------------------
 OCEAN VESSEL:
-IWASHIRO                                                                                    010S
+ERROR
 ------------------------------------
 ------------------------------------
 PLACE OF RECEIPT:
-
+ERROR
 ------------------------------------
 ------------------------------------
 PORT OF LOADING:
-TIEN SA PORT,DA NANG
+ERROR
 ------------------------------------
 ------------------------------------
 PORT OF DISCHARGE:
-NEW YORK
+ERROR
 ------------------------------------
 ------------------------------------
 PLACE OF DELIVERY:
@@ -68,28 +60,7 @@ NEW YORK
 ------------------------------------
 ------------------------------------
 MARKS & NOS.:
-CONT-NO 1
-SL:1
-
-NO MARKS
-
-
-
-
-CONT-NO 2
-SL:2
-
-NO MARKS
-
-
-
-
-
-
-
-
-
-
+ERROR
 ------------------------------------
 ------------------------------------
 QUANT.PACKAGE:
