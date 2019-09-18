@@ -18,46 +18,6 @@ def longestSubstringFinder(string1, string2):
                 match = ""
     return answer
 
-
-def leftProcess(CONFIG, extractedData):
-    #Process data with top = same_left
-    for key in CONFIG:
-        if (CONFIG[key]['endObject']['top'] == 'same_left' and key in extractedData):
-            # Delete keyword at the beggining of the string
-            length = len(key)
-            # print(extractedData[key][0:length])
-            if (extractedData[key][0:length] == key):
-                extractedData[key] = extractedData[key][length:]
-            # Delete potential blanks
-            extractedData[key] = extractedData[key].lstrip()
-            # Delete colon ":" if exist
-            if (extractedData[key][:1] == ":"):
-                extractedData[key] = extractedData[key][1:]
-            # Delete leftover blanks
-            extractedData[key] = extractedData[key].lstrip()
-    return extractedData
-
-def subfieldProcess(CONFIG, extractedData):
-    # Process the subfields
-    for key in CONFIG:
-        if ('subfields' in CONFIG[key]):
-            # print(extractedData[key])
-            for subs in CONFIG[key]['subfields']:
-                # print(subs)
-                reg = CONFIG[key]['subfields'][subs]
-                if (reg != 10):
-                    result1 = re.search(reg, extractedData[key])
-                    if (result1 is not None):
-                        result = re.search(reg, extractedData[key]).span()
-                        extractedData[subs] = extractedData[key][result[0]:result[1]]
-                        if key not in CONFIG[key]['subfields']:
-                            extractedData[key] = extractedData[key][0:result[0]] + extractedData[key][result[1]:]
-                else:
-                    extractedData[subs] = extractedData[key]
-            if key not in CONFIG[key]['subfields']:
-                del extractedData[key]
-    return extractedData
-
 def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
     extracted = []
     # Extract data
@@ -79,8 +39,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                 if (foundSynonym): break
                 i+=1
         error = False
-        print(key)
-        print('--------------')
+        # print(key)
+        # print('-----------------------------------------')
         if (not CONFIG[key]['isFlex']): # For fixxed elements
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
@@ -429,7 +389,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                     nearestLowerKey = keyE
                                     minDistance = abs(CURR_CONFIG[keyE]['row'][0] - CURR_CONFIG[key]['row'][1])
 
-                        print(startRow)
+                        # print(startRow)
                         # Get keyword
                         if (CONFIG[key]['endObject']['top'][:4] == 'same'):
                             topFinding = CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]]
@@ -447,8 +407,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                 # print(startRow)
                                 if (nearestLowerKey != key and startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1 and len(extracted) > 0):
                                     # print(startRow)
-                                    print(nearestLowerKey)
-                                    print(CURR_CONFIG[nearestLowerKey]['row'][0])
+                                    # print(nearestLowerKey)
+                                    # print(CURR_CONFIG[nearestLowerKey]['row'][0])
                                     someProblem = True
                                     break
 
@@ -508,7 +468,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                                     break
                             if (startRow > CURR_CONFIG[nearestLowerKey]['row'][0] + 1):
-                                print('key error ======================================')
+                                print('  + Key \"%s\" error!' % key)
                                 error = 1
 
                         # print(error)
@@ -782,9 +742,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         column = CURR_CONFIG[key]['column']
 
         # print(key)
-        print(row)
-        print(column)
-        print(CURR_CONFIG)
+        # print(row)
+        # print(column)
+        # print(CURR_CONFIG)
         # Extract data and mark it as 'extracted'
         lines = fullPdf[row[0]:row[1]]
         # print(lines[column[0]:column[1]])
@@ -908,7 +868,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         dataBlock[l] = ''.join(list_temp)
                         extractedData["Remark"] = SeawayData
 
- 
+
 
         # Process for temperature notation
         for l, lineInBlock in enumerate(dataBlock):
@@ -932,10 +892,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
 
         extractedData[key] = '\n'.join(dataBlock)
-        print(extractedData[key])
+        # print(extractedData[key])
         extracted.append(key)
-
-    extractedData = leftProcess(CONFIG, extractedData)
-    extractedData = subfieldProcess(CONFIG, extractedData)
 
     return extractedData

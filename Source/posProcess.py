@@ -42,3 +42,43 @@ def posProcessData(data, _config, removedData):
                 newData[row] = ''.join(list_temp)
                 # newData[row] = dataToReplace.replace(toBeReplaced, word)
     return newData
+
+
+def leftProcess(CONFIG, extractedData):
+    #Process data with top = same_left
+    for key in CONFIG:
+        if (CONFIG[key]['endObject']['top'] == 'same_left' and key in extractedData):
+            # Delete keyword at the beggining of the string
+            length = len(key)
+            # print(extractedData[key][0:length])
+            if (extractedData[key][0:length] == key):
+                extractedData[key] = extractedData[key][length:]
+            # Delete potential blanks
+            extractedData[key] = extractedData[key].lstrip()
+            # Delete colon ":" if exist
+            if (extractedData[key][:1] == ":"):
+                extractedData[key] = extractedData[key][1:]
+            # Delete leftover blanks
+            extractedData[key] = extractedData[key].lstrip()
+    return extractedData
+
+def subfieldProcess(CONFIG, extractedData):
+    # Process the subfields
+    for key in CONFIG:
+        if ('subfields' in CONFIG[key]):
+            # print(extractedData[key])
+            for subs in CONFIG[key]['subfields']:
+                # print(subs)
+                reg = CONFIG[key]['subfields'][subs]
+                if (reg != 10):
+                    result1 = re.search(reg, extractedData[key])
+                    if (result1 is not None):
+                        result = re.search(reg, extractedData[key]).span()
+                        extractedData[subs] = extractedData[key][result[0]:result[1]]
+                        if key not in CONFIG[key]['subfields']:
+                            extractedData[key] = extractedData[key][0:result[0]] + extractedData[key][result[1]:]
+                else:
+                    extractedData[subs] = extractedData[key]
+            if key not in CONFIG[key]['subfields']:
+                del extractedData[key]
+    return extractedData
