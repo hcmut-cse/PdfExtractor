@@ -16,21 +16,36 @@ def preProcessPdf(filename, ORIGINAL_CONFIG):
     # Check annotation and raise
 
     # Check multi config
-    if (isinstance(ORIGINAL_CONFIG[0], list)):
-        if PDF_PAGES > len(ORIGINAL_CONFIG[0]):
-            print("You are using multi configs for multi pages. This file has more pages than your configuration.")
+    if ("Multipages" in ORIGINAL_CONFIG[0]):
+        if (not ORIGINAL_CONFIG[0]['Multipages']):
+            ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0].get('1', '')
+
+        if (str(PDF_PAGES) not in ORIGINAL_CONFIG[0]):
+            print("You are using multi configs for multi pages. This file has a different page number than your configuration.")
             print("Would you like to continue extracting or edit config? (C: Continue extracting, E: Edit config)")
             choice = input("Your choice: ")
             while choice != "C" and choice != "E":
                 print("You have entered a wrong option! Please choose one C: Continue extracting, E: Edit config.")
                 choice = input("Your choice: ")
+
+            if choice == 'C':
+                pageConfigs = list(filter(lambda x: x != "Multipages", ORIGINAL_CONFIG[0].keys()))
+                maxPages = max(pageConfigs, key=lambda x: int(x) < PDF_PAGES)
+                print("We will use %s pages config for this file (%d pages)." % (maxPages, PDF_PAGES))
+                ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0][maxPages]
+
+            elif choice == 'E':
+                print("Please edit this config...")
+                # Function for editting
+                ORIGINAL_CONFIG[0] = {}
+
         else:
-            ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0][PDF_PAGES - 1]
+            ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0][str(PDF_PAGES)]
+
 
     # Reset Current CONFIG
     CONFIG = ORIGINAL_CONFIG[0].copy()
     HF_CONFIG = ORIGINAL_CONFIG[1].copy()
-
 
     # Remove header & footer
     fullPdf = removeHeaderAndFooter(pdf, HF_CONFIG)
