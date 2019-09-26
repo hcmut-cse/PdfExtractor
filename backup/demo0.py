@@ -54,6 +54,10 @@ def preProcessPdf(filename):
     if (len(pdf) > 1):
         fullPdf = removeHeaderAndFooter(pdf)
         # Join PDF
+        for i in range(len(pdf)):
+            with open(filename[:-4] + '_' + str(i) + ".txt", "w+") as f:
+                for line in fullPdf[i]:
+                    f.write(line + '\n')
         fullPdf = [line for page in fullPdf for line in page]
     else:
         fullPdf = pdf[0].split('\n')

@@ -4,6 +4,7 @@ from difflib import SequenceMatcher
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
+
 def longestSubstringFinder(string1, string2):
     answer = ""
     len1, len2 = len(string1), len(string2)
@@ -16,6 +17,7 @@ def longestSubstringFinder(string1, string2):
                 if (len(match) > len(answer)): answer = match
                 match = ""
     return answer
+
 def connectContent(length, extractedData):
     cString = []
     if (length >= 2):
