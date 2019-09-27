@@ -5,6 +5,32 @@ import numpy as np
 import pdftotext
 from removeHeaderFooter import removeHeaderAndFooter
 from removeWatermark import removeWatermark
+def matchAnaLine(line, anoList):
+    temp = line.lower()
+    for item in anoList:
+        if(type(item) == str):
+            findIt = re.search(item,temp)
+            if(findIt):
+                return True
+            
+        if(type(item) == list):
+            matchList = []
+            for cond in item:
+                findIt = re.search(cond,temp)
+                if(findIt):
+                    matchList.append(True)
+                else:
+                    matchList.append(False)
+            if(all(matchList)):
+                return True
+    return False
+
+def matchAnaPdf(firstpage, anoList):
+    matchList = []
+    for line in firstpage:
+        matchList.append(matchAnaLine(line, anoList))
+    return any(matchList)
+
 
 def preProcessPdf(filename, ORIGINAL_CONFIG):
     # Covert PDF to string by page
@@ -13,7 +39,30 @@ def preProcessPdf(filename, ORIGINAL_CONFIG):
 
     PDF_PAGES = len(pdf)
 
-    # Check annotation and raise
+    ### Check annotation and raise for multipages
+    # List case for annotation
+    annotationListformultipage = []
+    
+    amp1 = "as[ ]*per[ ]*attached"
+    amp2 = ["[*]+.+[*]+","page"]
+    
+    annotationListformultipage.append(amp1)
+    annotationListformultipage.append(amp2)
+    # Create pdftotext
+    fullPdf = []
+    for i in range(len(pdf)):
+        if (pdf[i].strip() != ''):
+            fullPdf.append(pdf[i].split('\n'))
+    firstpage = fullPdf[0]
+
+    multipagesRaise = matchAnaPdf(firstpage, annotationListformultipage) and PDF_PAGES > 1
+
+
+    if(multipagesRaise):
+        print("==========================================")
+        print("raise multipages".upper())
+        print("This file contains an annotation for multipages".upper())
+        print("==========================================")
 
     # Check multi config
     if ("Multipages" in ORIGINAL_CONFIG[0]):
