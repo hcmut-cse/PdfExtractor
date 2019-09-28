@@ -815,6 +815,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         dataBlock = [x.strip() for  x in dataBlock]
         # print(CURR_CONFIG)
         # Process for payment
+
+
         if key != 'Payment':
             for l, lineInBlock in enumerate(dataBlock):
                 temp = lineInBlock.lower()
@@ -849,23 +851,30 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         list_temp[start:end] = space
                         dataBlock[l] = ''.join(list_temp)
                         extractedData["Payment"] = PaymentData
-        if key != 'Remark':
+
+        remarkList = ['remark','remarks']
+
+        if (not key.lower() in remarkList):
             for l, lineInBlock in enumerate(dataBlock):
                 temp = lineInBlock.lower()
                 isSeaway = re.search("sea[ ]?way", temp)
 
                 if(isSeaway):
-                    case = "sea[ ]?way ((- hold cargo)|(bill - hold cargo)|(bill))"
+                    case = "sea[ ]*way.*((hold[ ]*cargo)|(bill.*hold cargo)|(bill))"
                     isCase = re.search(case, temp)
 
                     if(isCase):
                         start = isCase.start(0)
                         end = isCase.end(0)
                         SeawayData = lineInBlock[start:end]
-                        space = " " * len(lineInBlock[start:end])
-                        list_temp = list(lineInBlock)
-                        list_temp[start:end] = space
-                        dataBlock[l] = ''.join(list_temp)
+
+                        case_sub = "[ ]+" + case + "[ ]+"
+                        iscase_sub = re.search(case_sub, temp)
+                        if(not iscase_sub):
+	                        space = " " * len(lineInBlock[start:end])
+	                        list_temp = list(lineInBlock)
+	                        list_temp[start:end] = space
+                        	dataBlock[l] = ''.join(list_temp)
                         extractedData["Remark"] = SeawayData
 
 
