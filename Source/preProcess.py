@@ -5,6 +5,7 @@ import numpy as np
 import pdftotext
 from removeHeaderFooter import removeHeaderAndFooter
 from removeWatermark import removeWatermark
+
 def matchAnaLine(line, anoList):
     temp = line.lower()
     for item in anoList:
@@ -12,7 +13,7 @@ def matchAnaLine(line, anoList):
             findIt = re.search(item,temp)
             if(findIt):
                 return True
-            
+
         if(type(item) == list):
             matchList = []
             for cond in item:
@@ -31,6 +32,20 @@ def matchAnaPdf(firstpage, anoList):
         matchList.append(matchAnaLine(line, anoList))
     return any(matchList)
 
+def getObjectList(config):
+    if not isinstance(config, dict):
+        return list()
+
+    objectList = list()
+    for key, data in config.items():
+        if (data["endObject"]["top"] == -1):
+            continue
+        if (data["endObject"]["top"][:4] == "same"):
+            objectList.append(data["endObject"][data["endObject"]["top"][5:]])
+            continue
+        objectList.append(data["endObject"]["top"])
+
+    return objectList
 
 def preProcessPdf(filename, ORIGINAL_CONFIG):
     # Covert PDF to string by page
@@ -42,10 +57,10 @@ def preProcessPdf(filename, ORIGINAL_CONFIG):
     ### Check annotation and raise for multipages
     # List case for annotation
     annotationListformultipage = []
-    
+
     amp1 = "as[ ]*per[ ]*attached"
     amp2 = ["[*]+.+[*]+","page"]
-    
+
     annotationListformultipage.append(amp1)
     annotationListformultipage.append(amp2)
     # Create pdftotext
@@ -70,21 +85,33 @@ def preProcessPdf(filename, ORIGINAL_CONFIG):
             ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0].get('1', '')
 
         if (str(PDF_PAGES) not in ORIGINAL_CONFIG[0]):
-            print("You are using multi configs for multi pages. This file has a different page number than your configuration.")
-            print("Would you like to continue extracting or edit config? (C: Continue extracting, E: Edit config)")
-            choice = input("Your choice: ").lower()
-            while choice != "c" and choice != "e":
-                print("You have entered a wrong option! Please choose one C: Continue extracting, E: Edit config.")
-                choice = input("Your choice: ")
+            # Check if page 3 4... the same as page 2
+            useMultiConfig = True
+            for pageIndex in range(1, PDF_PAGES):
+                lineIndex = 0
+                listKey = getObjectList(ORIGINAL_CONFIG[0]["multi"][1])
 
-            if choice == 'c':
-                # pageConfigs = list(filter(lambda x: x != "Multipages", ORIGINAL_CONFIG[0].keys()))
-                # maxPages = max(pageConfigs, key=lambda x: int(x) < PDF_PAGES)
-                # print("We will use %s pages config for this file (%d pages)." % (maxPages, PDF_PAGES))
-                # ORIGINAL_CONFIG[0] = ORIGINAL_CONFIG[0][maxPages]
-                del(ORIGINAL_CONFIG[0]['1'])
+                while (lineIndex < len(fullPdf[pageIndex])):
+                    i = 0
+                    for _ in range(len(listKey)):
+                        if listKey[i] in fullPdf[pageIndex][lineIndex]:
+                            del listKey[i]
+                        else:
+                            i += 1
 
-            elif choice == 'e':
+                    if len(listKey) == 0:
+                        break
+                    else:
+                        lineIndex += 1
+
+                if len(listKey) != 0:
+                    useMultiConfig = False
+                    break
+
+            if (useMultiConfig):
+                del (ORIGINAL_CONFIG[0]['1'])
+            else:
+                print("You are using multi configs for multi pages. This file has a different page number than your configuration.")
                 print("Please edit this config...")
                 # Function for editting
                 ORIGINAL_CONFIG[0] = {}
