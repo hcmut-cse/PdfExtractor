@@ -85,7 +85,7 @@
 				"top": "NOTIFY PARTY",
 				"bottom": "PRE-CARRIAGE BY",
 				"left": -1,
-				"right": "ALSO NOTIFY"
+				"right": " ALSO NOTIFY"
 			}
 		},
 		"ALSO NOTIFY": {
