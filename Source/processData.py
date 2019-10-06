@@ -870,7 +870,7 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                         case_sub = "[ ]+" + case + "[ ]+"
                         iscase_sub = re.search(case_sub, temp)
-                        if(not iscase_sub):
+                        if(iscase_sub):
 	                        space = " " * len(lineInBlock[start:end])
 	                        list_temp = list(lineInBlock)
 	                        list_temp[start:end] = space
