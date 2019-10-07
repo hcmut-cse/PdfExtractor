@@ -1,0 +1,116 @@
+------------------------------------
+SHIPPER:
+
+SHINE INTERNATIONAL TRANSPORTATION CO.,LTD
+O/B SHINE INTERNATIONAL TRANSPORTATION
+(SHENZHEN) LIMITED
+195 DIEN BIEN PHU STR,WARD 15,BINH
+THANH DIST,HCM,VIETNAM
+TEL : (+84)28 35146550
+FAX : (+84)28 35146551
+------------------------------------
+------------------------------------
+BOOKING NO.:
+SGNUE1582300
+------------------------------------
+------------------------------------
+CONSIGNEE:
+E-FREIGHT SOLUTIONS INC.
+1000 CORPROATE CENTER DRIVE, SUIT
+E 140 MONTEREY PARK, CA 91754
+TEL: 323-488-6188
+FAX: 323-488-6199
+E-MAIL: EFS@E-FREIGHTGROUP.COM
+------------------------------------
+------------------------------------
+NOTIFY PARTY:
+SAME AS CONSIGNEE
+------------------------------------
+------------------------------------
+ALSO NOTIFY:
+
+------------------------------------
+------------------------------------
+PLACE OF RECEIPT:
+CAI MEP, VIET NAM
+------------------------------------
+------------------------------------
+PORT OF LOADING:
+CAI MEP, VIET NAM
+------------------------------------
+------------------------------------
+PRE-CARRIAGE BY:
+
+------------------------------------
+------------------------------------
+PORT OF DISCHARGE:
+CHARLESTON
+------------------------------------
+------------------------------------
+PLACE OF DELIVERY:
+CHARLESTON
+------------------------------------
+------------------------------------
+VESSEL / VOYAGE:
+MADRID BRIDGE 004E
+------------------------------------
+------------------------------------
+MARKS AND NUMBERS:
+FCL/FCL
+
+
+CONT/SEAL NO:
+NYKU4267289/
+VN160381A
+
+------------------------------------
+------------------------------------
+NUMBER AND KIND OF PACKAGES:
+
+76 CTNS
+
+
+
+
+
+------------------------------------
+------------------------------------
+DESCRIPTION OF GOODS:
+01x40HC CONTAINER S.T.C:
+TESSARO 2 SOFA
+THIS SHIPMENT CONTAINS NO SOLID
+WOOD PACKING MATERIALS.
+
+AMS # : SSHC19010072
+SCAC CODE : SSLN
+------------------------------------
+------------------------------------
+GROSS WEIGHT:
+
+4,370.00 KGS
+
+
+
+
+
+------------------------------------
+------------------------------------
+MEASUREMENT:
+
+64.60 CBM
+
+
+
+
+
+------------------------------------
+------------------------------------
+REMARK:
+HS CODE:9401.61.00                                                      FREIGHT: COLLECT-AMS: PRE-PAID
+(PLEASE DON'T SHOW HS CODE ON MBL)                                      SEAWAY MBL
+------------------------------------
+------------------------------------
+PAYMENT:
+
+
+------------------------------------
