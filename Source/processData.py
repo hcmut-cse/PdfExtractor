@@ -39,8 +39,8 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                 if (foundSynonym): break
                 i+=1
         error = False
-        print(key)
-        print('-----------------------------------------')
+        # print(key)
+        # print('-----------------------------------------')
         if (not CONFIG[key]['isFlex']): # For fixxed elements
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
@@ -348,7 +348,6 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
         else:
             for margin in CONFIG[key]['endObject']:
-                print(CONFIG[key]['endObject'][margin])
                 if (CONFIG[key]['endObject'][margin] == -1):
                     # If not define object for margin, it will use absolute location
                     continue
@@ -743,9 +742,9 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
         column = CURR_CONFIG[key]['column']
 
         # print(key)
-        print(row)
-        print(column)
-        print(CURR_CONFIG)
+        # print(row)
+        # print(column)
+        # print(CURR_CONFIG)
         # Extract data and mark it as 'extracted'
         lines = fullPdf[row[0]:row[1]]
         # print(lines[column[0]:column[1]])
