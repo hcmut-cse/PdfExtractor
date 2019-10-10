@@ -106,11 +106,11 @@ MEASUREMENT:
 ------------------------------------
 ------------------------------------
 REMARK:
-HS CODE:9401.61.00                                                      FREIGHT: COLLECT-AMS: PRE-PAID
-(PLEASE DON'T SHOW HS CODE ON MBL)                                      SEAWAY MBL
+HS CODE:9401.61.00
+(PLEASE DON'T SHOW HS CODE ON MBL)
 ------------------------------------
 ------------------------------------
 PAYMENT:
-
-
+FREIGHT: COLLECT-AMS: PRE-PAID
+SEAWAY MBL
 ------------------------------------

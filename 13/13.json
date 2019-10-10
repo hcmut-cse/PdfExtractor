@@ -196,6 +196,7 @@
 	            "row": [31, 33],
 	            "column": [0, 72],
 	            "isFlex": 1,
+							"isCenter": 1,
 	            "endObject": {
 	                "top": "REMARK",
 	                "bottom": -1,
@@ -208,6 +209,7 @@
 	            "row": [31, 33],
 	            "column": [72, null],
 	            "isFlex": 1,
+							"isCenter": 1,
 	            "endObject": {
 	                "top": "PAYMENT",
 	                "bottom": -1,
