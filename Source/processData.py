@@ -286,12 +286,21 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         rights.append(line[column_temp[1] - min_column:max_column - min_column])
 
                     #print("right:","|",line[column_temp[1] - min_column:max_column - min_column],"|")
-                temp = re.sub("[\s]+","",line[min_column - min_column:column_temp[1] - min_column])
+                temp = re.sub("[\s]+","",line[:column_temp[1] - min_column])
                 if not temp == "":
-                    lefts.append(line[min_column - min_column:column_temp[1] - min_column])
+                    lefts.append(line[:column_temp[1] - min_column])
 
                 #print("left:","|",line[min_column - min_column:column_temp[1] - min_column],"|")
+            max_length = column_temp[1] - min_column
+            for line in lefts:
+                #print(len(line))
+                if (len(line) > max_length):
+                    max_length = len(line)
+            #print("max:",max_length)
 
+            for line,i in zip(lefts,range(len(lefts))):
+                if len(line) < max_length:
+                    lefts[i] = line + " "*(max_length - len(line))
             # for right in rights:
             #     print("right:","|", right)
             #
