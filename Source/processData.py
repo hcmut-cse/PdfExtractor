@@ -25,22 +25,32 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
     synonymUsing={}
     for key in CONFIG:
         foundSynonym=0
-        if ('synonyms' in CONFIG[key]):
+        if ('alias' in CONFIG[key]):
             i=0
-            for synonym in CONFIG[key]['synonyms']:
-                checkedSynonym='synonym_'+str(i)
-                name=CONFIG[key]['synonyms'][checkedSynonym]['name']
+            for synonym in CONFIG[key]['alias']:
+                checkedSynonym='alias_'+str(i)
+                name=CONFIG[key]['alias'][checkedSynonym]['name']
                 for line in fullPdf:
                     if line.find(name)!=-1:
-                        CONFIG[key]['endObject']=CONFIG[key]['synonyms'][checkedSynonym]['endObject'].copy()
-                        CONFIG[key]['column']=CONFIG[key]['synonyms'][checkedSynonym]['column'].copy()
+                        # CONFIG[key]['endObject']=CONFIG[key]['alias'][checkedSynonym]['endObject'].copy()
+                        # CONFIG[key]['column']=CONFIG[key]['alias'][checkedSynonym]['column'].copy()
+                        # CURR_CONFIG[key]['endObject']=CONFIG[key]['alias'][checkedSynonym]['endObject'].copy()
+                        # CURR_CONFIG[key]['column']=CONFIG[key]['alias'][checkedSynonym]['column'].copy()
+                        if (CONFIG[key]['endObject']['top'][:4] == "same"):
+                            CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
+                            CURR_CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
+                        else:
+                            CONFIG[key]['endObject']['top'] = name
+                            CURR_CONFIG[key]['endObject']['top'] = name
                         foundSynonym=1
                         break
-                if (foundSynonym): break
+                if (foundSynonym):
+                    break
                 i+=1
         error = False
         # print(key)
         # print('-----------------------------------------')
+        # print(CURR_CONFIG)
         if (not CONFIG[key]['isFlex']): # For fixxed elements
             row = CURR_CONFIG[key]['row']
             column = CURR_CONFIG[key]['column']
@@ -418,8 +428,10 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                                     # print(startRow)
                                     # print(nearestLowerKey)
                                     # print(CURR_CONFIG[nearestLowerKey]['row'][0])
-                                    someProblem = True
-                                    break
+                                    if (CURR_CONFIG[nearestLowerKey]['row'][1]):
+                                        if (CURR_CONFIG[nearestLowerKey]['row'][1] - CURR_CONFIG[nearestLowerKey]['row'][0] > 1):
+                                            someProblem = True
+                                            break
 
                                 distance = startRow - CURR_CONFIG[key]['row'][0] + sameLine
                                 # print("top distance " + str(distance))
