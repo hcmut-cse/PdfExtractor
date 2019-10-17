@@ -66,10 +66,7 @@ Remark:
 SEAWAY - HOLD CARGO
 ------------------------------------
 ------------------------------------
-Bill type:
-Please issue SEAWAY - HOLD CARGO
-------------------------------------
-------------------------------------
 Leftovers:
-
+               
+Please issue SEAWAY - HOLD CARGO
 ------------------------------------

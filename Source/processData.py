@@ -25,28 +25,49 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
     synonymUsing={}
     for key in CONFIG:
         foundSynonym=0
-        if ('alias' in CONFIG[key]):
-            i=0
-            for synonym in CONFIG[key]['alias']:
-                checkedSynonym='alias_'+str(i)
-                name=CONFIG[key]['alias'][checkedSynonym]['name']
-                for line in fullPdf:
-                    if line.find(name)!=-1:
-                        # CONFIG[key]['endObject']=CONFIG[key]['alias'][checkedSynonym]['endObject'].copy()
-                        # CONFIG[key]['column']=CONFIG[key]['alias'][checkedSynonym]['column'].copy()
-                        # CURR_CONFIG[key]['endObject']=CONFIG[key]['alias'][checkedSynonym]['endObject'].copy()
-                        # CURR_CONFIG[key]['column']=CONFIG[key]['alias'][checkedSynonym]['column'].copy()
-                        if (CONFIG[key]['endObject']['top'][:4] == "same"):
-                            CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
-                            CURR_CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
-                        else:
-                            CONFIG[key]['endObject']['top'] = name
-                            CURR_CONFIG[key]['endObject']['top'] = name
-                        foundSynonym=1
-                        break
-                if (foundSynonym):
-                    break
-                i+=1
+        # if ('alias' in CONFIG[key]):
+        #     for synonym in CONFIG[key]['alias']:
+        #         name = CONFIG[key]['alias'][synonym]['name']
+        #
+        #         nearestKey = key
+        #         minDistance = len(fullPdf)
+        #
+        #         for keyE in CURR_CONFIG:
+        #             if (keyE not in extracted and keyE != key and CONFIG[keyE]['row'][0] >= CONFIG[key]['row'][1]):
+        #                 if abs(CURR_CONFIG[keyE]['row'][0] - CURR_CONFIG[key]['row'][1]) < minDistance:
+        #                     nearestKey = keyE
+        #                     minDistance = abs(CURR_CONFIG[keyE]['row'][0] - CURR_CONFIG[key]['row'][1])
+        #         # print(nearestKey)
+        #
+        #         upperKey = key
+        #         minDistance = len(fullPdf)
+        #
+        #         for keyE in CURR_CONFIG:
+        #             if (CONFIG[keyE]['row'][1] == None):
+        #                 continue
+        #             if (keyE != key and keyE != nearestKey and CONFIG[keyE]['row'][1] <= CONFIG[nearestKey]['row'][0]):
+        #                 if abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0]) < minDistance:
+        #                     upperKey = keyE
+        #                     minDistance = abs(CURR_CONFIG[keyE]['row'][1] - CURR_CONFIG[nearestKey]['row'][0])
+        #
+        #
+        #         upperLine = CURR_CONFIG[upperKey]['row'][1]
+        #         lowerLine = CURR_CONFIG[nearestKey]['row'][0]
+        #         # print(upperKey)
+        #         # print(nearestKey)
+        #         # print(fullPdf[upperLine:lowerLine])
+        #         for line in fullPdf[upperLine:lowerLine]:
+        #             if line.find(name)!=-1:
+        #                 if (CONFIG[key]['endObject']['top'][:4] == "same"):
+        #                     CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
+        #                     CURR_CONFIG[key]['endObject'][CONFIG[key]['endObject']['top'][5:]] = name
+        #                 else:
+        #                     CONFIG[key]['endObject']['top'] = name
+        #                     CURR_CONFIG[key]['endObject']['top'] = name
+        #                 foundSynonym=1
+        #                 break
+        #         if (foundSynonym):
+        #             break
         error = False
         # print(key)
         # print('-----------------------------------------')

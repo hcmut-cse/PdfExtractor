@@ -9,7 +9,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Shipper",
-				"left": "Attn",
+				"left": "Attn:",
 				"right": -1
 			}
 		},
@@ -25,6 +25,13 @@
 				"bottom": "Consignee",
 				"left": -1,
 				"right": -1
+			},
+			"alias":
+			{
+				"alias_0":
+				{
+					"name": "SHIPPER"
+				}
 			}
 		},
 
@@ -39,6 +46,13 @@
 				"bottom": "Notify",
 				"left": -1,
 				"right": -1
+			},
+			"alias":
+			{
+				"alias_0":
+				{
+					"name": "CONSIGNEE"
+				}
 			}
 		},
 
@@ -53,7 +67,14 @@
 				"bottom": "Shipping Mark",
 				"left": -1,
 				"right": -1
-			}
+			},
+			"alias":
+            {
+                "alias_0":
+                {
+                    "name": "NOTIFY PARTY"
+                }
+            }
 		},
 
 		"Shipping Mark":
@@ -65,7 +86,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Booking No.",
-				"left": "Shipping Mark",
+				"left": "Shipping Mark:",
 				"right": -1
 			}
 		},
@@ -107,7 +128,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Port of Discharge",
-				"left": "Temperature/Ventilation",
+				"left": "Temperature/Ventilation:",
 				"right": -1
 			}
 		},
@@ -121,7 +142,7 @@
 			{
 				"top": "same_left",
 				"bottom": "ETD",
-				"left": "Port of Discharge",
+				"left": "Port of Discharge:",
 				"right": -1
 			}
 		},
@@ -135,7 +156,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Commodity",
-				"left": "ETD",
+				"left": "ETD:",
 				"right": -1
 			}
 		},
@@ -149,7 +170,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Volume",
-				"left": "Commodity",
+				"left": "Commodity:",
 				"right": -1
 			}
 		},
@@ -163,7 +184,7 @@
 			{
 				"top": "same_left",
 				"bottom": "Gross Weight",
-				"left": "Volume",
+				"left": "Volume:",
 				"right": -1
 			}
 		},
@@ -179,44 +200,18 @@
 				"bottom": "Prepaid",
 				"left": "Gross Weight:",
 				"right": -1
-			}
-		},
-
-		"Payment":
-		{
-			"row": [25,26],
-			"column": [0,null],
-			"isFlex": 1,
-			"endObject":
-			{
-				"top": -1,
-				"bottom": -1,
-				"left": -1,
-				"right": -1
-			}
-		},
-
-		"Bill type":
-		{
-			"row": [26,27],
-			"column": [0,null],
-			"isFlex": 1,
-			"endObject":
-			{
-				"top": -1,
-				"bottom": -1,
-				"left": -1,
-				"right": -1
 			},
-			"subfields":
+			"alias":
 			{
-				"Bill type": "Please issue [A-Z\\s\\-]*\\n?\\s?"
+				"alias_0":
+				{
+					"name": "Gross weight"
+				}
 			}
 		},
-
 		"DATA":
 		{
-			"row": [27,null],
+			"row": [25,null],
 			"column": [0,null],
 			"isFlex": 1,
 			"endObject":
@@ -236,17 +231,16 @@
 			}
 		}
 	},
-
 	{
-		"Header": {
-        	"row": [0, 0],
-        	"column": [0, null],
-        	"pages": "all"
-      	},
-      	"Footer": {
-        	"row": [-1, null],
-        	"column": [0, null],
-        	"pages": "all"
-      	}
-	}
+        "Header": {
+            "row": [0,0],
+            "column": [0, 0],
+            "pages": "all"
+        },
+        "Footer": {
+            "row": [0, 0],
+            "column": [0, 0],
+            "pages": "all"
+        }
+    }
 ]
