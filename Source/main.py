@@ -60,7 +60,7 @@ if __name__ == '__main__':
     PDF_TYPE = str(args.pdf_type)
 
     fileName = list(filter(lambda pdf: pdf[-3:].lower() == 'pdf' ,os.listdir('../' + PDF_TYPE)))
-    # fileName = ["SGNV32099600.pdf"]
+    # fileName = ["VN104890_5.pdf"]
 
     for file in fileName:
         with open('../' + PDF_TYPE + '/' + PDF_TYPE + '.json', 'r', encoding='utf8') as json_file:

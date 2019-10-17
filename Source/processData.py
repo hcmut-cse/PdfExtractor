@@ -464,8 +464,21 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
 
                         if (someProblem or startRow == len(fullPdf)):
                             toFind = [k for k in removed]
+                            keyList = [key]
+                            if ("alias" in CURR_CONFIG[key]):
+                                for each in CURR_CONFIG[key]["alias"]:
+                                    keyList.append(CURR_CONFIG[key]["alias"][each]["name"])
+                            # print(keyList)
+
                             for tf in toFind:
-                                if key in tf:
+                                runXxx = False
+                                for eachKey in keyList:
+                                    if eachKey in tf:
+                                        runXxx = True
+                                        break
+
+                                if runXxx:
+                                    # print("Recover key: " + key)
                                     startRow = removed[tf][0] + 1
 
                                     distance = startRow - CURR_CONFIG[key]['row'][0] - (not  sameLine)

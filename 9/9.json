@@ -21,7 +21,14 @@
                 "bottom": -1,
                 "left": "SI BOOKING NO.",
                 "right": -1
-            }
+            },
+    				"alias":
+    				{
+    					"alias_0":
+    					{
+    						"name": "SI booking"
+    					}
+    				}
         },
         "Consignee": {
             "row": [10, 14],
