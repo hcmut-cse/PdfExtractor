@@ -262,7 +262,7 @@
             "row": [34, 43],
             "column": [0, 32],
             "isFlex": 1,
-            "isCenter": 1,
+            
             "endObject": {
                 "top": "Container/Seal No",
                 "bottom": "TOTAL:",
@@ -274,7 +274,7 @@
             "row": [34, 43],
             "column": [32, 52],
             "isFlex": 1,
-            "isCenter": 1,
+            
             "endObject": {
                 "top": "Size/ Type",
                 "bottom": "TOTAL:",

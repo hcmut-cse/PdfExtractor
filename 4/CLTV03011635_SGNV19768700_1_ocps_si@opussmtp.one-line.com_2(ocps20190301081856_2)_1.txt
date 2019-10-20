@@ -76,12 +76,8 @@ E-MAIL:
 air-sgn@smartcgo.com
 ------------------------------------
 ------------------------------------
-Remark:
-SEAWAY BILL
-------------------------------------
-------------------------------------
 REMARK:
-            // DONT SHOW RATE ON SEAWAY BL
+SEAWAY BILL // DONT SHOW RATE ON SEAWAY BL
 1. HS CODE: 87089510
 PLS DONT SHOW HS CODE ON BL
 2. ISSUED HBL# SCSS-190302
@@ -142,7 +138,7 @@ CUSHION FOR CAR AIRBAG
 
 
 
-               
+
 ------------------------------------
 ------------------------------------
 Weight:

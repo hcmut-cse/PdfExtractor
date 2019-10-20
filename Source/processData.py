@@ -867,12 +867,66 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
             # dataBlock.append(inform[column[0]:column[1]].strip())
         # dataBlock = [line[column[0]:column[1]].strip() for line in lines]
         dataBlock = posProcessData([line[column[0]:column[1]] for line in lines], CURR_CONFIG[key], removed)
+
+        if(column[1] != None):
+            linehavedata = 0
+            for i, line in enumerate(dataBlock):
+                str_temp = re.sub(" ","",line)
+                if (len(str_temp) > 0):
+                    linehavedata += 1
+
+
+                
+            if (linehavedata > 1):
+                for i, line in enumerate(dataBlock):
+                    print("l",line)
+                    if (len(line) < (column[1] - column[0])):
+                        continue
+
+                    print("pass1")
+                    if (line[::-1][0:2] == "  "):
+                        continue
+                    print("pass2")
+                    fullLine = lines[i]
+
+                    threshhold = int(column[1] - column[0])
+                    spaceFinding = re.search("  ",fullLine[column[1]:])
+                    spaceFinding2 = re.search("  ",fullLine[column[1]:column[1] + threshhold])
+                    print(fullLine[column[1]:])
+
+
+                    if spaceFinding:
+                        if spaceFinding2:
+                            newdata = fullLine[column[0]:spaceFinding.start() + column[1]]
+                            dataBlock[i] = newdata
+
+                            list_temp = list(fullPdf[row[0] + i])
+                            list_temp[column[1]:spaceFinding.start() + column[1]] = " "*len(list_temp[column[1]:spaceFinding.start() + column[1]])
+                            fullPdf[row[0] + i] = ''.join(list_temp)
+
+                    else:
+                        newdata = fullLine[column[0]:]
+                        dataBlock[i] = newdata
+
+                        list_temp = list(fullPdf[row[0] + i])
+                        list_temp[column[1]:] = " "*len(list_temp[column[1]:])
+                        fullPdf[row[0] + i] = ''.join(list_temp)
+
+
+
         dataBlock = [x.strip() for  x in dataBlock]
         # print(CURR_CONFIG)
+
         # Process for payment
+        paymentList = ['payment','bill','type']
 
+        paymentCheck = True
+        for item in paymentList:
+            keyCheck = key.lower()
+            if(re.search(item,keyCheck)):
+                paymentCheck = False
 
-        if key != 'Payment':
+        if (paymentCheck):
             for l, lineInBlock in enumerate(dataBlock):
                 temp = lineInBlock.lower()
                 isPayment = re.search("freight", temp)
@@ -881,41 +935,74 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                     # print("RUN PAYMENTS")
                     prepaid = "prepaid"
                     collect = "collect"
+
                     payment = re.search("freight " + prepaid, temp)
                     if (payment):
                         start = payment.start()
                         end = payment.end()
-                        # length = end - start
-                        #
+
                         PaymentData = lineInBlock[start:end]
-                        space = " " * len(lineInBlock[start:end])
-                        list_temp = list(lineInBlock)
-                        list_temp[start:end] = space
-                        dataBlock[l] = ''.join(list_temp)
+
+
+                        case = "freight " + prepaid
+                        case_sub0 = "\s\s\s+" + case + "\s\s\s+"
+                        case_sub1 = "\s\s\s+" + case + "$"
+                        case_sub2 = "^" + case + "\s\s\s+"
+                        case_sub3 = "^" + case + "$"
+                        iscase_sub0 = re.search(case_sub0, temp)
+                        iscase_sub1 = re.search(case_sub1, temp)
+                        iscase_sub2 = re.search(case_sub2, temp)
+                        iscase_sub3 = re.search(case_sub3, temp)
+                        if(iscase_sub0 or iscase_sub1 or iscase_sub2 or iscase_sub3):
+                            space = " " * len(lineInBlock[start:end])
+                            list_temp = list(lineInBlock)
+                            list_temp[start:end] = space
+                            dataBlock[l] = ''.join(list_temp)
+                        
                         extractedData["Payment"] = PaymentData
 
                     payment = re.search("freight " + collect, temp)
                     if (payment):
                         start = payment.start()
                         end = payment.end()
-                        # length = end - start
-                        #
+
                         PaymentData = lineInBlock[start:end]
-                        space = " " * len(lineInBlock[start:end])
-                        list_temp = list(lineInBlock)
-                        list_temp[start:end] = space
-                        dataBlock[l] = ''.join(list_temp)
+
+                        case = "freight " + collect
+                        case_sub0 = "\s\s\s+" + case + "\s\s\s+"
+                        case_sub1 = "\s\s\s+" + case + "$"
+                        case_sub2 = "^" + case + "\s\s\s+"
+                        case_sub3 = "^" + case + "$"
+                        iscase_sub0 = re.search(case_sub0, temp)
+                        iscase_sub1 = re.search(case_sub1, temp)
+                        iscase_sub2 = re.search(case_sub2, temp)
+                        iscase_sub3 = re.search(case_sub3, temp)
+                        if(iscase_sub0 or iscase_sub1 or iscase_sub2 or iscase_sub3):
+                            space = " " * len(lineInBlock[start:end])
+                            list_temp = list(lineInBlock)
+                            list_temp[start:end] = space
+                            dataBlock[l] = ''.join(list_temp)
+
                         extractedData["Payment"] = PaymentData
 
-        remarkList = ['remark','remarks']
 
-        if (not key.lower() in remarkList):
+        dataBlock = [x.strip() for  x in dataBlock]
+
+        remarkList = ['remark','remarks','bill','type']
+
+        remarkCheck = True
+        for item in remarkList:
+            keyCheck = key.lower()
+            if(re.search(item,keyCheck)):
+                remarkCheck = False
+
+        if (remarkCheck):
             for l, lineInBlock in enumerate(dataBlock):
                 temp = lineInBlock.lower()
                 isSeaway = re.search("sea[ ]?way", temp)
 
                 if(isSeaway):
-                    case = "sea[ ]*way.*((hold[ ]*cargo)|(bill.*hold cargo)|(bill))"
+                    case = "sea[ ]*way[ ]*((hold[ ]*cargo)|(bill.*hold cargo)|(bill))?"
                     isCase = re.search(case, temp)
 
                     if(isCase):
@@ -923,9 +1010,15 @@ def extractData(fullPdf, CONFIG, CURR_CONFIG, removed):
                         end = isCase.end(0)
                         SeawayData = lineInBlock[start:end]
 
-                        case_sub = "[ ]+" + case + "[ ]+"
-                        iscase_sub = re.search(case_sub, temp)
-                        if(iscase_sub):
+                        case_sub0 = "\s\s\s+" + case + "\s\s\s+"
+                        case_sub1 = "\s\s\s+" + case + "$"
+                        case_sub2 = "^" + case + "\s\s\s+"
+                        case_sub3 = "^" + case + "$"
+                        iscase_sub0 = re.search(case_sub0, temp)
+                        iscase_sub1 = re.search(case_sub1, temp)
+                        iscase_sub2 = re.search(case_sub2, temp)
+                        iscase_sub3 = re.search(case_sub3, temp)
+                        if(iscase_sub0 or iscase_sub1 or iscase_sub2 or iscase_sub3):
 	                        space = " " * len(lineInBlock[start:end])
 	                        list_temp = list(lineInBlock)
 	                        list_temp[start:end] = space

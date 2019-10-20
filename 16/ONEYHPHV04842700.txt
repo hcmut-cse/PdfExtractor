@@ -138,7 +138,7 @@ DFSU6323560           MOL074372N
 ------------------------------------
 Size/ Type:
 
-
+40'HQ
 
 
 
@@ -171,7 +171,7 @@ THE 3RD NOTIFY PARTY:
 SAME AS CONSIGNEE
 
 S/C : CHIB00285
-"               "
+"FREIGHT COLLECT"
 THIS SHIPMENT CONTAINS NO ANY SOLID WOOD PACKING MATERIALS
 ------------------------------------
 ------------------------------------

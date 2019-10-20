@@ -181,7 +181,7 @@ FREIGHT COLLECT
 ------------------------------------
 ------------------------------------
 PS:
-FREIGHT PAYMENT: C =                 P = FREIGHT PREPAID
+FREIGHT PAYMENT: C = FREIGHT COLLECT P = FREIGHT PREPAID
 RATED OBL/SWB : Y = YES     N = NO     OB/L NUMBER: SGNV08856300
 ------------------------------------
 ------------------------------------

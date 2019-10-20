@@ -183,12 +183,12 @@ THE 3RD NOTIFY PARTY:
 SAME AS CONSIGNEE
 
 S/C : CHIB00285
-"               "
+"FREIGHT COLLECT"
 THIS SHIPMENT CONTAINS NO ANY SOLID WOOD PACKING MATERIALS
 BSIU9435228 & CAIU9501371 LOADED BY GFT VIETNAM COMPANY LIMITED
-Tat Thuong Village, Cong Lac Commune,Tu Ky District,Hai Duong Province, Vietn
+Tat Thuong Village, Cong Lac Commune,Tu Ky District,Hai Duong Province, Vietnam
 TCLU8791647 LOADED BY LEO INDUSTRIES FAR EAST(VIET NAM) LIMITED COMPANY
-VANG PHAN VILLAGE, TUAN HUNG COMMUNE, KIM THANH DISTRICT, HAI DUONG PROVINCE,
+VANG PHAN VILLAGE, TUAN HUNG COMMUNE, KIM THANH DISTRICT, HAI DUONG PROVINCE, VIETNAM
 ------------------------------------
 ------------------------------------
 TOTAL::
@@ -205,9 +205,9 @@ Kind of Packages:
 
 
 
-nam
 
-, VIETNAM
+
+
 ------------------------------------
 ------------------------------------
 (Kgs):
